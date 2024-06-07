@@ -497,7 +497,7 @@ class Accesspoint(DnacBase):
             responses = {}
             responses["accesspoints_updates"] = {"response": taskdetails,
                                              "after_update": devices_config,
-            "msg": "Below list APs updated successfully"}
+            "msg": "APs updated successfully"}
             self.result["changed"] = True
             del self.payload["device_list"]
             self.result["response"].append(responses)
