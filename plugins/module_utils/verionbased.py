@@ -57,9 +57,7 @@ class FindVersionNumber(DnacBase):
         """
         if self.check_family_function_in_uplifted(family, function, version):
             required_keys = self.version_details["updated_version"]["required"]
-            self.check_required_keys(payload, required_keys)
             optional_req_keys = self.version_details["updated_version"]["required_optional"]
-            self.check_required_optional_keys(payload, optional_req_keys)
             if self.check_required_keys(payload, required_keys) and\
                self.check_required_optional_keys(payload, optional_req_keys):
                 return True, version
@@ -119,6 +117,27 @@ class FindVersionNumber(DnacBase):
         if all_required_optional_key_count == payload_unmatch_key_count:
             return False
 
+    def depth_search_key(self, payload, search_key):
+        """
+        this function used the serarch specific key in the payload.
+        """
+        input_dict = payload
+        target_string = search_key
+
+        if isinstance(input_dict, dict):
+            for key, value in input_dict.items():
+                if key == target_string:
+                    return True
+                result = self.depth_search_key(value, target_string)
+                if result is not None:
+                    return result
+        elif isinstance(input_dict, list):
+            for item in input_dict:
+                result = self.depth_search_key(item, target_string)
+                if result is not None:
+                    return result
+        return None
+
     def format_version(self, version):
         """
         Converts version from '2.3.5.3' to 'v2_3_5_3'.
@@ -150,26 +169,7 @@ class FindVersionNumber(DnacBase):
                 'Unknown API version, known versions are: {0}'.format(str(valid_versions))
             )
 
-    def depth_search_key(self, payload, search_key):
-        """
-        this function used the serarch specific key in the payload.
-        """
-        input_dict = payload
-        target_string = search_key
 
-        if isinstance(input_dict, dict):
-            for key, value in input_dict.items():
-                if key == target_string:
-                    return True
-                result = self.depth_search_key(value, target_string)
-                if result is not None:
-                    return result
-        elif isinstance(input_dict, list):
-            for item in input_dict:
-                result = self.depth_search_key(item, target_string)
-                if result is not None:
-                    return result
-        return None
 
     def list_defined_methods(self, cls_obj):
         """Lists all methods of a given class."""
