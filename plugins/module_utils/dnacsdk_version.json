@@ -1,0 +1,49 @@
+{
+    "updated_version":
+    {
+        "devices^get_device_list^2.3.7.6": {
+            "required": [],
+            "required_optional": ["macAddress", "managementIpAddress", "hostname"],
+            "optional": []
+        },
+        "wireless^get_access_point_configuration^2.3.7.6": {
+            "required": ["key"],
+            "required_optional": [],
+            "optional": []
+        },
+        "sites^get_site^2.3.7.6": {
+            "required": ["name"],
+            "required_optional": [],
+            "optional": []
+        }
+    },
+    "last_updated_date": "",
+    "last_updated_date_time": "",
+    "valid_versions": ["2.2.2.3", "2.2.3.3", "2.3.3.0", "2.3.5.3", "2.3.7.6"],
+    "functions_v2_3_5_3": {
+        "get_permissions": "get_permissions_api",
+        "get_roles": "get_roles_api",
+        "get_users": "get_users_api",
+        "add_user": "add_user_api",
+        "update_user": "update_user_api",
+        "get_external_authentication_servers": "get_external_authentication_servers_api"
+    },
+    "functions_v2_3_7_6": {
+        "add_role": "add_role_ap_i",
+        "update_role": "update_role_ap_i",
+        "get_permissions": "get_permissions_ap_i",
+        "delete_role": "delete_role_ap_i",
+        "get_roles": "get_roles_ap_i",
+        "get_users": "get_users_ap_i",
+        "add_user": "add_user_ap_i",
+        "update_user": "update_user_ap_i",
+        "delete_user": "delete_user_ap_i",
+        "get_external_authentication_setting": "get_external_authentication_setting_ap_i",
+        "manage_external_authentication_setting": "manage_external_authentication_setting_ap_i",
+        "get_external_authentication_servers": "get_external_authentication_servers_ap_i",
+        "add_and_update_aa_attribute": "add_and_update_a_a_attribute_ap_i",
+        "delete_aa_attribute": "delete_a_a_attribute_ap_i",
+        "get_aa_attribute": "get_a_a_attribute_ap_i"
+    }
+}
+  
