@@ -308,5 +308,5 @@ class FindVersionNumber(DnacBase):
                 return None
 
     class VersionError(Exception):
-        """Exception raised for invalid DNA Center API versions."""
+        """Exception raised for invalid DNA Center API versions. check """
         pass
