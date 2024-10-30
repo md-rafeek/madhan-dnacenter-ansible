@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>cisco.dnac.fabric_devices_workflow_manager module -- Manage SDA fabric devices in Cisco Catalyst Center. &mdash; DNACenterAnsibleActions  documentation</title>
+  <title>cisco.dnac.sda_fabric_devices_workflow_manager module -- Manage SDA fabric devices in Cisco Catalyst Center. &mdash; DNACenterAnsibleActions  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
       <link rel="stylesheet" type="text/css" href="../_static/ansible-basic-sphinx-ext.css" />
@@ -23,8 +23,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="cisco.dnac.fabric_sites_zones_workflow_manager module -- Manage fabric site(s)/zone(s) and update the authentication profile template in Cisco Catalyst Center." href="fabric_sites_zones_workflow_manager_module.html" />
-    <link rel="prev" title="cisco.dnac.execute_suggested_actions_commands module -- Resource module for Execute Suggested Actions Commands" href="execute_suggested_actions_commands_module.html" /> 
+    <link rel="next" title="cisco.dnac.sda_fabric_edge_device module -- Resource module for Sda Fabric Edge Device" href="sda_fabric_edge_device_module.html" />
+    <link rel="prev" title="cisco.dnac.sda_fabric_devices_layer2_handoffs_sda_transits_info module -- Information module for Sda Fabricdevices Layer2handoffs Sdatransits" href="sda_fabric_devices_layer2_handoffs_sda_transits_info_module.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -197,9 +197,6 @@
 <li class="toctree-l4"><a class="reference internal" href="event_webhook_update_module.html">cisco.dnac.event_webhook_update module -- Resource module for Event Webhook Update</a></li>
 <li class="toctree-l4"><a class="reference internal" href="events_and_notifications_workflow_manager_module.html">cisco.dnac.events_and_notifications_workflow_manager module -- Configure various types of destinations to deliver event notifications from Cisco Catalyst Center Platform.</a></li>
 <li class="toctree-l4"><a class="reference internal" href="execute_suggested_actions_commands_module.html">cisco.dnac.execute_suggested_actions_commands module -- Resource module for Execute Suggested Actions Commands</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">cisco.dnac.fabric_devices_workflow_manager module -- Manage SDA fabric devices in Cisco Catalyst Center.</a></li>
-<li class="toctree-l4"><a class="reference internal" href="fabric_sites_zones_workflow_manager_module.html">cisco.dnac.fabric_sites_zones_workflow_manager module -- Manage fabric site(s)/zone(s) and update the authentication profile template in Cisco Catalyst Center.</a></li>
-<li class="toctree-l4"><a class="reference internal" href="fabric_transits_workflow_manager_module.html">cisco.dnac.fabric_transits_workflow_manager module -- Resource module for SDA fabric transits</a></li>
 <li class="toctree-l4"><a class="reference internal" href="file_import_module.html">cisco.dnac.file_import module -- Resource module for File Import</a></li>
 <li class="toctree-l4"><a class="reference internal" href="file_info_module.html">cisco.dnac.file_info module -- Information module for File</a></li>
 <li class="toctree-l4"><a class="reference internal" href="file_namespace_files_info_module.html">cisco.dnac.file_namespace_files_info module -- Information module for File Namespace Files</a></li>
@@ -252,6 +249,7 @@
 <li class="toctree-l4"><a class="reference internal" href="lan_automation_update_device_module.html">cisco.dnac.lan_automation_update_device module -- Resource module for Lan Automation Updatedevice</a></li>
 <li class="toctree-l4"><a class="reference internal" href="lan_automation_update_v2_module.html">cisco.dnac.lan_automation_update_v2 module -- Resource module for Lan Automation Update V2</a></li>
 <li class="toctree-l4"><a class="reference internal" href="lan_automation_v2_module.html">cisco.dnac.lan_automation_v2 module -- Resource module for Lan Automation V2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lan_automation_workflow_manager_module.html">cisco.dnac.lan_automation_workflow_manager module -- Automate network discovery, deployment, and device configuration with LAN Automation in Cisco Catalyst Center.</a></li>
 <li class="toctree-l4"><a class="reference internal" href="license_device_count_info_module.html">cisco.dnac.license_device_count_info module -- Information module for License Device Count</a></li>
 <li class="toctree-l4"><a class="reference internal" href="license_device_deregistration_module.html">cisco.dnac.license_device_deregistration module -- Resource module for License Device Deregistration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="license_device_license_details_info_module.html">cisco.dnac.license_device_license_details_info module -- Information module for License Device License Details</a></li>
@@ -409,6 +407,7 @@
 <li class="toctree-l4"><a class="reference internal" href="sda_fabric_devices_layer2_handoffs_sda_transits_module.html">cisco.dnac.sda_fabric_devices_layer2_handoffs_sda_transits module -- Resource module for Sda Fabricdevices Layer2handoffs Sdatransits</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sda_fabric_devices_layer2_handoffs_sda_transits_count_info_module.html">cisco.dnac.sda_fabric_devices_layer2_handoffs_sda_transits_count_info module -- Information module for Sda Fabricdevices Layer2handoffs Sdatransits Count</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sda_fabric_devices_layer2_handoffs_sda_transits_info_module.html">cisco.dnac.sda_fabric_devices_layer2_handoffs_sda_transits_info module -- Information module for Sda Fabricdevices Layer2handoffs Sdatransits</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">cisco.dnac.sda_fabric_devices_workflow_manager module -- Manage SDA fabric devices in Cisco Catalyst Center.</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sda_fabric_edge_device_module.html">cisco.dnac.sda_fabric_edge_device module -- Resource module for Sda Fabric Edge Device</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sda_fabric_edge_device_info_module.html">cisco.dnac.sda_fabric_edge_device_info module -- Information module for Sda Fabric Edge Device</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sda_fabric_info_module.html">cisco.dnac.sda_fabric_info module -- Information module for Sda Fabric</a></li>
@@ -417,6 +416,8 @@
 <li class="toctree-l4"><a class="reference internal" href="sda_fabric_sites_module.html">cisco.dnac.sda_fabric_sites module -- Resource module for Sda Fabricsites</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sda_fabric_sites_count_info_module.html">cisco.dnac.sda_fabric_sites_count_info module -- Information module for Sda Fabricsites Count</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sda_fabric_sites_info_module.html">cisco.dnac.sda_fabric_sites_info module -- Information module for Sda Fabricsites</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sda_fabric_sites_zones_workflow_manager_module.html">cisco.dnac.sda_fabric_sites_zones_workflow_manager module -- Manage fabric site(s)/zone(s) and update the authentication profile template in Cisco Catalyst Center.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sda_fabric_transits_workflow_manager_module.html">cisco.dnac.sda_fabric_transits_workflow_manager module -- Resource module for SDA fabric transits</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sda_fabric_virtual_networks_workflow_manager_module.html">cisco.dnac.sda_fabric_virtual_networks_workflow_manager module -- Configure fabric VLANs, Virtual Networks, and Anycast Gateways in Cisco Catalyst Center.</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sda_fabric_zones_module.html">cisco.dnac.sda_fabric_zones module -- Resource module for Sda Fabriczones</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sda_fabric_zones_count_info_module.html">cisco.dnac.sda_fabric_zones_count_info module -- Information module for Sda Fabriczones Count</a></li>
@@ -570,9 +571,9 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">Cisco.Dnac</a></li>
-      <li class="breadcrumb-item active">cisco.dnac.fabric_devices_workflow_manager module -- Manage SDA fabric devices in Cisco Catalyst Center.</li>
+      <li class="breadcrumb-item active">cisco.dnac.sda_fabric_devices_workflow_manager module -- Manage SDA fabric devices in Cisco Catalyst Center.</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/plugins/fabric_devices_workflow_manager_module.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/plugins/sda_fabric_devices_workflow_manager_module.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -580,15 +581,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <span class="target" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module"></span><section id="cisco-dnac-fabric-devices-workflow-manager-module-manage-sda-fabric-devices-in-cisco-catalyst-center">
-<h1>cisco.dnac.fabric_devices_workflow_manager module -- Manage SDA fabric devices in Cisco Catalyst Center.<a class="headerlink" href="#cisco-dnac-fabric-devices-workflow-manager-module-manage-sda-fabric-devices-in-cisco-catalyst-center" title="Permalink to this heading"></a></h1>
+  <span class="target" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module"></span><section id="cisco-dnac-sda-fabric-devices-workflow-manager-module-manage-sda-fabric-devices-in-cisco-catalyst-center">
+<h1>cisco.dnac.sda_fabric_devices_workflow_manager module -- Manage SDA fabric devices in Cisco Catalyst Center.<a class="headerlink" href="#cisco-dnac-sda-fabric-devices-workflow-manager-module-manage-sda-fabric-devices-in-cisco-catalyst-center" title="Permalink to this heading"></a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This module is part of the <a class="reference external" href="https://galaxy.ansible.com/cisco/dnac">cisco.dnac collection</a> (version 6.20.0).</p>
+<p>This module is part of the <a class="reference external" href="https://galaxy.ansible.com/cisco/dnac">cisco.dnac collection</a> (version 6.22.0).</p>
 <p>To install it, use: <code class="code docutils literal notranslate"><span class="pre">ansible-galaxy</span> <span class="pre">collection</span> <span class="pre">install</span> <span class="pre">cisco.dnac</span></code>.
 You need further requirements to be able to use this module,
-see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-requirements"><span class="std std-ref">Requirements</span></a> for details.</p>
-<p>To use it in a playbook, specify: <code class="code docutils literal notranslate"><span class="pre">cisco.dnac.fabric_devices_workflow_manager</span></code>.</p>
+see <a class="reference internal" href="#ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-requirements"><span class="std std-ref">Requirements</span></a> for details.</p>
+<p>To use it in a playbook, specify: <code class="code docutils literal notranslate"><span class="pre">cisco.dnac.sda_fabric_devices_workflow_manager</span></code>.</p>
 </div>
 <p class="ansible-version-added">New in cisco.dnac 6.21.0</p>
 <nav class="contents local" id="contents">
@@ -611,7 +612,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </ul>
 </section>
 <section id="requirements">
-<span id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-requirements"></span><h2><a class="toc-backref" href="#id100" role="doc-backlink">Requirements</a><a class="headerlink" href="#requirements" title="Permalink to this heading"></a></h2>
+<span id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-requirements"></span><h2><a class="toc-backref" href="#id100" role="doc-backlink">Requirements</a><a class="headerlink" href="#requirements" title="Permalink to this heading"></a></h2>
 <p>The below requirements are needed on the host that executes this module.</p>
 <ul class="simple">
 <li><p>dnacentersdk &gt;= 2.9.2</p></li>
@@ -628,7 +629,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </thead>
 <tbody>
 <tr class="row-even"><td><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config"><strong>config</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config"><strong>config</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">list</span> / <span class="ansible-option-elements">elements=dictionary</span> / <span class="ansible-option-required">required</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>A list of SDA fabric device configurations associated with fabric sites.</p>
@@ -636,21 +637,21 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices"><strong>fabric_devices</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices"><strong>fabric_devices</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">dictionary</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Configuration details for SDA fabric devices associated with a fabric site.</p>
 </div></td>
 </tr>
 <tr class="row-even"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config"><strong>device_config</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config"><strong>device_config</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">list</span> / <span class="ansible-option-elements">elements=dictionary</span> / <span class="ansible-option-required">required</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>A list of devices with their respective border settings, L2 handoff, L3 handoff with SDA transit, and L3 handoff with IP transit.</p>
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings"><strong>borders_settings</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings"><strong>borders_settings</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/borders_settings" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">dictionary</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Effective only when the 'device_roles' contains BORDER_NODE.</p>
@@ -661,7 +662,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-even"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer2_handoff"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer2-handoff"><strong>layer2_handoff</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer2_handoff"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer2-handoff"><strong>layer2_handoff</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/borders_settings/layer2_handoff" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">list</span> / <span class="ansible-option-elements">elements=dictionary</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Adds layer 2 handoffs in fabric devices.</p>
@@ -671,7 +672,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer2_handoff/external_vlan_id"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer2-handoff-external-vlan-id"><strong>external_vlan_id</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer2_handoff/external_vlan_id"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer2-handoff-external-vlan-id"><strong>external_vlan_id</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/borders_settings/layer2_handoff/external_vlan_id" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">integer</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Represents to the VLAN identifier used for traffic that exits the fabric to external networks.</p>
@@ -681,7 +682,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-even"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer2_handoff/interface_name"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer2-handoff-interface-name"><strong>interface_name</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer2_handoff/interface_name"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer2-handoff-interface-name"><strong>interface_name</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/borders_settings/layer2_handoff/interface_name" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Refers to the specific network interface in the border device.</p>
@@ -690,7 +691,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer2_handoff/internal_vlan_id"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer2-handoff-internal-vlan-id"><strong>internal_vlan_id</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer2_handoff/internal_vlan_id"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer2-handoff-internal-vlan-id"><strong>internal_vlan_id</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/borders_settings/layer2_handoff/internal_vlan_id" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">integer</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Represents the VLAN identifier used within the fabric for traffic segmentation among devices.</p>
@@ -700,7 +701,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-even"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-ip-transit"><strong>layer3_handoff_ip_transit</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-ip-transit"><strong>layer3_handoff_ip_transit</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">list</span> / <span class="ansible-option-elements">elements=dictionary</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Adds layer 3 handoffs with ip transit in fabric devices.</p>
@@ -709,7 +710,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/external_connectivity_ip_pool_name"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-ip-transit-external-connectivity-ip-pool-name"><strong>external_connectivity_ip_pool_name</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/external_connectivity_ip_pool_name"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-ip-transit-external-connectivity-ip-pool-name"><strong>external_connectivity_ip_pool_name</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/external_connectivity_ip_pool_name" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Denotes the IP address range allocated for communication between the SDA fabric and external networks.</p>
@@ -722,7 +723,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-even"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/interface_name"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-ip-transit-interface-name"><strong>interface_name</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/interface_name"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-ip-transit-interface-name"><strong>interface_name</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/interface_name" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Refers to the specific network interface in the border device.</p>
@@ -731,7 +732,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/local_ip_address"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-ip-transit-local-ip-address"><strong>local_ip_address</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/local_ip_address"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-ip-transit-local-ip-address"><strong>local_ip_address</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/local_ip_address" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>IP address assigned to a device's interface within the fabric.</p>
@@ -742,7 +743,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-even"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/local_ipv6_address"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-ip-transit-local-ipv6-address"><strong>local_ipv6_address</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/local_ipv6_address"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-ip-transit-local-ipv6-address"><strong>local_ipv6_address</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/local_ipv6_address" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>IP address assigned to a device's interface within the fabric.</p>
@@ -753,7 +754,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/remote_ip_address"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-ip-transit-remote-ip-address"><strong>remote_ip_address</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/remote_ip_address"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-ip-transit-remote-ip-address"><strong>remote_ip_address</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/remote_ip_address" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>IP address of a device located outside the fabric network, often used for BGP peering.</p>
@@ -764,7 +765,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-even"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/remote_ipv6_address"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-ip-transit-remote-ipv6-address"><strong>remote_ipv6_address</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/remote_ipv6_address"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-ip-transit-remote-ipv6-address"><strong>remote_ipv6_address</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/remote_ipv6_address" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>IP address of a device located outside the fabric network, often used for BGP peering.</p>
@@ -775,7 +776,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/tcp_mss_adjustment"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-ip-transit-tcp-mss-adjustment"><strong>tcp_mss_adjustment</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/tcp_mss_adjustment"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-ip-transit-tcp-mss-adjustment"><strong>tcp_mss_adjustment</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/tcp_mss_adjustment" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">integer</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Allows the modification of the Maximum Segment Size in TCP packets.</p>
@@ -784,7 +785,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-even"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/transit_network_name"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-ip-transit-transit-network-name"><strong>transit_network_name</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/transit_network_name"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-ip-transit-transit-network-name"><strong>transit_network_name</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/transit_network_name" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Network that connects multiple SDA fabrics or networks.</p>
@@ -793,7 +794,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/virtual_network_name"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-ip-transit-virtual-network-name"><strong>virtual_network_name</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/virtual_network_name"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-ip-transit-virtual-network-name"><strong>virtual_network_name</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/virtual_network_name" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Refers to the logical segmentation of the network, grouping devices into isolated virtual networks.</p>
@@ -801,7 +802,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-even"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/vlan_id"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-ip-transit-vlan-id"><strong>vlan_id</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/vlan_id"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-ip-transit-vlan-id"><strong>vlan_id</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_ip_transit/vlan_id" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">integer</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Unique identifier assigned to a Virtual Local Area Network (VLAN).</p>
@@ -812,7 +813,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_sda_transit"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-sda-transit"><strong>layer3_handoff_sda_transit</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_sda_transit"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-sda-transit"><strong>layer3_handoff_sda_transit</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_sda_transit" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">dictionary</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Adds layer 3 handoffs with SDA transit in fabric devices.</p>
@@ -821,7 +822,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-even"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_sda_transit/affinity_id_decider"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-sda-transit-affinity-id-decider"><strong>affinity_id_decider</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_sda_transit/affinity_id_decider"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-sda-transit-affinity-id-decider"><strong>affinity_id_decider</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_sda_transit/affinity_id_decider" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">integer</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>If the 'affinity_id_prime' value is the same, the 'affinity_id_decider' value is used as a tiebreaker.</p>
@@ -831,7 +832,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_sda_transit/affinity_id_prime"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-sda-transit-affinity-id-prime"><strong>affinity_id_prime</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_sda_transit/affinity_id_prime"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-sda-transit-affinity-id-prime"><strong>affinity_id_prime</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_sda_transit/affinity_id_prime" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">integer</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>It supersedes the border priority to determine border node preference.</p>
@@ -842,7 +843,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-even"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_sda_transit/connected_to_internet"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-sda-transit-connected-to-internet"><strong>connected_to_internet</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_sda_transit/connected_to_internet"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-sda-transit-connected-to-internet"><strong>connected_to_internet</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_sda_transit/connected_to_internet" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">boolean</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Set this true to allow associated site to provide internet access to other sites through SDA.</p>
@@ -856,7 +857,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_sda_transit/is_multicast_over_transit_enabled"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-sda-transit-is-multicast-over-transit-enabled"><strong>is_multicast_over_transit_enabled</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_sda_transit/is_multicast_over_transit_enabled"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-sda-transit-is-multicast-over-transit-enabled"><strong>is_multicast_over_transit_enabled</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_sda_transit/is_multicast_over_transit_enabled" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">boolean</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Set this true to configure native multicast over multiple sites that are connected to an SDA transit.</p>
@@ -870,7 +871,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-even"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_sda_transit/transit_network_name"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-sda-transit-transit-network-name"><strong>transit_network_name</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_sda_transit/transit_network_name"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-handoff-sda-transit-transit-network-name"><strong>transit_network_name</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/borders_settings/layer3_handoff_sda_transit/transit_network_name" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Network that connects multiple SDA fabrics or networks.</p>
@@ -879,14 +880,14 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_settings"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-settings"><strong>layer3_settings</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_settings"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-settings"><strong>layer3_settings</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/borders_settings/layer3_settings" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">list</span> / <span class="ansible-option-elements">elements=dictionary</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Configures a device with a Layer3 border type.</p>
 </div></td>
 </tr>
 <tr class="row-even"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_settings/border_priority"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-settings-border-priority"><strong>border_priority</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_settings/border_priority"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-settings-border-priority"><strong>border_priority</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/borders_settings/layer3_settings/border_priority" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">integer</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Sets the preference level for this Border Node when multiple border nodes are present.</p>
@@ -897,7 +898,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_settings/import_external_routes"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-settings-import-external-routes"><strong>import_external_routes</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_settings/import_external_routes"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-settings-import-external-routes"><strong>import_external_routes</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/borders_settings/layer3_settings/import_external_routes" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">boolean</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Determines whether routes from external networks are imported into the fabric.</p>
@@ -911,7 +912,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-even"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_settings/is_default_exit"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-settings-is-default-exit"><strong>is_default_exit</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_settings/is_default_exit"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-settings-is-default-exit"><strong>is_default_exit</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/borders_settings/layer3_settings/is_default_exit" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">boolean</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Indicates whether this Border Node serves as the default gateway for traffic exiting the virtual network.</p>
@@ -924,7 +925,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_settings/local_autonomous_system_number"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-settings-local-autonomous-system-number"><strong>local_autonomous_system_number</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_settings/local_autonomous_system_number"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-settings-local-autonomous-system-number"><strong>local_autonomous_system_number</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/borders_settings/layer3_settings/local_autonomous_system_number" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Identifies the local autonomous system in BGP routing.</p>
@@ -935,7 +936,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-even"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_settings/prepend_autonomous_system_count"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-settings-prepend-autonomous-system-count"><strong>prepend_autonomous_system_count</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/borders_settings/layer3_settings/prepend_autonomous_system_count"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-borders-settings-layer3-settings-prepend-autonomous-system-count"><strong>prepend_autonomous_system_count</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/borders_settings/layer3_settings/prepend_autonomous_system_count" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">integer</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Increases the AS path length artificially when advertising routes via BGP.</p>
@@ -946,7 +947,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/delete_fabric_device"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-delete-fabric-device"><strong>delete_fabric_device</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/delete_fabric_device"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-delete-fabric-device"><strong>delete_fabric_device</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/delete_fabric_device" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">boolean</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Effective only when the state is deleted.</p>
@@ -959,7 +960,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-even"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/device_ip"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-device-ip"><strong>device_ip</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/device_ip"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-device-ip"><strong>device_ip</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/device_ip" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span> / <span class="ansible-option-required">required</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>IP address of the device to be added to the fabric site.</p>
@@ -968,7 +969,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/device_roles"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-device-roles"><strong>device_roles</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/device_config/device_roles"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-device-config-device-roles"><strong>device_roles</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/device_roles" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">list</span> / <span class="ansible-option-elements">elements=string</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Specifies the role(s) of the device within the fabric site.</p>
@@ -976,6 +977,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 <p>The device roles cannot be updated once assigned.</p>
 <p>At least one device must be a CONTROL_PLANE_NODE to assign roles to other devices.</p>
 <p>Available roles, - CONTROL_PLANE_NODE - Manages the mapping of endpoint IP addresses to their location within the network using LISP, enabling mobility. - EDGE_NODE - Connects endpoints to the SDA network, handling policy enforcement, segmentation, and communication with the control plane. - BORDER_NODE - Acts as the gateway between the fabric and external networks, managing traffic entering or exiting the SDA environment. - WIRELESS_CONTROLLER_NODE - Manages and controls wireless access points and devices within the network.</p>
+<p>For 'WIRELESS_CONTROLLER_NODE', the check for the provisioning status will be added in 2.3.7.6 SDK.</p>
 <p class="ansible-option-line"><span class="ansible-option-choices">Choices:</span></p>
 <ul class="simple">
 <li><p><a href="#id25"><span class="problematic" id="id26">:ansible-option-choices-entry:`&quot;CONTROL\_PLANE\_NODE&quot;`</span></a></p></li>
@@ -986,7 +988,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-even"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/fabric_name"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-fabric-name"><strong>fabric_name</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config/fabric_devices/fabric_name"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-fabric-devices-fabric-name"><strong>fabric_name</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/fabric_name" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span> / <span class="ansible-option-required">required</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Name of the SDA fabric site.</p>
@@ -998,7 +1000,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-config_verify"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-config-verify"><strong>config_verify</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-config_verify"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-config-verify"><strong>config_verify</strong></p>
 <a class="ansibleOptionLink" href="#parameter-config_verify" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">boolean</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>Set to True to verify the Cisco Catalyst Center after applying the playbook config.</p>
@@ -1010,7 +1012,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-even"><td><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-dnac_api_task_timeout"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-dnac-api-task-timeout"><strong>dnac_api_task_timeout</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-dnac_api_task_timeout"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-dnac-api-task-timeout"><strong>dnac_api_task_timeout</strong></p>
 <a class="ansibleOptionLink" href="#parameter-dnac_api_task_timeout" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">integer</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>Defines the timeout in seconds for API calls to retrieve task details. If the task details are not received within this period, the process will end, and a timeout notification will be logged.</p>
@@ -1018,7 +1020,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-dnac_debug"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-dnac-debug"><strong>dnac_debug</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-dnac_debug"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-dnac-debug"><strong>dnac_debug</strong></p>
 <a class="ansibleOptionLink" href="#parameter-dnac_debug" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">boolean</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>Indicates whether debugging is enabled in the Cisco Catalyst Center SDK.</p>
@@ -1030,14 +1032,14 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-even"><td><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-dnac_host"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-dnac-host"><strong>dnac_host</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-dnac_host"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-dnac-host"><strong>dnac_host</strong></p>
 <a class="ansibleOptionLink" href="#parameter-dnac_host" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span> / <span class="ansible-option-required">required</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>The hostname of the Cisco Catalyst Center.</p>
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-dnac_log"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-dnac-log"><strong>dnac_log</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-dnac_log"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-dnac-log"><strong>dnac_log</strong></p>
 <a class="ansibleOptionLink" href="#parameter-dnac_log" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">boolean</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>Flag to enable/disable playbook execution logging.</p>
@@ -1054,7 +1056,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-even"><td><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-dnac_log_append"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-dnac-log-append"><strong>dnac_log_append</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-dnac_log_append"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-dnac-log-append"><strong>dnac_log_append</strong></p>
 <a class="ansibleOptionLink" href="#parameter-dnac_log_append" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">boolean</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>Determines the mode of the file. Set to True for 'append' mode. Set to False for 'write' mode.</p>
@@ -1066,7 +1068,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-dnac_log_file_path"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-dnac-log-file-path"><strong>dnac_log_file_path</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-dnac_log_file_path"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-dnac-log-file-path"><strong>dnac_log_file_path</strong></p>
 <a class="ansibleOptionLink" href="#parameter-dnac_log_file_path" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>Governs logging. Logs are recorded if dnac_log is True.</p>
@@ -1076,7 +1078,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-even"><td><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-dnac_log_level"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-dnac-log-level"><strong>dnac_log_level</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-dnac_log_level"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-dnac-log-level"><strong>dnac_log_level</strong></p>
 <a class="ansibleOptionLink" href="#parameter-dnac_log_level" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>Sets the threshold for log level. Messages with a level equal to or higher than this will be logged. Levels are listed in order of severity [CRITICAL, ERROR, WARNING, INFO, DEBUG].</p>
@@ -1089,14 +1091,14 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-dnac_password"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-dnac-password"><strong>dnac_password</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-dnac_password"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-dnac-password"><strong>dnac_password</strong></p>
 <a class="ansibleOptionLink" href="#parameter-dnac_password" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>The password for authentication at the Cisco Catalyst Center.</p>
 </div></td>
 </tr>
 <tr class="row-even"><td><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-dnac_port"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-dnac-port"><strong>dnac_port</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-dnac_port"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-dnac-port"><strong>dnac_port</strong></p>
 <a class="ansibleOptionLink" href="#parameter-dnac_port" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>Specifies the port number associated with the Cisco Catalyst Center.</p>
@@ -1104,7 +1106,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-dnac_task_poll_interval"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-dnac-task-poll-interval"><strong>dnac_task_poll_interval</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-dnac_task_poll_interval"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-dnac-task-poll-interval"><strong>dnac_task_poll_interval</strong></p>
 <a class="ansibleOptionLink" href="#parameter-dnac_task_poll_interval" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">integer</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>Specifies the interval in seconds between successive calls to the API to retrieve task details.</p>
@@ -1113,7 +1115,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </tr>
 <tr class="row-even"><td><div class="ansible-option-cell">
 <div class="ansibleOptionAnchor" id="parameter-dnac_username"></div>
-<div class="ansibleOptionAnchor" id="parameter-user"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-user"><span id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-dnac-username"></span><strong>dnac_username</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-user"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-user"><span id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-dnac-username"></span><strong>dnac_username</strong></p>
 <a class="ansibleOptionLink" href="#parameter-dnac_username" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-aliases">aliases: user</span></p>
 <p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
@@ -1122,7 +1124,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-dnac_verify"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-dnac-verify"><strong>dnac_verify</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-dnac_verify"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-dnac-verify"><strong>dnac_verify</strong></p>
 <a class="ansibleOptionLink" href="#parameter-dnac_verify" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">boolean</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>Flag to enable or disable SSL certificate verification.</p>
@@ -1134,7 +1136,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-even"><td><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-dnac_version"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-dnac-version"><strong>dnac_version</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-dnac_version"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-dnac-version"><strong>dnac_version</strong></p>
 <a class="ansibleOptionLink" href="#parameter-dnac_version" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>Specifies the version of the Cisco Catalyst Center that the SDK should use.</p>
@@ -1142,7 +1144,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-state"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-state"><strong>state</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-state"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-state"><strong>state</strong></p>
 <a class="ansibleOptionLink" href="#parameter-state" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">string</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>The state of Cisco Catalyst Center after module completion.</p>
@@ -1154,7 +1156,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-even"><td><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="parameter-validate_response_schema"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-parameter-validate-response-schema"><strong>validate_response_schema</strong></p>
+<div class="ansibleOptionAnchor" id="parameter-validate_response_schema"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-parameter-validate-response-schema"><strong>validate_response_schema</strong></p>
 <a class="ansibleOptionLink" href="#parameter-validate_response_schema" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">boolean</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>Flag for Cisco Catalyst Center SDK to enable the validation of request bodies against a JSON schema.</p>
@@ -1184,7 +1186,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 <section id="examples">
 <h2><a class="toc-backref" href="#id103" role="doc-backlink">Examples</a><a class="headerlink" href="#examples" title="Permalink to this heading"></a></h2>
 <div class="highlight-yaml+jinja notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Create SDA fabric device with device role as CONTROL_PLANE_NODE</span>
-<span class="w">  </span><span class="nt">cisco.dnac.fabric_devices_workflow_manager</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">cisco.dnac.sda_fabric_devices_workflow_manager</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">dnac_host</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_host</span><span class="cp">}}</span><span class="s">&quot;</span>
 <span class="w">    </span><span class="nt">dnac_username</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_username</span><span class="cp">}}</span><span class="s">&quot;</span>
 <span class="w">    </span><span class="nt">dnac_password</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_password</span><span class="cp">}}</span><span class="s">&quot;</span>
@@ -1204,7 +1206,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 <span class="w">          </span><span class="nt">device_roles</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">CONTROL_PLANE_NODE</span><span class="p p-Indicator">]</span>
 
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Update the SDA fabric device with the device roles with BORDER_NODE and add L2 Handoff</span>
-<span class="w">  </span><span class="nt">cisco.dnac.fabric_devices_workflow_manager</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">cisco.dnac.sda_fabric_devices_workflow_manager</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">dnac_host</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_host</span><span class="cp">}}</span><span class="s">&quot;</span>
 <span class="w">    </span><span class="nt">dnac_username</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_username</span><span class="cp">}}</span><span class="s">&quot;</span>
 <span class="w">    </span><span class="nt">dnac_password</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_password</span><span class="cp">}}</span><span class="s">&quot;</span>
@@ -1236,7 +1238,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 
 
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Add the L3 Handoff with SDA Transit to the SDA fabric device</span>
-<span class="w">  </span><span class="nt">cisco.dnac.fabric_devices_workflow_manager</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">cisco.dnac.sda_fabric_devices_workflow_manager</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">dnac_host</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_host</span><span class="cp">}}</span><span class="s">&quot;</span>
 <span class="w">    </span><span class="nt">dnac_username</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_username</span><span class="cp">}}</span><span class="s">&quot;</span>
 <span class="w">    </span><span class="nt">dnac_password</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_password</span><span class="cp">}}</span><span class="s">&quot;</span>
@@ -1263,7 +1265,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 <span class="w">              </span><span class="nt">is_multicast_over_transit_enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
 
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Add L3 Handoff with IP Transit to the SDA fabric device with external_connectivity_ip_pool_name</span>
-<span class="w">  </span><span class="nt">cisco.dnac.fabric_devices_workflow_manager</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">cisco.dnac.sda_fabric_devices_workflow_manager</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">dnac_host</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_host</span><span class="cp">}}</span><span class="s">&quot;</span>
 <span class="w">    </span><span class="nt">dnac_username</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_username</span><span class="cp">}}</span><span class="s">&quot;</span>
 <span class="w">    </span><span class="nt">dnac_password</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_password</span><span class="cp">}}</span><span class="s">&quot;</span>
@@ -1291,7 +1293,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 <span class="w">              </span><span class="nt">tcp_mss_adjustment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
 
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Add L3 Handoff with IP Transit to the SDA fabric device with local and remote network</span>
-<span class="w">  </span><span class="nt">cisco.dnac.fabric_devices_workflow_manager</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">cisco.dnac.sda_fabric_devices_workflow_manager</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">dnac_host</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_host</span><span class="cp">}}</span><span class="s">&quot;</span>
 <span class="w">    </span><span class="nt">dnac_username</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_username</span><span class="cp">}}</span><span class="s">&quot;</span>
 <span class="w">    </span><span class="nt">dnac_password</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_password</span><span class="cp">}}</span><span class="s">&quot;</span>
@@ -1322,7 +1324,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 <span class="w">              </span><span class="nt">remote_ipv6_address</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2009:db8::2/64</span>
 
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Update the border settings of the SDA Devices</span>
-<span class="w">  </span><span class="nt">cisco.dnac.fabric_devices_workflow_manager</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">cisco.dnac.sda_fabric_devices_workflow_manager</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">dnac_host</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_host</span><span class="cp">}}</span><span class="s">&quot;</span>
 <span class="w">    </span><span class="nt">dnac_username</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_username</span><span class="cp">}}</span><span class="s">&quot;</span>
 <span class="w">    </span><span class="nt">dnac_password</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_password</span><span class="cp">}}</span><span class="s">&quot;</span>
@@ -1349,7 +1351,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 <span class="w">              </span><span class="nt">prepend_autonomous_system_count</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3</span>
 
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Update the L3 Handoffs with SDA Transit and IP Transit.</span>
-<span class="w">  </span><span class="nt">cisco.dnac.fabric_devices_workflow_manager</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">cisco.dnac.sda_fabric_devices_workflow_manager</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">dnac_host</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_host</span><span class="cp">}}</span><span class="s">&quot;</span>
 <span class="w">    </span><span class="nt">dnac_username</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_username</span><span class="cp">}}</span><span class="s">&quot;</span>
 <span class="w">    </span><span class="nt">dnac_password</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_password</span><span class="cp">}}</span><span class="s">&quot;</span>
@@ -1387,7 +1389,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 <span class="w">              </span><span class="nt">remote_ipv6_address</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2009:db8::2/64</span>
 
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Delete the L2 Handoff</span>
-<span class="w">  </span><span class="nt">cisco.dnac.fabric_devices_workflow_manager</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">cisco.dnac.sda_fabric_devices_workflow_manager</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">dnac_host</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_host</span><span class="cp">}}</span><span class="s">&quot;</span>
 <span class="w">    </span><span class="nt">dnac_username</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_username</span><span class="cp">}}</span><span class="s">&quot;</span>
 <span class="w">    </span><span class="nt">dnac_password</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_password</span><span class="cp">}}</span><span class="s">&quot;</span>
@@ -1410,7 +1412,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 <span class="w">              </span><span class="nt">internal_vlan_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">550</span>
 
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Delete the L3 Handoff with SDA Transit</span>
-<span class="w">  </span><span class="nt">cisco.dnac.fabric_devices_workflow_manager</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">cisco.dnac.sda_fabric_devices_workflow_manager</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">dnac_host</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_host</span><span class="cp">}}</span><span class="s">&quot;</span>
 <span class="w">    </span><span class="nt">dnac_username</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_username</span><span class="cp">}}</span><span class="s">&quot;</span>
 <span class="w">    </span><span class="nt">dnac_password</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_password</span><span class="cp">}}</span><span class="s">&quot;</span>
@@ -1432,7 +1434,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 <span class="w">              </span><span class="nt">transit_network_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SDA_PUB_SUB_TRANSIT</span>
 
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Delete the L3 Handoff with IP Transit</span>
-<span class="w">  </span><span class="nt">cisco.dnac.fabric_devices_workflow_manager</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">cisco.dnac.sda_fabric_devices_workflow_manager</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">dnac_host</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_host</span><span class="cp">}}</span><span class="s">&quot;</span>
 <span class="w">    </span><span class="nt">dnac_username</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_username</span><span class="cp">}}</span><span class="s">&quot;</span>
 <span class="w">    </span><span class="nt">dnac_password</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_password</span><span class="cp">}}</span><span class="s">&quot;</span>
@@ -1456,7 +1458,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 <span class="w">              </span><span class="nt">virtual_network_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">L3VN1</span>
 
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Delete the device along with L2 Handoff and L3 Handoff</span>
-<span class="w">  </span><span class="nt">cisco.dnac.fabric_devices_workflow_manager</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">cisco.dnac.sda_fabric_devices_workflow_manager</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">dnac_host</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_host</span><span class="cp">}}</span><span class="s">&quot;</span>
 <span class="w">    </span><span class="nt">dnac_username</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_username</span><span class="cp">}}</span><span class="s">&quot;</span>
 <span class="w">    </span><span class="nt">dnac_password</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;</span><span class="cp">{{</span><span class="nv">dnac_password</span><span class="cp">}}</span><span class="s">&quot;</span>
@@ -1500,7 +1502,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </thead>
 <tbody>
 <tr class="row-even"><td><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="return-response_1"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-return-response-1"><strong>response_1</strong></p>
+<div class="ansibleOptionAnchor" id="return-response_1"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-return-response-1"><strong>response_1</strong></p>
 <a class="ansibleOptionLink" href="#return-response_1" title="Permalink to this return value"></a><p class="ansible-option-type-line"><span class="ansible-option-type">dictionary</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>A dictionary or list with the response returned by the Cisco Catalyst Center Python SDK</p>
@@ -1509,7 +1511,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="return-response_10"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-return-response-10"><strong>response_10</strong></p>
+<div class="ansibleOptionAnchor" id="return-response_10"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-return-response-10"><strong>response_10</strong></p>
 <a class="ansibleOptionLink" href="#return-response_10" title="Permalink to this return value"></a><p class="ansible-option-type-line"><span class="ansible-option-type">dictionary</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>A dictionary or list with the response returned by the Cisco Catalyst Center Python SDK</p>
@@ -1518,7 +1520,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-even"><td><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="return-response_11"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-return-response-11"><strong>response_11</strong></p>
+<div class="ansibleOptionAnchor" id="return-response_11"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-return-response-11"><strong>response_11</strong></p>
 <a class="ansibleOptionLink" href="#return-response_11" title="Permalink to this return value"></a><p class="ansible-option-type-line"><span class="ansible-option-type">dictionary</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>A dictionary or list with the response returned by the Cisco Catalyst Center Python SDK</p>
@@ -1527,7 +1529,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="return-response_12"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-return-response-12"><strong>response_12</strong></p>
+<div class="ansibleOptionAnchor" id="return-response_12"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-return-response-12"><strong>response_12</strong></p>
 <a class="ansibleOptionLink" href="#return-response_12" title="Permalink to this return value"></a><p class="ansible-option-type-line"><span class="ansible-option-type">dictionary</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>A dictionary or list with the response returned by the Cisco Catalyst Center Python SDK</p>
@@ -1536,7 +1538,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-even"><td><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="return-response_2"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-return-response-2"><strong>response_2</strong></p>
+<div class="ansibleOptionAnchor" id="return-response_2"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-return-response-2"><strong>response_2</strong></p>
 <a class="ansibleOptionLink" href="#return-response_2" title="Permalink to this return value"></a><p class="ansible-option-type-line"><span class="ansible-option-type">dictionary</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>A dictionary or list with the response returned by the Cisco Catalyst Center Python SDK</p>
@@ -1545,7 +1547,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="return-response_3"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-return-response-3"><strong>response_3</strong></p>
+<div class="ansibleOptionAnchor" id="return-response_3"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-return-response-3"><strong>response_3</strong></p>
 <a class="ansibleOptionLink" href="#return-response_3" title="Permalink to this return value"></a><p class="ansible-option-type-line"><span class="ansible-option-type">dictionary</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>A dictionary or list with the response returned by the Cisco Catalyst Center Python SDK</p>
@@ -1554,7 +1556,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-even"><td><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="return-response_4"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-return-response-4"><strong>response_4</strong></p>
+<div class="ansibleOptionAnchor" id="return-response_4"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-return-response-4"><strong>response_4</strong></p>
 <a class="ansibleOptionLink" href="#return-response_4" title="Permalink to this return value"></a><p class="ansible-option-type-line"><span class="ansible-option-type">dictionary</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>A dictionary or list with the response returned by the Cisco Catalyst Center Python SDK</p>
@@ -1563,7 +1565,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="return-response_5"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-return-response-5"><strong>response_5</strong></p>
+<div class="ansibleOptionAnchor" id="return-response_5"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-return-response-5"><strong>response_5</strong></p>
 <a class="ansibleOptionLink" href="#return-response_5" title="Permalink to this return value"></a><p class="ansible-option-type-line"><span class="ansible-option-type">dictionary</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>A dictionary or list with the response returned by the Cisco Catalyst Center Python SDK</p>
@@ -1572,7 +1574,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-even"><td><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="return-response_6"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-return-response-6"><strong>response_6</strong></p>
+<div class="ansibleOptionAnchor" id="return-response_6"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-return-response-6"><strong>response_6</strong></p>
 <a class="ansibleOptionLink" href="#return-response_6" title="Permalink to this return value"></a><p class="ansible-option-type-line"><span class="ansible-option-type">dictionary</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>A dictionary or list with the response returned by the Cisco Catalyst Center Python SDK</p>
@@ -1581,7 +1583,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="return-response_7"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-return-response-7"><strong>response_7</strong></p>
+<div class="ansibleOptionAnchor" id="return-response_7"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-return-response-7"><strong>response_7</strong></p>
 <a class="ansibleOptionLink" href="#return-response_7" title="Permalink to this return value"></a><p class="ansible-option-type-line"><span class="ansible-option-type">dictionary</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>A dictionary or list with the response returned by the Cisco Catalyst Center Python SDK</p>
@@ -1590,7 +1592,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-even"><td><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="return-response_8"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-return-response-8"><strong>response_8</strong></p>
+<div class="ansibleOptionAnchor" id="return-response_8"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-return-response-8"><strong>response_8</strong></p>
 <a class="ansibleOptionLink" href="#return-response_8" title="Permalink to this return value"></a><p class="ansible-option-type-line"><span class="ansible-option-type">dictionary</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>A dictionary or list with the response returned by the Cisco Catalyst Center Python SDK</p>
@@ -1599,7 +1601,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
 </div></td>
 </tr>
 <tr class="row-odd"><td><div class="ansible-option-cell">
-<div class="ansibleOptionAnchor" id="return-response_9"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-fabric-devices-workflow-manager-module-return-response-9"><strong>response_9</strong></p>
+<div class="ansibleOptionAnchor" id="return-response_9"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-return-response-9"><strong>response_9</strong></p>
 <a class="ansibleOptionLink" href="#return-response_9" title="Permalink to this return value"></a><p class="ansible-option-type-line"><span class="ansible-option-type">dictionary</span></p>
 </div></td>
 <td><div class="ansible-option-cell"><p>A dictionary or list with the response returned by the Cisco Catalyst Center Python SDK</p>
@@ -1628,8 +1630,8 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-fabric-d
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="execute_suggested_actions_commands_module.html" class="btn btn-neutral float-left" title="cisco.dnac.execute_suggested_actions_commands module -- Resource module for Execute Suggested Actions Commands" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="fabric_sites_zones_workflow_manager_module.html" class="btn btn-neutral float-right" title="cisco.dnac.fabric_sites_zones_workflow_manager module -- Manage fabric site(s)/zone(s) and update the authentication profile template in Cisco Catalyst Center." accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="sda_fabric_devices_layer2_handoffs_sda_transits_info_module.html" class="btn btn-neutral float-left" title="cisco.dnac.sda_fabric_devices_layer2_handoffs_sda_transits_info module -- Information module for Sda Fabricdevices Layer2handoffs Sdatransits" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="sda_fabric_edge_device_module.html" class="btn btn-neutral float-right" title="cisco.dnac.sda_fabric_edge_device module -- Resource module for Sda Fabric Edge Device" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
