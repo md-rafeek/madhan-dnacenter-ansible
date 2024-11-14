@@ -42,7 +42,7 @@ cisco.dnac.sda_fabric_devices_workflow_manager module -- Manage SDA fabric devic
 .. Collection note
 
 .. note::
-    This module is part of the `cisco.dnac collection <https://galaxy.ansible.com/cisco/dnac>`_ (version 6.22.0).
+    This module is part of the `cisco.dnac collection <https://galaxy.ansible.com/cisco/dnac>`_ (version 6.24.0).
 
     To install it, use: :code:`ansible-galaxy collection install cisco.dnac`.
     You need further requirements to be able to use this module,
@@ -1218,7 +1218,7 @@ Parameters
 
       Enhances security by limiting route usage to internal routes.
 
-      The 'import\_external\_routes' can be updated.
+      The 'import\_external\_routes' cannot be updated.
 
 
       .. rst-class:: ansible-option-line
@@ -1262,7 +1262,7 @@ Parameters
 
       Indicates whether this Border Node serves as the default gateway for traffic exiting the virtual network.
 
-      The \`is\_default\_exit\` can be updated.
+      The \`is\_default\_exit\` cannot be updated.
 
 
       .. rst-class:: ansible-option-line

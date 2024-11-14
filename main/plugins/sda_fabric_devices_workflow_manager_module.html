@@ -585,7 +585,7 @@
 <h1>cisco.dnac.sda_fabric_devices_workflow_manager module -- Manage SDA fabric devices in Cisco Catalyst Center.<a class="headerlink" href="#cisco-dnac-sda-fabric-devices-workflow-manager-module-manage-sda-fabric-devices-in-cisco-catalyst-center" title="Permalink to this heading"></a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This module is part of the <a class="reference external" href="https://galaxy.ansible.com/cisco/dnac">cisco.dnac collection</a> (version 6.22.0).</p>
+<p>This module is part of the <a class="reference external" href="https://galaxy.ansible.com/cisco/dnac">cisco.dnac collection</a> (version 6.24.0).</p>
 <p>To install it, use: <code class="code docutils literal notranslate"><span class="pre">ansible-galaxy</span> <span class="pre">collection</span> <span class="pre">install</span> <span class="pre">cisco.dnac</span></code>.
 You need further requirements to be able to use this module,
 see <a class="reference internal" href="#ansible-collections-cisco-dnac-sda-fabric-devices-workflow-manager-module-requirements"><span class="std std-ref">Requirements</span></a> for details.</p>
@@ -903,7 +903,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-sda-fabr
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Determines whether routes from external networks are imported into the fabric.</p>
 <p>Enhances security by limiting route usage to internal routes.</p>
-<p>The 'import_external_routes' can be updated.</p>
+<p>The 'import_external_routes' cannot be updated.</p>
 <p class="ansible-option-line"><span class="ansible-option-choices">Choices:</span></p>
 <ul class="simple">
 <li><p><a href="#id11"><span class="problematic" id="id12">:ansible-option-choices-entry:`false`</span></a></p></li>
@@ -916,7 +916,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-sda-fabr
 <a class="ansibleOptionLink" href="#parameter-config/fabric_devices/device_config/borders_settings/layer3_settings/is_default_exit" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">boolean</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Indicates whether this Border Node serves as the default gateway for traffic exiting the virtual network.</p>
-<p>The `is_default_exit` can be updated.</p>
+<p>The `is_default_exit` cannot be updated.</p>
 <p class="ansible-option-line"><span class="ansible-option-choices">Choices:</span></p>
 <ul class="simple">
 <li><p><a href="#id15"><span class="problematic" id="id16">:ansible-option-choices-entry:`false`</span></a></p></li>
