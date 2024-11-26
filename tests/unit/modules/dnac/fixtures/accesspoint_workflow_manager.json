@@ -33,8 +33,7 @@
                 "admin_status": "Enabled",
                 "radio_role_assignment": "Client-Serving",
                 "powerlevel": 1,
-                "radio_band": "2.4 GHz",
-                "channel_width": "40 MHz"
+                "radio_band": "2.4 GHz"
             },
             "5ghz_radio": {
                 "admin_status": "Enabled",
@@ -971,10 +970,11 @@
             "serviceType": "NCSP",
             "username": "admin",
             "lastUpdate": 1721149801680,
+            "status": "FAILURE",
             "isError": true,
             "failureReason": "Unable to push to device 204.192.6.200 using protocol ssh2 the CLI do ap name LTTS-test2 name LTTS-test1",
             "instanceTenantId": "6486ce96ff1f0d0c8be622f4",
-            "id": "f0ac3a5d-95b1-42ea-801c-e04ff7a4fbcb"
+            "id": "01923406-fe60-7cca-9a42-e93d023ae62d"
         }
     },
 
