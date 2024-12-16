@@ -3489,7 +3489,7 @@ Parameters
 
       .. rst-class:: ansible-option-type-line
 
-      :ansible-option-type:`list` / :ansible-option-elements:`elements=dictionary`
+      :ansible-option-type:`dictionary`
 
       .. raw:: html
 
@@ -8700,7 +8700,7 @@ Examples
             - param_name: "vlan_name"
               param_value: "testvlan31"
             device_details:
-              - device_ips: ["10.1.2.1", "10.2.3.4"]
+              device_ips: ["10.1.2.1", "10.2.3.4"]
 
     - name: Delete the given project or template from the Cisco Catalyst Center
       cisco.dnac.template_workflow_manager:

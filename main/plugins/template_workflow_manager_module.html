@@ -2235,7 +2235,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-template
 </tr>
 <tr class="row-even"><td><div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
 <div class="ansibleOptionAnchor" id="parameter-config/deploy_template/device_details"></div><p class="ansible-option-title" id="ansible-collections-cisco-dnac-template-workflow-manager-module-parameter-config-deploy-template-device-details"><strong>device_details</strong></p>
-<a class="ansibleOptionLink" href="#parameter-config/deploy_template/device_details" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">list</span> / <span class="ansible-option-elements">elements=dictionary</span></p>
+<a class="ansibleOptionLink" href="#parameter-config/deploy_template/device_details" title="Permalink to this option"></a><p class="ansible-option-type-line"><span class="ansible-option-type">dictionary</span></p>
 </div></td>
 <td><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell"><p>Details specific to devices where the template will be deployed, including lists of device IPs, hostnames, serial numbers, or MAC addresses.</p>
 </div></td>
@@ -3575,7 +3575,7 @@ see <a class="reference internal" href="#ansible-collections-cisco-dnac-template
 <span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">param_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;vlan_name&quot;</span>
 <span class="w">          </span><span class="nt">param_value</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;testvlan31&quot;</span>
 <span class="w">        </span><span class="nt">device_details</span><span class="p">:</span>
-<span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">device_ips</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;10.1.2.1&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;10.2.3.4&quot;</span><span class="p p-Indicator">]</span>
+<span class="w">          </span><span class="nt">device_ips</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;10.1.2.1&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;10.2.3.4&quot;</span><span class="p p-Indicator">]</span>
 
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Delete the given project or template from the Cisco Catalyst Center</span>
 <span class="w">  </span><span class="nt">cisco.dnac.template_workflow_manager</span><span class="p">:</span>
