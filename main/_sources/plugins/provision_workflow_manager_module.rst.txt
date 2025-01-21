@@ -1553,7 +1553,7 @@ Examples
         config:
             - site_name_hierarchy: Global/USA/San Francisco/BGL_18
               management_ip_address: 204.192.3.40
-              primary_managed_ap_Locations:
+              primary_managed_ap_locations:
                 - Global/USA/San Francisco/BGL_18/Test_Floor2
               secondary_managed_ap_locations:
                 - Global/USA/San Francisco/BGL_18/Test_Floor1
