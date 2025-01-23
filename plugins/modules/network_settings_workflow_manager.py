@@ -2478,8 +2478,12 @@ class NetworkSettings(DnacBase):
 
             self.log("Reserved IP pool playbook details: {0}".format(pool_values), "DEBUG")
 
+            reserve_pool_check = None
+            if self.have.get("reservePool"):
+                reserve_pool_check = self.have.get("reservePool")[reserve_pool_index].get("details")
+
             # If there are no existing Reserved Pool details, validate and set defaults
-            if not self.have.get("reservePool")[reserve_pool_index].get("details"):
+            if not reserve_pool_check:
                 if not pool_values.get("ipv4GlobalPool"):
                     self.msg = "missing parameter 'ipv4GlobalPool' in reserve_pool_details '{0}' element" \
                                .format(reserve_pool_index + 1)
@@ -3377,8 +3381,13 @@ class NetworkSettings(DnacBase):
             reserve_pool_index += 1
             name = item.get("name")
             result_reserve_pool = self.result.get("response")[1].get("reservePool")
+
+            reserve_pool_details = None
+            if self.have.get("reservePool"):
+                reserve_pool_details = self.have.get("reservePool")[reserve_pool_index]
+
             self.log("Current reserved pool '{0}' details in Catalyst Center: {1}"
-                     .format(name, self.have.get("reservePool")[reserve_pool_index].get("details")), "DEBUG")
+                     .format(name, reserve_pool_details), "DEBUG")
             self.log("Desired reserved pool '{0}' details in Catalyst Center: {1}"
                      .format(name, self.want.get("wantReserve")[reserve_pool_index]), "DEBUG")
 
@@ -3389,7 +3398,7 @@ class NetworkSettings(DnacBase):
             reserve_params = self.want.get("wantReserve")[reserve_pool_index]
             site_exist, site_id = self.get_site_id(site_name)
             reserve_params.update({"site_id": site_id})
-            if not self.have.get("reservePool")[reserve_pool_index].get("exists"):
+            if not reserve_pool_details:
                 self.log("Desired reserved pool '{0}' details (want): {1}"
                          .format(name, reserve_params), "DEBUG")
                 try:
@@ -3417,7 +3426,7 @@ class NetworkSettings(DnacBase):
                 continue
 
             # Check update is required
-            if not self.requires_update(self.have.get("reservePool")[reserve_pool_index].get("details"),
+            if not self.requires_update(reserve_pool_details.get("details"),
                                         self.want.get("wantReserve")[reserve_pool_index],
                                         self.reserve_pool_obj_params):
                 self.log("Reserved ip subpool '{0}' doesn't require an update".format(name), "INFO")
@@ -3432,7 +3441,7 @@ class NetworkSettings(DnacBase):
                      .format(name, self.have.get("reservePool")), "DEBUG")
             self.log("Desired reserved ip pool '{0}' details: {1}"
                      .format(name, self.want.get("wantReserve")), "DEBUG")
-            reserve_params.update({"id": self.have.get("reservePool")[reserve_pool_index].get("id")})
+            reserve_params.update({"id": reserve_pool_details.get("id")})
             try:
                 response = self.dnac._exec(
                     family="network_settings",
@@ -3454,7 +3463,7 @@ class NetworkSettings(DnacBase):
             result_reserve_pool.get("response") \
                 .update({name: reserve_params})
             result_reserve_pool.get("response").get(name) \
-                .update({"Id": self.have.get("reservePool")[reserve_pool_index].get("id")})
+                .update({"Id": reserve_pool_details.get("id")})
             result_reserve_pool.get("msg") \
                 .update({name: "Reserved Ip Subpool updated successfully."})
 
@@ -3965,7 +3974,11 @@ class NetworkSettings(DnacBase):
             if delete_all:
                 self.log("Delete all reserved pools operation initiated for site '{0}'"
                          .format(site_name), "INFO")
-                have_reserve_pool = reserve_pool = self.have.get("reservePool")[reserve_pool_index]
+
+                have_reserve_pool = None
+                if self.have.get("reservePool"):
+                    have_reserve_pool = self.have.get("reservePool")
+
                 result_reserve_pool.get("response").update({site_name: []})
                 if have_reserve_pool and len(have_reserve_pool) > 0:
                     if isinstance(have_reserve_pool, dict):
@@ -4328,7 +4341,7 @@ def main():
         "dnac_username": {"type": 'str', "default": 'admin', "aliases": ['user']},
         "dnac_password": {"type": 'str', "no_log": True},
         "dnac_verify": {"type": 'bool', "default": 'True'},
-        "dnac_version": {"type": 'str', "default": '2.2.3.3'},
+        "dnac_version": {"type": 'str', "default": '2.3.5.3'},
         "dnac_debug": {"type": 'bool', "default": False},
         "dnac_log": {"type": 'bool', "default": False},
         "dnac_log_level": {"type": 'str', "default": 'WARNING'},
