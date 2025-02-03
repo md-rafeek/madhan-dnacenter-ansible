@@ -179,6 +179,7 @@ Parameters
           - site\_name (if specified, the image will be activated on all devices within the site)
           At least one of these parameters must be provided. If 'site\_name' is provided, additional filters
           such as 'device\_role', 'device\_family\_name', and 'device\_series\_name' can be used to further narrow down the devices within the site.
+          - SAPRO devices are not eligible for image activation.
           
 
 
@@ -691,6 +692,7 @@ Parameters
           - site\_name (if specified, the image will be distributed to all devices within the site)
           At least one of these parameters must be provided. If 'site\_name' is provided, additional filters
           such as 'device\_role', 'device\_family\_name', and 'device\_series\_name' can be used to further narrow down the devices within the site.
+          - SAPRO devices are not eligible for image distribution.
           
 
 
