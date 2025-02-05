@@ -21,8 +21,12 @@ description:
 version_added: 6.6.0
 extends_documentation_fragment:
   - cisco.dnac.workflow_manager_params
-author: Abinash Mishra (@abimishr) Madhan Sankaranarayanan (@madhansansel)
-  Rishita Chowdhary (@rishitachowdhary)
+author:
+  - A Mohamed Rafeek (@mabdulk2)
+  - Abinash Mishra (@abimishr)
+  - Madhan Sankaranarayanan (@madhansansel)
+  - Rishita Chowdhary (@rishitachowdhary)
+
 options:
   config_verify:
     description: Set to True to verify the Cisco Catalyst Center config after
@@ -30,7 +34,9 @@ options:
     type: bool
     default: false
   state:
-    description: The state of Cisco Catalyst Center after module completion.
+    description: |
+      The state used to create or delete the input config of play book
+      to the Cisco Catalyst Center after module completion.
     type: str
     choices:
       - merged
@@ -72,9 +78,11 @@ options:
           pid:
             description: Pnp Device's pid.
             type: str
+            required: true
           serial_number:
             description: Pnp Device's serial_number.
             type: str
+            required: true
           is_sudi_required:
             description: Sudi Authentication requiremnet's flag.
             type: bool
