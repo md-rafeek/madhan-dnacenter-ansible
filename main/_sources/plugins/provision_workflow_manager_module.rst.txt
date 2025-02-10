@@ -415,8 +415,6 @@ Parameters
 
       The 'provisioning' option should not be set to 'false' for 'force\_provisioning' to take effect.
 
-      Applicable only for wired devices.
-
       Set to 'true' to enforce reprovisioning, even if the device is already provisioned.
 
       Set to 'false' to skip provisioning for devices that are already provisioned.

@@ -1573,7 +1573,7 @@ Parameters
 
         <div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell">
 
-      A mandatory parameter for importing a SWIM image via a remote URL. This parameter is required when using a URL to import an image..(For example, http://{host}/swim/cat9k\_isoxe.16.12.10s.SPA.bin, ftp://user:password@{host}/swim/cat9k\_isoxe.16.12.10s.SPA.iso)
+      A mandatory parameter for importing a SWIM image via a remote URL. This parameter is required when using a URL to import an image..(For example, http://{host}/swim/cat9k\_isoxe.16.12.10s.SPA.bin, ftp://user:password@{host}/swim/cat9k\_isoxe.16.12.10s.SPA.iso) source url can be either str or list
 
 
       .. raw:: html
@@ -2713,7 +2713,26 @@ Examples
                 - source_url:
                     - "http://10.10.10.10/stda/cat9k_iosxe.17.12.01.SPA.bin"
                     - "http://10.10.10.10/stda/cat9k_iosxe.17.12.02.SPA.bin"
-                third_party: False
+                is_third_party: False
+
+    - name: Import image from URL using str
+      cisco.dnac.swim_workflow_manager:
+        dnac_host: "{{dnac_host}}"
+        dnac_username: "{{dnac_username}}"
+        dnac_password: "{{dnac_password}}"
+        dnac_verify: "{{dnac_verify}}"
+        dnac_port: "{{dnac_port}}"
+        dnac_version: "{{dnac_version}}"
+        dnac_debug: "{{dnac_debug}}"
+        dnac_log_level: "{{dnac_log_level}}"
+        dnac_log: True
+        config:
+        - import_image_details:
+            type: remote
+            url_details:
+                payload:
+                - source_url: "http://10.10.10.10/stda/cat9k_iosxe.17.12.01.SPA.bin"
+                is_third_party: False
 
     - name: Import images from CCO (cisco.com)
       cisco.dnac.swim_workflow_manager:

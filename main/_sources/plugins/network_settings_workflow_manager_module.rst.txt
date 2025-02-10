@@ -1278,7 +1278,7 @@ Parameters
 
       :ansible-option-choices:`Choices:`
 
-      - :ansible-option-choices-entry-default:`"Builtin"` :ansible-option-choices-default-mark:`← (default)`
+      - :ansible-option-choices-entry:`"Builtin"`
       - :ansible-option-choices-entry:`"Telemetry\_broker\_or\_UDP\_director"`
 
 
@@ -1320,7 +1320,7 @@ Parameters
 
       :ansible-option-choices:`Choices:`
 
-      - :ansible-option-choices-entry-default:`false` :ansible-option-choices-default-mark:`← (default)`
+      - :ansible-option-choices-entry:`false`
       - :ansible-option-choices-entry:`true`
 
 
@@ -2029,7 +2029,7 @@ Parameters
 
       :ansible-option-choices:`Choices:`
 
-      - :ansible-option-choices-entry-default:`false` :ansible-option-choices-default-mark:`← (default)`
+      - :ansible-option-choices-entry:`false`
       - :ansible-option-choices-entry:`true`
 
 
@@ -2108,7 +2108,7 @@ Parameters
 
       :ansible-option-choices:`Choices:`
 
-      - :ansible-option-choices-entry-default:`false` :ansible-option-choices-default-mark:`← (default)`
+      - :ansible-option-choices-entry:`false`
       - :ansible-option-choices-entry:`true`
 
 
