@@ -613,6 +613,41 @@ Parameters
   * - .. raw:: html
 
         <div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
+        <div class="ansibleOptionAnchor" id="parameter-config/assurance_system_issue_settings/device_type"></div>
+
+      .. _ansible_collections.cisco.dnac.assurance_issue_workflow_manager_module__parameter-config/assurance_system_issue_settings/device_type:
+
+      .. rst-class:: ansible-option-title
+
+      **device_type**
+
+      .. raw:: html
+
+        <a class="ansibleOptionLink" href="#parameter-config/assurance_system_issue_settings/device_type" title="Permalink to this option"></a>
+
+      .. rst-class:: ansible-option-type-line
+
+      :ansible-option-type:`string` / :ansible-option-required:`required`
+
+      .. raw:: html
+
+        </div>
+
+    - .. raw:: html
+
+        <div class="ansible-option-indent-desc"></div><div class="ansible-option-indent-desc"></div><div class="ansible-option-cell">
+
+      Specifies the type of device to which the issue configuration applies. For example, choices: - Router - SWITCH\_AND\_HUB - UNIFIED\_AP - FIREWALL - CONTROLLER
+          
+
+
+      .. raw:: html
+
+        </div>
+
+  * - .. raw:: html
+
+        <div class="ansible-option-indent"></div><div class="ansible-option-indent"></div><div class="ansible-option-cell">
         <div class="ansibleOptionAnchor" id="parameter-config/assurance_system_issue_settings/issue_enabled"></div>
 
       .. _ansible_collections.cisco.dnac.assurance_issue_workflow_manager_module__parameter-config/assurance_system_issue_settings/issue_enabled:
