@@ -1570,14 +1570,14 @@ class Template(DnacBase):
                 }
             },
             "projects": {
-            "type": "list",
-            "elements": "dict",
-            "options": {
-                "name": {"type": "str", "required": True},
-                "new_name": {"type": "str"},
-                "description": {"type": "str"},
-                "tags": {"type": "list", "elements": "dict"},
-                "templates": {"type": "list", "elements": "str"}
+                "type": "list",
+                "elements": "dict",
+                "options": {
+                    "name": {"type": "str", "required": True},
+                    "new_name": {"type": "str"},
+                    "description": {"type": "str"},
+                    "tags": {"type": "list", "elements": "dict"},
+                    "templates": {"type": "list", "elements": "str"}
                 }
             }
         }
@@ -1635,7 +1635,7 @@ class Template(DnacBase):
                     errormsg.append("name: Name of the poject is missing")
 
                 if self.payload.get("state") == "deleted":
-                  continue
+                    continue
 
                 project_newname = each_project.get("new_name")
                 if project_newname and isinstance(project_newname, str):
@@ -2718,7 +2718,6 @@ class Template(DnacBase):
             return self
 
         try:
-            #for project_detail in project_details:
             create_project_params = {
                 "name": project_detail.get("name"),
                 "description": project_detail.get("description"),
@@ -2783,7 +2782,6 @@ class Template(DnacBase):
             return self
 
         try:
-            #for project_detail in project_details:
             old_name = project_detail.get("name")
             new_name = project_detail.get("new_name")
 
@@ -3893,8 +3891,8 @@ class Template(DnacBase):
         if project_details:
             if len(self.have.get("projects")) == len(project_details):
                 project_unmatch = any(not project.get("project_status") and\
-                                       not project.get("new_name")
-                                       for project in self.have.get("projects"))
+                                      not project.get("new_name")
+                                      for project in self.have.get("projects"))
                 if not project_unmatch:
                     self.msg = "No changes required, project(s) already exist"
                     self.log(self.msg, "INFO")
