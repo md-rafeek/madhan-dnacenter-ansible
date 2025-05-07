@@ -1200,7 +1200,7 @@ EXAMPLES = r"""
     config:
       export:
         template:
-          - project_name : string
+          - project_name: string
             template_name: string
           - project_name: string
             template_name: string
@@ -1223,8 +1223,8 @@ EXAMPLES = r"""
         project:
           do_version: false
           payload:
-          - name: string
-          - name: string
+            - name: string
+            - name: string
 
 - name: Import the Templates.
   cisco.dnac.template_workflow_manager:
