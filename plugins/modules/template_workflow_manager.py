@@ -1596,7 +1596,7 @@ class Template(DnacBase):
 
         Args:
             self (object): Instance of the class interacting with Cisco Catalyst Center.
-            config (dict): Dictionary containing project definitions and optional template/tag data.
+            config (list[dict]): List of dictionary containing project definitions and optional template/tag data.
 
         Returns:
             object: Returns self if validation passes; otherwise, logs an error and exits the module.
@@ -1613,7 +1613,7 @@ class Template(DnacBase):
         errormsg = []
         param_spec_str = dict(type="str")
 
-        projects = config.get("projects")
+        projects = config[0].get("projects")
         if projects and isinstance(projects, list):
             for each_project in projects:
                 project_name = each_project.get("name")
