@@ -114,9 +114,8 @@ options:
                 description: Provides a description of the template.
                 type: str
               device_types:
-                description: |
-                  List of dictionaries details the types of devices that the
-                  templates can be applied to.
+                description: List of dictionaries details the types of devices that
+                  the templates can be applied to.
                 type: list
                 elements: dict
                 suboptions:
@@ -143,12 +142,12 @@ options:
                     description: Describes the exact type of the device.
                     type: str
               id:
-                description: Unique identifier for the template, represented as a UUID.
+                description: Unique identifier for the template, represented as a
+                  UUID.
                 type: str
               language:
-                description: |
-                  Programming language used for templating. Options are 'JINJA' for
-                  Jinja templating or 'VELOCITY' for Apache Velocity.
+                description: Programming language used for templating. Options are
+                  'JINJA' for Jinja templating or 'VELOCITY' for Apache Velocity.
                 choices:
                   - JINJA
                   - VELOCITY
@@ -157,21 +156,20 @@ options:
                 description: Designation of the template, serving as its unique name.
                 type: str
               project_name:
-                description: |
-                  Title of the project within which the template is categorized
+                description: Title of the project within which the template is categorized
                   and managed.
                 type: str
               project_description:
-                description: |
-                  Narrative that elaborates on the purpose and scope of the project.
+                description: Narrative that elaborates on the purpose and scope of
+                  the project.
                 type: str
               tags:
-                description: |
-                  A list of dictionaries representing tags associated with the
-                  Configuration Template during creation.
+                description: A list of dictionaries representing tags associated with
+                  the Configuration Template during creation.
                 suboptions:
                   id:
-                    description: The unique identifier for each tag, presented as a UUID.
+                    description: The unique identifier for each tag, presented as
+                      a UUID.
                     type: str
                   name:
                     description: The descriptive label or name assigned to the tag.
@@ -179,7 +177,8 @@ options:
                 type: list
                 elements: dict
               template_content:
-                description: The actual script or code constituting the body of the template.
+                description: The actual script or code constituting the body of the
+                  template.
                 type: str
               template_params:
                 description: The customization of the contents within the template.
@@ -192,51 +191,47 @@ options:
                     description: Specifies a user-defined ordering for the parameter.
                     type: int
                   data_type:
-                    description: |
-                      Identifies the data type of the parameter
-                      (e.g., string, integer, boolean).
+                    description: Identifies the data type of the parameter (e.g.,
+                      string, integer, boolean).
                     type: str
                   default_value:
-                    description: |
-                      Establishes a default value for the parameter, used if
-                      no other value is provided.
+                    description: Establishes a default value for the parameter, used
+                      if no other value is provided.
                     type: str
                   description:
-                    description: |
-                      Provides a descriptive explanation of the parameter's purpose.
+                    description: Provides a descriptive explanation of the parameter's
+                      purpose.
                     type: str
                   display_name:
                     description: The name of the parameter as displayed to users.
                     type: str
                   group:
-                    description: |
-                      Categorizes the parameter into a named group for
+                    description: Categorizes the parameter into a named group for
                       organizational purposes.
                     type: str
                   id:
-                    description: |
-                      A unique identifier for the parameter, formatted as a UUID.
+                    description: A unique identifier for the parameter, formatted
+                      as a UUID.
                     type: str
                   instruction_text:
-                    description: |
-                      Gives guidance or instructions regarding the parameter's use.
+                    description: Gives guidance or instructions regarding the parameter's
+                      use.
                     type: str
                   key:
-                    description: |
-                      A unique key that identifies the parameter within the template.
+                    description: A unique key that identifies the parameter within
+                      the template.
                     type: str
                   not_param:
-                    description: |
-                      Indicates whether the entry is not to be treated as a parameter.
+                    description: Indicates whether the entry is not to be treated
+                      as a parameter.
                     type: bool
                   order:
-                    description: |
-                      Determines the sequence in which the parameter appears
+                    description: Determines the sequence in which the parameter appears
                       relative to others.
                     type: int
                   param_array:
-                    description: |
-                      Specifies if the parameter should be treated as an array.
+                    description: Specifies if the parameter should be treated as an
+                      array.
                     type: bool
                   parameter_name:
                     description: The name of the parameter.
@@ -245,38 +240,41 @@ options:
                     description: Denotes the provider associated with the parameter.
                     type: str
                   range:
-                    description: Defines the permissible range for the parameter's value.
+                    description: Defines the permissible range for the parameter's
+                      value.
                     suboptions:
                       id:
-                        description: Unique identifier for the range, represented as a UUID.
+                        description: Unique identifier for the range, represented
+                          as a UUID.
                         type: str
                       max_value:
-                        description: Specifies the maximum allowable value for the parameter.
+                        description: Specifies the maximum allowable value for the
+                          parameter.
                         type: int
                       min_value:
-                        description: Specifies the minimum allowable value for the parameter.
+                        description: Specifies the minimum allowable value for the
+                          parameter.
                         type: int
                     type: list
                     elements: dict
                   required:
-                    description: |
-                      Dictates whether the parameter is required for template operations.
+                    description: Dictates whether the parameter is required for template
+                      operations.
                     type: bool
                   selection:
-                    description: |
-                      Contains options for parameter selection when a choice is available.
+                    description: Contains options for parameter selection when a choice
+                      is available.
                     suboptions:
                       default_selected_values:
                         description: Lists the default values that are preselected.
                         elements: str
                         type: list
                       id:
-                        description: |
-                          A unique identifier for the selection entity, represented as a UUID.
+                        description: A unique identifier for the selection entity,
+                          represented as a UUID.
                         type: str
                       selection_type:
-                        description: |
-                          Specifies the type of selection, such as 'SINGLE_SELECT'
+                        description: Specifies the type of selection, such as 'SINGLE_SELECT'
                           or 'MULTI_SELECT'.
                         type: str
                       selection_values:
@@ -290,17 +288,15 @@ options:
             type: list
             elements: dict
           custom_params_order:
-            description: |
-              Specifies the sequence in which custom parameters or variables
+            description: Specifies the sequence in which custom parameters or variables
               should be arranged within the template.
             type: bool
           template_description:
             description: Provides a overview  of the template.
             type: str
           device_types:
-            description: |
-              List of dictionaries details the types of devices that
-              the templates can be applied to.
+            description: List of dictionaries details the types of devices that the
+              templates can be applied to.
             type: list
             elements: dict
             suboptions:
@@ -337,33 +333,31 @@ options:
             description: A unique identifier, represented as a UUID.
             type: str
           language:
-            description: |
-              Programming language used for templating. Options are 'JINJA'
+            description: Programming language used for templating. Options are 'JINJA'
               for Jinja templating or 'VELOCITY' for Apache Velocity.
             choices:
               - JINJA
               - VELOCITY
             type: str
           template_name:
-            description: |
-              Name of template. This field is required to create a new template.
+            description: Name of template. This field is required to create a new
+              template.
             type: str
           new_template_name:
             description:
-            - New name of the template.
-            - Use this field to update the name of the existing template.
+              - New name of the template.
+              - Use this field to update the name of the existing template.
             type: str
           project_name:
-            description: |
-              Title of the project within which the template is categorized and managed.
+            description: Title of the project within which the template is categorized
+              and managed.
             type: str
           project_description:
-            description: |
-              Narrative that elaborates on the purpose and scope of the project.
+            description: Narrative that elaborates on the purpose and scope of the
+              project.
             type: str
           software_type:
-            description: |
-              Applicable device software type. This field is required to
+            description: Applicable device software type. This field is required to
               create a new template.
             choices:
               - IOS
@@ -380,12 +374,10 @@ options:
             description: Applicable device software version.
             type: str
           template_tag:
-            description: |
-              Refers to a keyword, label, or metadata assigned to a template.
+            description: Refers to a keyword, label, or metadata assigned to a template.
             suboptions:
               id:
-                description: |
-                  A unique identifier for the tag, represented as a UUID.
+                description: A unique identifier for the tag, represented as a UUID.
                 type: str
               name:
                 description: The name of the tag.
@@ -393,8 +385,7 @@ options:
             type: list
             elements: dict
           template_content:
-            description: |
-              The actual script or code constituting the body of the template.
+            description: The actual script or code constituting the body of the template.
             type: str
           template_params:
             description: The customization of the contents within the template.
@@ -406,51 +397,46 @@ options:
                 description: Specifies a user-defined ordering for the parameter.
                 type: int
               data_type:
-                description: |
-                  Identifies the data type of the parameter
-                  (e.g., string, integer, boolean).
+                description: Identifies the data type of the parameter (e.g., string,
+                  integer, boolean).
                 type: str
               default_value:
-                description: |
-                  Establishes a default value for the parameter, used if no
-                  other value is provided.
+                description: Establishes a default value for the parameter, used if
+                  no other value is provided.
                 type: str
               description:
-                description: |
-                  Provides a descriptive explanation of the parameter's purpose.
+                description: Provides a descriptive explanation of the parameter's
+                  purpose.
                 type: str
               display_name:
                 description: The name of the parameter as displayed to users.
                 type: str
               group:
-                description: |
-                  Categorizes the parameter into a named group for organizational
+                description: Categorizes the parameter into a named group for organizational
                   purposes.
                 type: str
               id:
-                description: |
-                  A unique identifier for the parameter, formatted as a UUID.
+                description: A unique identifier for the parameter, formatted as a
+                  UUID.
                 type: str
               instruction_text:
-                description: |
-                  Gives guidance or instructions regarding the parameter's use.
+                description: Gives guidance or instructions regarding the parameter's
+                  use.
                 type: str
               key:
-                description: |
-                  A unique key that identifies the parameter within the template.
+                description: A unique key that identifies the parameter within the
+                  template.
                 type: str
               not_param:
-                description: |
-                  Indicates whether the entry is not to be treated as a parameter.
+                description: Indicates whether the entry is not to be treated as a
+                  parameter.
                 type: bool
               order:
-                description: |
-                  Determines the sequence in which the parameter appears relative
-                  to others.
+                description: Determines the sequence in which the parameter appears
+                  relative to others.
                 type: int
               param_array:
-                description: |
-                  Specifies if the parameter should be treated as an array.
+                description: Specifies if the parameter should be treated as an array.
                 type: bool
               parameter_name:
                 description: The name of the parameter.
@@ -462,7 +448,8 @@ options:
                 description: Defines the permissible range for the parameter's value.
                 suboptions:
                   id:
-                    description: Unique identifier for the range, represented as a UUID.
+                    description: Unique identifier for the range, represented as a
+                      UUID.
                     type: str
                   max_value:
                     description: Specifies the maximum allowable value for the parameter.
@@ -473,25 +460,24 @@ options:
                 type: list
                 elements: dict
               required:
-                description: |
-                  Dictates whether the parameter is required for template operations.
+                description: Dictates whether the parameter is required for template
+                  operations.
                 type: bool
               selection:
-                description: |
-                  Contains options for parameter selection when a choice is available.
+                description: Contains options for parameter selection when a choice
+                  is available.
                 suboptions:
                   default_selected_values:
                     description: Lists the default values that are preselected.
                     elements: str
                     type: list
                   id:
-                    description: |
-                      A unique identifier for the selection entity, represented as a UUID.
+                    description: A unique identifier for the selection entity, represented
+                      as a UUID.
                     type: str
                   selection_type:
-                    description: |
-                      Specifies the type of selection, such as 'SINGLE_SELECT' or
-                      'MULTI_SELECT'.
+                    description: Specifies the type of selection, such as 'SINGLE_SELECT'
+                      or 'MULTI_SELECT'.
                     type: str
                   selection_values:
                     description: A dictionary of available values for selection.
@@ -534,27 +520,27 @@ options:
             suboptions:
               do_version:
                 description:
-                  - Determines whether to create a new version of the project
-                    with the imported contents.
-                  - If set to true and the project already exists, a new version
-                    will be created.
-                  - If false, the operation will fail with a 'Project already
-                    exists' error if the project already exists.
+                  - Determines whether to create a new version of the project with
+                    the imported contents.
+                  - If set to true and the project already exists, a new version will
+                    be created.
+                  - If false, the operation will fail with a 'Project already exists'
+                    error if the project already exists.
                 type: bool
               project_file:
                 description:
-                  - Specifies the path to a JSON file that contains the import
-                    project configuration.
-                  - If both 'project_file' and 'payload' are provided, the
-                    'project_file' will be given priority.
+                  - Specifies the path to a JSON file that contains the import project
+                    configuration.
+                  - If both 'project_file' and 'payload' are provided, the 'project_file'
+                    will be given priority.
                 type: str
                 version_added: 6.17.0
               payload:
                 description:
-                  - Directly imports configuration data into the system using
-                    the provided payload.
-                  - Offers an alternative to 'project_file' for importing
-                    configurations without referencing an external file.
+                  - Directly imports configuration data into the system using the
+                    provided payload.
+                  - Offers an alternative to 'project_file' for importing configurations
+                    without referencing an external file.
                   - Ignored if 'project_file' is also provided.
                 type: list
                 elements: dict
@@ -567,17 +553,16 @@ options:
             type: dict
             suboptions:
               do_version:
-                description: |
-                  DoVersion query parameter. If this flag is true, creates a new
-                  version of the template with the imported contents, if the templates already
-                  exists. " If false and if template already exists, then operation
-                  fails with 'Template already exists' error.
+                description: DoVersion query parameter. If this flag is true, creates
+                  a new version of the template with the imported contents, if the
+                  templates already exists. " If false and if template already exists,
+                  then operation fails with 'Template already exists' error.
                 type: bool
               template_file:
                 description:
                   - Specifies the path to a JSON file that contains an import template.
-                  - If both 'template_file' and 'payload' are provided,
-                  the 'template_file' will be given priority.
+                  - If both 'template_file' and 'payload' are provided, the 'template_file'
+                    will be given priority.
                 type: str
               payload:
                 description:
@@ -585,8 +570,8 @@ options:
                     data into the system.
                   - The payload provides an alternative way to import configurations
                     without the need to reference an external file.
-                  - If both 'template_file' and 'payload' are provided, the
-                    'template_file' will be given priority.
+                  - If both 'template_file' and 'payload' are provided, the 'template_file'
+                    will be given priority.
                 type: list
                 elements: dict
                 suboptions:
@@ -598,12 +583,12 @@ options:
                     type: bool
                   containing_templates:
                     description:
-                      - Refer to a set of templates within the main template to
-                        define more complex or modular configurations.
-                      - This is particularly useful in systems that support
-                        hierarchical or nested templates.
-                      - Here parent templates may contain child templates to
-                        form a complete configuration.
+                      - Refer to a set of templates within the main template to define
+                        more complex or modular configurations.
+                      - This is particularly useful in systems that support hierarchical
+                        or nested templates.
+                      - Here parent templates may contain child templates to form
+                        a complete configuration.
                     suboptions:
                       composite:
                         description: Specifies if the template is composite.
@@ -612,8 +597,7 @@ options:
                         description: Provides a description of the template.
                         type: str
                       device_types:
-                        description: |
-                          List of dictionaries details the types of devices
+                        description: List of dictionaries details the types of devices
                           that the templates can be applied to.
                         type: list
                         elements: dict
@@ -635,151 +619,154 @@ options:
                               - Wireless Controller
                             type: str
                           product_series:
-                            description: Specifies the series classification of the device.
+                            description: Specifies the series classification of the
+                              device.
                             type: str
                           product_type:
                             description: Describes the exact type of the device.
                             type: str
                       id:
-                        description: Unique identifier for the template, represented as a UUID.
+                        description: Unique identifier for the template, represented
+                          as a UUID.
                         type: str
                       language:
-                        description: |
-                          Programming language used for templating. Options are
-                          'JINJA' for Jinja templating or 'VELOCITY' for Apache Velocity.
+                        description: Programming language used for templating. Options
+                          are 'JINJA' for Jinja templating or 'VELOCITY' for Apache
+                          Velocity.
                         choices:
                           - JINJA
                           - VELOCITY
                         type: str
                       name:
-                        description: |
-                          Designation of the template, serving as its unique name.
+                        description: Designation of the template, serving as its unique
+                          name.
                         type: str
                       project_name:
-                        description: |
-                          Title of the project within which the template is
-                          categorized and managed.
+                        description: Title of the project within which the template
+                          is categorized and managed.
                         type: str
                       tags:
-                        description: |
-                          A list of dictionaries representing tags associated
+                        description: A list of dictionaries representing tags associated
                           with the Configuration Template during creation.
                         suboptions:
                           id:
-                            description: |
-                              The unique identifier for each tag, presented as a UUID.
+                            description: The unique identifier for each tag, presented
+                              as a UUID.
                             type: str
                           name:
-                            description: The descriptive label or name assigned to the tag.
+                            description: The descriptive label or name assigned to
+                              the tag.
                             type: str
                         type: list
                         elements: dict
                       template_content:
-                        description: |
-                          The actual script or code constituting the body of the template.
+                        description: The actual script or code constituting the body
+                          of the template.
                         type: str
                       template_params:
-                        description: |
-                          The customization of the contents within the template.
+                        description: The customization of the contents within the
+                          template.
                         elements: dict
                         suboptions:
                           binding:
                             description: Associates the parameter with its source.
                             type: str
                           custom_order:
-                            description: Specifies a user-defined ordering for the parameter.
+                            description: Specifies a user-defined ordering for the
+                              parameter.
                             type: int
                           data_type:
-                            description: |
-                              Identifies the data type of the parameter
+                            description: Identifies the data type of the parameter
                               (e.g., string, integer, boolean).
                             type: str
                           default_value:
-                            description: |
-                              Establishes a default value for the parameter,
+                            description: Establishes a default value for the parameter,
                               used if no other value is provided.
                             type: str
                           description:
-                            description: |
-                              Provides a descriptive explanation of the parameter's purpose.
+                            description: Provides a descriptive explanation of the
+                              parameter's purpose.
                             type: str
                           display_name:
-                            description: The name of the parameter as displayed to users.
+                            description: The name of the parameter as displayed to
+                              users.
                             type: str
                           group:
-                            description: |
-                              Categorizes the parameter into a named group for
-                              organizational purposes.
+                            description: Categorizes the parameter into a named group
+                              for organizational purposes.
                             type: str
                           id:
-                            description: |
-                              A unique identifier for the parameter, formatted as a UUID.
+                            description: A unique identifier for the parameter, formatted
+                              as a UUID.
                             type: str
                           instruction_text:
-                            description: |
-                              Gives guidance or instructions regarding the parameter's use.
+                            description: Gives guidance or instructions regarding
+                              the parameter's use.
                             type: str
                           key:
-                            description: |
-                              A unique key that identifies the parameter within the template.
+                            description: A unique key that identifies the parameter
+                              within the template.
                             type: str
                           not_param:
-                            description: |
-                              Indicates whether the entry is not to be treated as a parameter.
+                            description: Indicates whether the entry is not to be
+                              treated as a parameter.
                             type: bool
                           order:
-                            description: |
-                              Determines the sequence in which the parameter
+                            description: Determines the sequence in which the parameter
                               appears relative to others.
                             type: int
                           param_array:
-                            description: |
-                              Specifies if the parameter should be treated as an array.
+                            description: Specifies if the parameter should be treated
+                              as an array.
                             type: bool
                           parameter_name:
                             description: The name of the parameter.
                             type: str
                           provider:
-                            description: Denotes the provider associated with the parameter.
+                            description: Denotes the provider associated with the
+                              parameter.
                             type: str
                           range:
-                            description: Defines the permissible range for the parameter's value.
+                            description: Defines the permissible range for the parameter's
+                              value.
                             suboptions:
                               id:
-                                description: Unique identifier for the range, represented as a UUID.
+                                description: Unique identifier for the range, represented
+                                  as a UUID.
                                 type: str
                               max_value:
-                                description: Specifies the maximum allowable value for the parameter.
+                                description: Specifies the maximum allowable value
+                                  for the parameter.
                                 type: int
                               min_value:
-                                description: Specifies the minimum allowable value for the parameter.
+                                description: Specifies the minimum allowable value
+                                  for the parameter.
                                 type: int
                             type: list
                             elements: dict
                           required:
-                            description: |
-                              Dictates whether the parameter is required for template operations.
+                            description: Dictates whether the parameter is required
+                              for template operations.
                             type: bool
                           selection:
-                            description: |
-                              Contains options for parameter selection when a choice is available.
+                            description: Contains options for parameter selection
+                              when a choice is available.
                             suboptions:
                               default_selected_values:
                                 description: Lists the default values that are preselected.
                                 elements: str
                                 type: list
                               id:
-                                description: |
-                                  A unique identifier for the selection entity,
-                                  represented as a UUID.
+                                description: A unique identifier for the selection
+                                  entity, represented as a UUID.
                                 type: str
                               selection_type:
-                                description: |
-                                  Specifies the type of selection, such as
-                                  'SINGLE_SELECT' or 'MULTI_SELECT'.
+                                description: Specifies the type of selection, such
+                                  as 'SINGLE_SELECT' or 'MULTI_SELECT'.
                                 type: str
                               selection_values:
-                                description: A dictionary of available values for selection.
+                                description: A dictionary of available values for
+                                  selection.
                                 type: dict
                             type: dict
                         type: list
@@ -789,17 +776,15 @@ options:
                     type: list
                     elements: dict
                   custom_params_order:
-                    description: |
-                      Specifies the sequence in which custom parameters or variables
-                      should be arranged within the template.
+                    description: Specifies the sequence in which custom parameters
+                      or variables should be arranged within the template.
                     type: bool
                   template_description:
                     description: Provides a overview  of the template.
                     type: str
                   device_types:
-                    description: |
-                      List of dictionaries details the types of devices that
-                      the templates can be applied to.
+                    description: List of dictionaries details the types of devices
+                      that the templates can be applied to.
                     type: list
                     elements: dict
                     suboptions:
@@ -828,7 +813,8 @@ options:
                   failure_policy:
                     description:
                       - Define failure policy if template provisioning fails.
-                      - failure_policy will be enabled only when the composite is set to True.
+                      - failure_policy will be enabled only when the composite is
+                        set to True.
                     choices:
                       - ABORT_TARGET_ON_ERROR
                     type: str
@@ -836,27 +822,27 @@ options:
                     description: A unique identifier, represented as a UUID.
                     type: str
                   language:
-                    description: |
-                      Programming language used for templating. Options are
-                      'JINJA' for Jinja templating or 'VELOCITY' for Apache Velocity.
+                    description: Programming language used for templating. Options
+                      are 'JINJA' for Jinja templating or 'VELOCITY' for Apache Velocity.
                     choices:
                       - JINJA
                       - VELOCITY
                     type: str
                   template_name:
-                    description: Name of template. This field is required to create a new template.
+                    description: Name of template. This field is required to create
+                      a new template.
                     type: str
                   project_name:
-                    description: |
-                      Title of the project within which the template is categorized and managed.
+                    description: Title of the project within which the template is
+                      categorized and managed.
                     type: str
                   project_description:
-                    description: Narrative that elaborates on the purpose and scope of the project.
+                    description: Narrative that elaborates on the purpose and scope
+                      of the project.
                     type: str
                   software_type:
-                    description: |
-                      Applicable device software type. This field is required to
-                      create a new template.
+                    description: Applicable device software type. This field is required
+                      to create a new template.
                     choices:
                       - IOS
                       - IOS-XE
@@ -872,10 +858,12 @@ options:
                     description: Applicable device software version.
                     type: str
                   template_tag:
-                    description: Refers to a keyword, label, or metadata assigned to a template.
+                    description: Refers to a keyword, label, or metadata assigned
+                      to a template.
                     suboptions:
                       id:
-                        description: A unique identifier for the tag, represented as a UUID.
+                        description: A unique identifier for the tag, represented
+                          as a UUID.
                         type: str
                       name:
                         description: The name of the tag.
@@ -883,7 +871,8 @@ options:
                     type: list
                     elements: dict
                   template_content:
-                    description: The actual script or code constituting the body of the template.
+                    description: The actual script or code constituting the body of
+                      the template.
                     type: str
                   template_params:
                     description: The customization of the contents within the template.
@@ -895,44 +884,47 @@ options:
                         description: Specifies a user-defined ordering for the parameter.
                         type: int
                       data_type:
-                        description: |
-                          Identifies the data type of the parameter
-                          (e.g., string, integer, boolean).
+                        description: Identifies the data type of the parameter (e.g.,
+                          string, integer, boolean).
                         type: str
                       default_value:
-                        description: |
-                          Establishes a default value for the parameter, used if
-                          no other value is provided.
+                        description: Establishes a default value for the parameter,
+                          used if no other value is provided.
                         type: str
                       description:
-                        description: Provides a descriptive explanation of the parameter's purpose.
+                        description: Provides a descriptive explanation of the parameter's
+                          purpose.
                         type: str
                       display_name:
                         description: The name of the parameter as displayed to users.
                         type: str
                       group:
-                        description: |
-                          Categorizes the parameter into a named group for organizational purposes.
+                        description: Categorizes the parameter into a named group
+                          for organizational purposes.
                         type: str
                       id:
-                        description: A unique identifier for the parameter, formatted as a UUID.
+                        description: A unique identifier for the parameter, formatted
+                          as a UUID.
                         type: str
                       instruction_text:
-                        description: Gives guidance or instructions regarding the parameter's use.
+                        description: Gives guidance or instructions regarding the
+                          parameter's use.
                         type: str
                       key:
-                        description: A unique key that identifies the parameter within the template.
+                        description: A unique key that identifies the parameter within
+                          the template.
                         type: str
                       not_param:
-                        description: Indicates whether the entry is not to be treated as a parameter.
+                        description: Indicates whether the entry is not to be treated
+                          as a parameter.
                         type: bool
                       order:
-                        description: |
-                          Determines the sequence in which the parameter appears
-                          relative to others.
+                        description: Determines the sequence in which the parameter
+                          appears relative to others.
                         type: int
                       param_array:
-                        description: Specifies if the parameter should be treated as an array.
+                        description: Specifies if the parameter should be treated
+                          as an array.
                         type: bool
                       parameter_name:
                         description: The name of the parameter.
@@ -941,36 +933,42 @@ options:
                         description: Denotes the provider associated with the parameter.
                         type: str
                       range:
-                        description: Defines the permissible range for the parameter's value.
+                        description: Defines the permissible range for the parameter's
+                          value.
                         suboptions:
                           id:
-                            description: Unique identifier for the range, represented as a UUID.
+                            description: Unique identifier for the range, represented
+                              as a UUID.
                             type: str
                           max_value:
-                            description: Specifies the maximum allowable value for the parameter.
+                            description: Specifies the maximum allowable value for
+                              the parameter.
                             type: int
                           min_value:
-                            description: Specifies the minimum allowable value for the parameter.
+                            description: Specifies the minimum allowable value for
+                              the parameter.
                             type: int
                         type: list
                         elements: dict
                       required:
-                        description: Dictates whether the parameter is required for template operations.
+                        description: Dictates whether the parameter is required for
+                          template operations.
                         type: bool
                       selection:
-                        description: Contains options for parameter selection when a choice is available.
+                        description: Contains options for parameter selection when
+                          a choice is available.
                         suboptions:
                           default_selected_values:
                             description: Lists the default values that are preselected.
                             elements: str
                             type: list
                           id:
-                            description: A unique identifier for the selection entity, represented as a UUID.
+                            description: A unique identifier for the selection entity,
+                              represented as a UUID.
                             type: str
                           selection_type:
-                            description: |
-                              Specifies the type of selection, such as 'SINGLE_SELECT'
-                              or 'MULTI_SELECT'.
+                            description: Specifies the type of selection, such as
+                              'SINGLE_SELECT' or 'MULTI_SELECT'.
                             type: str
                           selection_values:
                             description: A dictionary of available values for selection.
@@ -982,100 +980,91 @@ options:
                     description: The current version of template.
                     type: str
               project_name:
-                description: |
-                  ProjectName path parameter. Project name to create template under the
-                  project.
+                description: ProjectName path parameter. Project name to create template
+                  under the project.
                 type: str
       deploy_template:
-        description: |
-          To deploy the template to the devices based on either list of site
-          provisionig details with further filtering criteria like device family,
-          device role, device tag or by providing the device specific details
-          which includes device_ips, device_hostnames, serial_numbers or
-          mac_addresses.
+        description: To deploy the template to the devices based on either list of
+          site provisionig details with further filtering criteria like device family,
+          device role, device tag or by providing the device specific details which
+          includes device_ips, device_hostnames, serial_numbers or mac_addresses.
         type: dict
         suboptions:
           project_name:
-            description: |
-              Provide the name of project under which the template is available.
+            description: Provide the name of project under which the template is available.
             type: str
           template_name:
             description: Name of the template to be deployed.
             type: str
           force_push:
-            description: |
-              Boolean flag to indicate whether the template should be forcefully
+            description: Boolean flag to indicate whether the template should be forcefully
               pushed to the devices, overriding any existing configuration.
             type: bool
           is_composite:
-            description: |
-              Boolean flag indicating whether the template is composite,
-              which means the template is built using multiple smaller
-              templates.
+            description: Boolean flag indicating whether the template is composite,
+              which means the template is built using multiple smaller templates.
             type: bool
           template_parameters:
-            description: |
-              A list of parameter name-value pairs used for customizing
+            description: A list of parameter name-value pairs used for customizing
               the template with specific values for each device.
             type: list
             elements: dict
             suboptions:
               param_name:
-                description: |
-                  Name of the parameter in the template that needs to be
+                description: Name of the parameter in the template that needs to be
                   replaced with a specific value.
                 type: str
               param_value:
                 description: Value assigned to the parameter for deployment to devices.
                 type: str
           device_details:
-            description: |
-              Details specific to devices where the template will be deployed,
-              including lists of device IPs, hostnames, serial numbers,
-              or MAC addresses.
+            description: Details specific to devices where the template will be deployed,
+              including lists of device IPs, hostnames, serial numbers, or MAC addresses.
             type: dict
             suboptions:
               device_ips:
-                description: A list of IP addresses of the devices where the template will be deployed.
+                description: A list of IP addresses of the devices where the template
+                  will be deployed.
                 type: list
                 elements: str
               device_hostnames:
-                description: A list of hostnames of the devices where the template will be deployed.
+                description: A list of hostnames of the devices where the template
+                  will be deployed.
                 type: list
                 elements: str
               serial_numbers:
-                description: A list of serial numbers of the devices where the template will be deployed.
+                description: A list of serial numbers of the devices where the template
+                  will be deployed.
                 type: list
                 elements: str
               mac_addresses:
-                description: A list of MAC addresses of the devices where the template will be deployed.
+                description: A list of MAC addresses of the devices where the template
+                  will be deployed.
                 type: list
                 elements: str
           site_provisioning_details:
-            description: |
-              Parameters related to site-based provisioning, allowing the
-              deployment of templates to devices associated with specific
-              sites, with optional filtering by device family, role, or tag.
+            description: Parameters related to site-based provisioning, allowing the
+              deployment of templates to devices associated with specific sites, with
+              optional filtering by device family, role, or tag.
             type: list
             elements: dict
             suboptions:
               site_name:
-                description: Name of the site where the devices are associated for provisioning.
+                description: Name of the site where the devices are associated for
+                  provisioning.
                 type: list
                 elements: str
               device_family:
-                description: |
-                  Family of the devices (e.g., switches, routers) used to
-                  filter devices for template deployment.
+                description: Family of the devices (e.g., switches, routers) used
+                  to filter devices for template deployment.
                 type: str
               device_role:
-                description: |
-                  Role of the devices (e.g., access, core, edge) used to
+                description: Role of the devices (e.g., access, core, edge) used to
                   filter devices for template deployment.
                 type: str
               device_tag:
-                description: |
-                  Specific device tag used to filter devices for template deployment.
+                description: Specific device tag used to filter devices for template
+                  deployment.
                 type: str
 
 requirements:
