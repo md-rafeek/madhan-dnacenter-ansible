@@ -2691,7 +2691,7 @@ class Template(DnacBase):
 
         Parameters:
             self (object): An instance of a class for interacting with Cisco Catalyst Center.
-            config (list[dict]): A list of dictionaries, each containing project details.
+            project_detail (dict): Dictionary containing project details.
 
         Returns:
             self: The current instance with created project configuration.
@@ -4191,11 +4191,15 @@ class Template(DnacBase):
         project_details = config.get("projects")
         if project_details and isinstance(project_details, list):
             self.processed_project = []
-            if self.have.get("projects"):
-                for each_project in project_details:
-                    if each_project.get("name"):
-                        if self.delete_project(each_project.get("name")):
-                            self.processed_project.append(each_project.get("name"))
+            if not self.have.get("projects"):
+                return self
+
+            for each_project in project_details:
+                if not each_project.get("name"):
+                    continue
+
+                if self.delete_project(each_project.get("name")):
+                    self.processed_project.append(each_project.get("name"))
 
         return self
 
