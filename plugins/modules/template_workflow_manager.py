@@ -1105,28 +1105,28 @@ EXAMPLES = r"""
     config_verify: true
     state: merged
     config:
-    - configuration_templates:
-        author: string
-        composite: true
-        custom_params_order: true
-        description: string
-        device_types:
-        - product_family: string
-          product_series: string
-          product_type: string
-        failure_policy: string
-        id: string
-        language: string
-        template_name: string
-        project_name: string
-        project_description: string
-        software_type: string
-        software_version: string
-        tags:
-        - id: string
-          name: string
-        template_content: string
-        version: string
+      - configuration_templates:
+          author: string
+          composite: true
+          custom_params_order: true
+          description: string
+          device_types:
+            - product_family: string
+              product_series: string
+              product_type: string
+          failure_policy: string
+          id: string
+          language: string
+          template_name: string
+          project_name: string
+          project_description: string
+          software_type: string
+          software_version: string
+          tags:
+            - id: string
+              name: string
+          template_content: string
+          version: string
 
 - name: Update a template.
   cisco.dnac.template_workflow_manager:
@@ -1142,29 +1142,28 @@ EXAMPLES = r"""
     config_verify: true
     state: merged
     config:
-    - configuration_templates:
-        author: string
-        composite: true
-        custom_params_order: true
-        description: string
-        device_types:
-        - product_family: string
-          product_series: string
-          product_type: string
-        failure_policy: string
-        id: string
-        language: string
-        template_name: string
-        new_template_name: string
-        project_name: string
-        project_description: string
-        software_type: string
-        software_version: string
-        tags:
-        - id: string
-          name: string
-        template_content: string
-        version: string
+      - configuration_templates:
+          author: string
+          composite: true
+          custom_params_order: true
+          description: string
+          device_types:
+            - product_family: string
+              product_series: string
+              product_type: string
+          failure_policy: string
+          id: string
+          language: string
+          template_name: string
+          new_template_name: string
+          project_name: string
+          project_description: string
+          software_type: string
+          software_version: string
+          tags:
+            - id: string
+              name: string
+          template_content: str
 
 - name: Export the projects.
   cisco.dnac.template_workflow_manager:
