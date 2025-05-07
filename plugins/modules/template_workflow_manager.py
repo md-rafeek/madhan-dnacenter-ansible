@@ -3890,7 +3890,7 @@ class Template(DnacBase):
         project_details = config.get("projects")
         if project_details:
             if len(self.have.get("projects")) == len(project_details):
-                project_unmatch = any(not project.get("project_status") and\
+                project_unmatch = any(not project.get("project_status") and
                                       not project.get("new_name")
                                       for project in self.have.get("projects"))
                 if not project_unmatch:
