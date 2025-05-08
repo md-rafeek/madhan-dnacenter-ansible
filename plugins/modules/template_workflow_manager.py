@@ -70,12 +70,6 @@ options:
             description: Description of the project.
             type: str
             required: false
-          templates:
-            description: |
-              List of template names assigned to the project.
-            type: list
-            elements: str
-            required: false
           tags:
             description: |
               Specifies tags that need to be attached to the project.
@@ -1321,6 +1315,64 @@ EXAMPLES = r"""
         software_type: "IOS-XE"
         device_types:
           - product_family: "Switches and Hubs"
+
+- name: Create a new project for the template.
+  cisco.dnac.template_workflow_manager:
+    dnac_host: "{{ dnac_host }}"
+    dnac_port: "{{ dnac_port }}"
+    dnac_username: "{{ dnac_username }}"
+    dnac_password: "{{ dnac_password }}"
+    dnac_verify: "{{ dnac_verify }}"
+    dnac_version: "{{ dnac_version }}"
+    dnac_debug: "{{ dnac_debug }}"
+    dnac_log_level: "{{ dnac_log_level }}"
+    dnac_log: true
+    config_verify: true
+    state: merged
+    config:
+      - projects:
+          name: WLC_Project
+          description: Project for the WLC templates
+          tags:
+            - name: testing_proj
+
+- name: Update project name and details.
+  cisco.dnac.template_workflow_manager:
+    dnac_host: "{{ dnac_host }}"
+    dnac_port: "{{ dnac_port }}"
+    dnac_username: "{{ dnac_username }}"
+    dnac_password: "{{ dnac_password }}"
+    dnac_verify: "{{ dnac_verify }}"
+    dnac_version: "{{ dnac_version }}"
+    dnac_debug: "{{ dnac_debug }}"
+    dnac_log_level: "{{ dnac_log_level }}"
+    dnac_log: true
+    config_verify: true
+    state: merged
+    config:
+      - projects:
+          name: WLC_Project
+          name: WLC_Project_Test
+          description: Project for the WLC templates
+          tags:
+            - name: testing_proj
+
+- name: Delete project based on the name.
+  cisco.dnac.template_workflow_manager:
+    dnac_host: "{{ dnac_host }}"
+    dnac_port: "{{ dnac_port }}"
+    dnac_username: "{{ dnac_username }}"
+    dnac_password: "{{ dnac_password }}"
+    dnac_verify: "{{ dnac_verify }}"
+    dnac_version: "{{ dnac_version }}"
+    dnac_debug: "{{ dnac_debug }}"
+    dnac_log_level: "{{ dnac_log_level }}"
+    dnac_log: true
+    config_verify: true
+    state: deleted
+    config:
+      - projects:
+          name: WLC_Project
 """
 
 RETURN = r"""
@@ -1389,6 +1441,46 @@ response_5:
     {
       "response": {},
       "msg": String
+    }
+
+# Case_6: Create project with project name response
+response_6:
+  description: Details of the projects created response by the Cisco Catalyst Center Python SDK
+  returned: always
+  type: dict
+  sample: >
+    {
+        "msg": "project test-project-1 created succesfully",
+        "response": "project test-project-1 created succesfully",
+        "status": "success"
+    }
+
+# Case_7: Update project with project name response
+response_7:
+  description: Details of the projects updated response by the Cisco Catalyst Center Python SDK
+  returned: always
+  type: dict
+  sample: >
+    {
+        "msg": "Project 'test-rename-2' updated successfully.",
+        "response": "Project 'test-rename-2' updated successfully.",
+        "status": "success"
+    }
+
+# Case_8: delete project with project name response
+response_8:
+  description: Details of the projects deleted response by the Cisco Catalyst Center Python SDK
+  returned: always
+  type: dict
+  sample: >
+    {
+        "msg": "Project(s) are deleted and verified successfully. ['test-rename-2']",
+        "response": [
+            {
+                "name": "test-rename-2"
+            }
+        ],
+        "status": "success"
     }
 """
 
@@ -1564,8 +1656,7 @@ class Template(DnacBase):
                     "name": {"type": "str", "required": True},
                     "new_name": {"type": "str"},
                     "description": {"type": "str"},
-                    "tags": {"type": "list", "elements": "dict"},
-                    "templates": {"type": "list", "elements": "str"}
+                    "tags": {"type": "list", "elements": "dict"}
                 }
             }
         }
@@ -1633,18 +1724,12 @@ class Template(DnacBase):
                 if description and isinstance(description, str):
                     validate_str(description, param_spec_str, "description", errormsg)
 
-                templates = each_project.get("templates")
-                if templates and isinstance(templates, list):
-                    for each_template in templates:
-                        validate_str(each_template, param_spec_str, "templates", errormsg)
-
                 tags = each_project.get("tags")
                 if tags and isinstance(tags, list):
                     for each_tag in tags:
                         if each_tag and isinstance(each_tag, dict):
                             if each_tag.get("name"):
-                                validate_str(each_template, param_spec_str,
-                                             "templates", errormsg)
+                                validate_str(each_tag, param_spec_str, "templates", errormsg)
 
         if errormsg:
             msg = "Invalid parameters in playbook config: '{0}' ".format(errormsg)
