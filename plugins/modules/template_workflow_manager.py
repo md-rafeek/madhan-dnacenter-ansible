@@ -1352,7 +1352,7 @@ EXAMPLES = r"""
     config:
       - projects:
           name: WLC_Project
-          name: WLC_Project_Test
+          new_name: WLC_Project_Test
           description: Project for the WLC templates
           tags:
             - name: testing_proj
