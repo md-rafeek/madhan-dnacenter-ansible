@@ -2009,7 +2009,7 @@
         "version": "1.0"
     },
 
-    "import_project_playbook_case_1": [{
+    "import_project_playbook_case_8": [{
         "projects": [{
             "name": "test-project-1",
             "description": "test-rename descriptions",
@@ -2021,11 +2021,11 @@
         }]
     }],
 
-    "get_projects_response_1_call_1": {
+    "get_projects_response_8_call_1": {
         "response": []
     },
 
-    "get_projects_response_1_call_2": {
+    "get_projects_response_8_call_2": {
         "response": {
           "taskId": "0196abfb-4c1c-7354-a21f-f7d626f17a30",
           "url": "/api/v1/task/0196abfb-4c1c-7354-a21f-f7d626f17a30"
@@ -2033,7 +2033,7 @@
         "version": "1.0"
     },
 
-    "get_projects_response_1_call_3": {
+    "get_projects_response_8_call_3": {
         "response": {
           "endTime": 1746642095138,
           "status": "SUCCESS",
@@ -2044,7 +2044,7 @@
         "version": "1.0"
     },
 
-    "import_project_playbook_case_2": [{
+    "import_project_playbook_case_9": [{
         "projects": [{
             "name": "test-project-1",
             "new_name": "test-rename-2",
@@ -2057,7 +2057,7 @@
         }]
     }],
 
-    "get_projects_response_update_call_1": {
+    "get_projects_response_update_9_call_1": {
         "response": [
           {
             "name": "test-project-1",
@@ -2071,13 +2071,13 @@
         "version": "1.0"
     },
 
-    "import_project_playbook_case_3": [{
+    "import_project_playbook_case_10": [{
         "projects": [{
             "name": "test-rename-2"
         }]
     }],
 
-    "get_projects_response_delete_call_1": {
+    "get_projects_response_delete_10_call_1": {
         "response": [
           {
             "name": "test-rename-2",

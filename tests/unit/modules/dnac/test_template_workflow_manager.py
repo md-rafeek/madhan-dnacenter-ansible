@@ -46,14 +46,14 @@ class TestDnacTemplateWorkflow(TestDnacModule):
     playbook_config_import_template_playbook_case_7 = test_data.get(
         "import_template_playbook_case_7"
     )
-    playbook_config_import_project_playbook_case_1 = test_data.get(
-        "import_project_playbook_case_1"
+    playbook_config_import_project_playbook_case_8 = test_data.get(
+        "import_project_playbook_case_8"
     )
-    playbook_config_import_project_playbook_case_2 = test_data.get(
-        "import_project_playbook_case_2"
+    playbook_config_import_project_playbook_case_9 = test_data.get(
+        "import_project_playbook_case_9"
     )
-    playbook_config_import_project_playbook_case_3 = test_data.get(
-        "import_project_playbook_case_3"
+    playbook_config_import_project_playbook_case_10 = test_data.get(
+        "import_project_playbook_case_10"
     )
 
     def setUp(self):
@@ -143,24 +143,24 @@ class TestDnacTemplateWorkflow(TestDnacModule):
                 self.test_data.get("get_task_details_by_id_case_7_call_1"),
                 self.test_data.get("get_task_details_by_id_case_7_call_2"),
             ]
-        elif "test_import_project_playbook_case_1" in self._testMethodName:
+        elif "test_import_project_playbook_case_8" in self._testMethodName:
             self.run_dnac_exec.side_effect = [
-                self.test_data.get("get_projects_response_1_call_1"),
-                self.test_data.get("get_projects_response_1_call_2"),
-                self.test_data.get("get_projects_response_1_call_3"),
+                self.test_data.get("get_projects_response_8_call_1"),
+                self.test_data.get("get_projects_response_8_call_2"),
+                self.test_data.get("get_projects_response_8_call_3"),
             ]
-        elif "test_import_project_playbook_case_2" in self._testMethodName:
+        elif "test_import_project_playbook_case_9" in self._testMethodName:
             self.run_dnac_exec.side_effect = [
-                self.test_data.get("get_projects_response_update_call_1"),
-                self.test_data.get("get_projects_response_update_call_1"),
-                self.test_data.get("get_projects_response_1_call_2"),
-                self.test_data.get("get_projects_response_1_call_3"),
+                self.test_data.get("get_projects_response_update_9_call_1"),
+                self.test_data.get("get_projects_response_update_9_call_1"),
+                self.test_data.get("get_projects_response_8_call_2"),
+                self.test_data.get("get_projects_response_8_call_3"),
             ]
-        elif "test_import_project_playbook_case_3" in self._testMethodName:
+        elif "test_import_project_playbook_case_10" in self._testMethodName:
             self.run_dnac_exec.side_effect = [
-                self.test_data.get("get_projects_response_delete_call_1"),
-                self.test_data.get("get_projects_response_1_call_2"),
-                self.test_data.get("get_projects_response_1_call_1"),
+                self.test_data.get("get_projects_response_delete_10_call_1"),
+                self.test_data.get("get_projects_response_8_call_2"),
+                self.test_data.get("get_projects_response_8_call_1")
             ]
 
     def test_create_template_playbook_case_1(self):
@@ -338,7 +338,7 @@ class TestDnacTemplateWorkflow(TestDnacModule):
             "Successfully imported the templates",
         )
 
-    def test_import_project_playbook_case_1(self):
+    def test_import_project_playbook_case_8(self):
         """
         Create Project
         """
@@ -352,7 +352,7 @@ class TestDnacTemplateWorkflow(TestDnacModule):
                 dnac_log_level="DEBUG",
                 state="merged",
                 config_verify=True,
-                config=self.playbook_config_import_project_playbook_case_1,
+                config=self.playbook_config_import_project_playbook_case_8,
             )
         )
         result = self.execute_module(changed=True, failed=False)
@@ -362,7 +362,7 @@ class TestDnacTemplateWorkflow(TestDnacModule):
             "project test-project-1 created succesfully"
         )
 
-    def test_import_project_playbook_case_2(self):
+    def test_import_project_playbook_case_9(self):
         """
         Update Project
         """
@@ -376,7 +376,7 @@ class TestDnacTemplateWorkflow(TestDnacModule):
                 dnac_log_level="DEBUG",
                 state="merged",
                 config_verify=True,
-                config=self.playbook_config_import_project_playbook_case_2,
+                config=self.playbook_config_import_project_playbook_case_9,
             )
         )
         result = self.execute_module(changed=True, failed=False)
@@ -386,7 +386,7 @@ class TestDnacTemplateWorkflow(TestDnacModule):
             "Project 'test-rename-2' updated successfully."
         )
 
-    def test_import_project_playbook_case_3(self):
+    def test_import_project_playbook_case_10(self):
         """
         Delete Project
         """
@@ -400,7 +400,7 @@ class TestDnacTemplateWorkflow(TestDnacModule):
                 dnac_log_level="DEBUG",
                 state="deleted",
                 config_verify=True,
-                config=self.playbook_config_import_project_playbook_case_3,
+                config=self.playbook_config_import_project_playbook_case_10,
             )
         )
         result = self.execute_module(changed=True, failed=False)
