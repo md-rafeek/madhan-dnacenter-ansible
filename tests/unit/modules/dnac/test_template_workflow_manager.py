@@ -367,7 +367,7 @@ class TestDnacTemplateWorkflow(TestDnacModule):
         self.maxDiff = None
         self.assertEqual(
             result.get('msg'),
-            "project test-project-1 created succesfully"
+            "project(s) test-project-1 created succesfully"
         )
 
     def test_import_project_playbook_case_9(self):
@@ -391,7 +391,7 @@ class TestDnacTemplateWorkflow(TestDnacModule):
         self.maxDiff = None
         self.assertEqual(
             result.get('msg'),
-            "Project 'test-rename-2' updated successfully."
+            "Project(s) 'test-rename-2' updated successfully."
         )
 
     def test_import_project_playbook_case_10(self):
