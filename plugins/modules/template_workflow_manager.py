@@ -50,35 +50,36 @@ options:
     suboptions:
       projects:
         description: |
-          Create/update or delete the project, description, template and tag details
-          using by project details.
+          Create, update, or delete projects with associated details such as name,
+          description, and tags.
         type: list
         elements: dict
         required: false
         suboptions:
           name:
             description: |
-              Provide the name of the project under which need to be created.
+              The name of the project. This is used to identify the project for creation,
+              update, or deletion.
             type: str
             required: true
           new_name:
             description: |
-              Replace the old name with thie new name of the project which need to be updated.
+              Specify a new name for the project when updating an existing project.
             type: str
             required: false
           description:
-            description: Description of the project.
+            description: A brief description of the project.
             type: str
             required: false
           tags:
             description: |
-              Specifies tags that need to be attached to the project.
+              A list of tags to associate with the project. Tags help categorize and filter projects.
             type: list
             elements: dict
             required: false
             suboptions:
               name:
-                description: Name of the project tag.
+                description: The name of the tag to attach to the project.
                 type: str
                 required: true
 
@@ -1157,7 +1158,7 @@ EXAMPLES = r"""
           tags:
             - id: string
               name: string
-          template_content: str
+          template_content: string
 
 - name: Export the projects.
   cisco.dnac.template_workflow_manager:
@@ -1316,7 +1317,7 @@ EXAMPLES = r"""
         device_types:
           - product_family: "Switches and Hubs"
 
-- name: Create a new project for the template.
+- name: Create a New Project
   cisco.dnac.template_workflow_manager:
     dnac_host: "{{ dnac_host }}"
     dnac_port: "{{ dnac_port }}"
@@ -1331,10 +1332,12 @@ EXAMPLES = r"""
     state: merged
     config:
       - projects:
-          name: WLC_Project
-          description: Project for the WLC templates
+          name: Wireless_Controller
+          description: Centralized repository for managing templates and configurations for wireless controllers (WLCs).
           tags:
-            - name: testing_proj
+            - name: wlc_templates
+            - name: wireless
+            - name: configuration
 
 - name: Update project name and details.
   cisco.dnac.template_workflow_manager:
@@ -1351,11 +1354,13 @@ EXAMPLES = r"""
     state: merged
     config:
       - projects:
-          name: WLC_Project
-          new_name: WLC_Project_Test
-          description: Project for the WLC templates
+          name: Wireless_Controller
+          new_name: Wireless_Template_Management
+          description: Centralized repository for managing templates and configurations for wireless controllers (WLCs).
           tags:
-            - name: testing_proj
+            - name: wlc_templates
+            - name: wireless
+            - name: configuration
 
 - name: Delete project based on the name.
   cisco.dnac.template_workflow_manager:
@@ -1372,7 +1377,7 @@ EXAMPLES = r"""
     state: deleted
     config:
       - projects:
-          name: WLC_Project
+          name: Wireless_Template_Management
 """
 
 RETURN = r"""
@@ -1443,41 +1448,41 @@ response_5:
       "msg": String
     }
 
-# Case_6: Create project with project name response
+# Case_6: Response for Creating a Project with a Name
 response_6:
-  description: Details of the projects created response by the Cisco Catalyst Center Python SDK
+  description: Response when a project is created successfully
   returned: always
   type: dict
   sample: >
     {
-        "msg": "project test-project-1 created succesfully",
-        "response": "project test-project-1 created succesfully",
+        "msg": "project Wireless_Controller created succesfully",
+        "response": "project Wireless_Controller created succesfully",
         "status": "success"
     }
 
-# Case_7: Update project with project name response
+# Case_7: Response for Updating a Project with a Name
 response_7:
-  description: Details of the projects updated response by the Cisco Catalyst Center Python SDK
+  description: Provides details of the response when a project is successfully updated using the Cisco Catalyst Center Python SDK.
   returned: always
   type: dict
   sample: >
     {
-        "msg": "Project 'test-rename-2' updated successfully.",
-        "response": "Project 'test-rename-2' updated successfully.",
+        "msg": "Project 'Wireless_Template_Management' updated successfully.",
+        "response": Project 'Wireless_Template_Management' updated successfully.",
         "status": "success"
     }
 
-# Case_8: delete project with project name response
+# Case_8: Response for Deleting a Project by Name
 response_8:
-  description: Details of the projects deleted response by the Cisco Catalyst Center Python SDK
+  description: Response when a project is Deleted successfully.
   returned: always
   type: dict
   sample: >
     {
-        "msg": "Project(s) are deleted and verified successfully. ['test-rename-2']",
+        "msg": "Project(s) are deleted and verified successfully. ['Wireless_Template_Management']",
         "response": [
             {
-                "name": "test-rename-2"
+                "name": "Wireless_Template_Management"
             }
         ],
         "status": "success"
@@ -1687,7 +1692,8 @@ class Template(DnacBase):
 
         Args:
             self (object): Instance of the class interacting with Cisco Catalyst Center.
-            config (list[dict]): List of dictionary containing project definitions and optional template/tag data.
+            config (list[dict]): List of dictionaries containing project definitions
+                                 and optional template/tag data.
 
         Returns:
             object: Returns self if validation passes; otherwise, logs an error and exits the module.
@@ -1701,6 +1707,7 @@ class Template(DnacBase):
             If any validation errors are detected, the method logs an error and terminates the module run.
         """
 
+        self.log("Starting input data validation.", "INFO")
         errormsg = []
         param_spec_str = dict(type="str")
 
@@ -1711,14 +1718,14 @@ class Template(DnacBase):
                 if project_name and isinstance(project_name, str):
                     validate_str(project_name, param_spec_str, "name", errormsg)
                 else:
-                    errormsg.append("name: Name of the poject is missing")
+                    errormsg.append("Missing or invalid 'name' field in project.")
 
                 if self.payload.get("state") == "deleted":
                     continue
 
-                project_newname = each_project.get("new_name")
-                if project_newname and isinstance(project_newname, str):
-                    validate_str(project_newname, param_spec_str, "new_name", errormsg)
+                project_new_name = each_project.get("new_name")
+                if project_new_name and isinstance(project_new_name, str):
+                    validate_str(project_new_name, param_spec_str, "new_name", errormsg)
 
                 description = each_project.get("description")
                 if description and isinstance(description, str):
@@ -2493,12 +2500,22 @@ class Template(DnacBase):
         if project_config and isinstance(project_config, list):
             have["projects"] = []
             for project in project_config:
-                existing = self.get_project_details(project.get("name"))
+                project_name = project.get("name")
+
+                if not project_name:
+                    self.log("Skipping project: Missing 'name' field.", "WARNING")
+                    continue
+
+                # Fetch existing project details based on the name
+                existing = self.get_project_details(project_name)
                 if existing:
                     proj_status, unmatched = self.compare_projects(project, existing[0])
                     existing[0]["project_status"] = proj_status
                     existing[0]["unmatched"] = unmatched
                     have["projects"].append(existing[0] or {})
+                else:
+                    self.log("No existing project found for name: {0}".format(
+                        project_name), "INFO")
 
         deploy_temp_details = config.get("deploy_template")
         if deploy_temp_details:
@@ -2665,23 +2682,33 @@ class Template(DnacBase):
             excluding the "tags" field. It logs the comparison process and results. If mismatches are found,
             the differing input values are collected and returned for further processing or reporting.
         """
-        self.log("Find the Input project config: {0}, Current config: {1}".format(
-            self.pprint(input_config), self.pprint(current_proj)), "INFO")
-        unmatch_value = []
+        self.log("Comparing input project config with current config.", "INFO")
+        self.log("Input project config: {0}".format(self.pprint(input_config)), "DEBUG")
+        self.log("Current project config: {0}".format(self.pprint(current_proj)), "DEBUG")
+
+        unmatched_keys = []
 
         if input_config and current_proj:
             for key, value in input_config.items():
-                if current_proj.get(key) != value and key != "tags":
-                    unmatch_value.append(value)
+                # Exclude "tags" from comparison
+                if key == "tags":
+                    continue
 
-            if not unmatch_value:
-                self.log("Input config: {0} match with existing config: {1}.".format(
-                    self.pprint(input_config), self.pprint(current_proj)), "INFO")
+                # Compare values of the current key
+                if current_proj.get(key) != value:
+                    unmatched_keys.append(key)
+                    self.log("Mismatch found for key: {0}. Input value: {1}, Current value: {2}".format(
+                        key, value, current_proj.get(key)), "DEBUG")
+
+            # If no mismatches are found, configurations match
+            if not unmatched_keys:
+                self.log("Input project config matches current project config.", "INFO")
                 return True, None
 
-        self.log("Input config: {0} not match with existing config: {1}.".format(
-            self.pprint(input_config), self.pprint(current_proj)), "DEBUG")
-        return False, unmatch_value
+        self.log("Configurations do not match. Mismatched keys: {0}".format(
+            unmatched_keys), "DEBUG")
+
+        return False, unmatched_keys
 
     def delete_project(self, project_name):
         """
@@ -2714,38 +2741,38 @@ class Template(DnacBase):
                 project_id = each_project.get("id")
                 break
 
-        # If a valid project ID is found, proceed to delete the project
-        if project_id:
-            self.log("Found project ID: {0} for project name: {1}".format(
-                project_id, project_name), "INFO")
-
-            try:
-                function_name = "delete_template_project_v1"
-                params = {"project_id": project_id}
-                task_id = self.get_taskid_post_api_call("configuration_templates",
-                                                        function_name, params)
-
-                if not task_id:
-                    self.msg = "Unable to retrieve the task_id for the task '{0}'.".format(
-                        function_name)
-                    self.set_operation_result("failed", False, self.msg, "ERROR")
-                    return self
-
-                self.log("Successfully deleted project with ID: {0}".format(project_name), "INFO")
-                self.result['changed'] = True  # Indicate that the project was deleted
-                self.status = "success"
-                self.msg = "Successfully deleted project: {0}".format(project_name)
-                return self
-
-            except Exception as e:
-                self.msg = "An error occurred while deleting project {0} (ID: {1}). ".format(
-                    project_name, project_id)
-                self.log(self.msg + str(e), "ERROR")
-                self.status = "failed"
-
-        else:
+        if not project_id:
             self.msg = "Could not find a project with the name: {0}".format(project_name)
             self.log(self.msg, "ERROR")
+            self.status = "failed"
+            return self
+
+        # If a valid project ID is found, proceed to delete the project
+        self.log("Found project ID: {0} for project name: {1}".format(
+            project_id, project_name), "INFO")
+
+        try:
+            function_name = "delete_template_project_v1"
+            params = {"project_id": project_id}
+            task_id = self.get_taskid_post_api_call("configuration_templates",
+                                                    function_name, params)
+
+            if not task_id:
+                self.msg = "Unable to retrieve the task_id for the task '{0}'.".format(
+                    function_name)
+                self.set_operation_result("failed", False, self.msg, "ERROR")
+                return self
+
+            self.log("Successfully deleted project with ID: {0}".format(project_name), "INFO")
+            self.result['changed'] = True  # Indicate that the project was deleted
+            self.status = "success"
+            self.msg = "Successfully deleted project: {0}".format(project_name)
+            return self
+
+        except Exception as e:
+            self.msg = "An error occurred while deleting project {0} (ID: {1}). ".format(
+                project_name, project_id)
+            self.log(self.msg + str(e), "ERROR")
             self.status = "failed"
 
         return self
@@ -2761,13 +2788,21 @@ class Template(DnacBase):
         Returns:
             self: The current instance with updated project configuration.
         """
+        self.log("Starting to apply project configurations. Total projects: {0}".format(
+            len(config)), "INFO")
 
         for project in config:
+            project_name = project.get("name", "Unnamed Project")
+            self.log("Processing project: {0}".format(project_name), "DEBUG")
             if project.get("new_name"):
+                self.log("Updating project: {0} with new name: {1}".format(
+                    project_name, project.get("new_name")), "INFO")
                 self.update_project(project)
             else:
+                self.log("Creating project: {0}".format(project_name), "INFO")
                 self.create_project(project)
 
+        self.log("Finished applying project configurations.", "INFO")
         return self
 
     def create_project(self, project_detail):
@@ -2808,7 +2843,7 @@ class Template(DnacBase):
             if templates:
                 create_project_params["templates"] = templates
 
-            self.log("Creating Project template with parameters: {0}".format(
+            self.log("Creating project with parameters: {0}".format(
                 self.pprint(create_project_params)), "INFO")
 
             task_name = "create_project"
@@ -2821,10 +2856,10 @@ class Template(DnacBase):
                 self.set_operation_result("failed", False, self.msg, "ERROR")
                 return self
 
-            success_msg = "project {0} created succesfully".format(project_detail.get("name"))
+            success_msg = "project(s) {0} created succesfully".format(project_detail.get("name"))
             self.log("Task ID '{0}' received. Checking task status.".format(task_id), "DEBUG")
             self.get_task_status_from_tasks_by_id(task_id, task_name, success_msg)
-            self.log("project {0} created succesfully".format(
+            self.log("project(s) {0} created succesfully".format(
                 project_detail.get("name")), "INFO")
             return self
 
@@ -2835,8 +2870,8 @@ class Template(DnacBase):
 
     def update_project(self, project_detail):
         """
-        Update an existing project in Cisco Catalyst Center by identifying the project using its old name
-        and updating it with the new name and other provided details.
+        Identify an existing project in Cisco Catalyst Center by its current name and description,
+        and update it with the new name and project details.
 
         Parameters:
             self (object): An instance of a class for interacting with Cisco Catalyst Center.
@@ -2895,11 +2930,11 @@ class Template(DnacBase):
                 self.set_operation_result("failed", False, self.msg, "ERROR")
                 return self
 
-            success_msg = "Project '{0}' updated successfully.".format(new_name)
+            success_msg = "Project(s) '{0}' updated successfully.".format(new_name)
             self.log("Task ID '{0}' received. Checking task status.".format(task_id), "DEBUG")
             self.get_task_status_from_tasks_by_id(task_id, task_name, success_msg)
 
-            self.log("Project '{0}' updated successfully.".format(new_name), "INFO")
+            self.log("Project(s) '{0}' updated successfully.".format(new_name), "INFO")
             return self
 
         except Exception as e:
@@ -4306,14 +4341,18 @@ class Template(DnacBase):
         if project_details and isinstance(project_details, list):
             self.processed_project = []
             if not self.have.get("projects"):
+                self.log("No existing projects found. Nothing to delete.", "INFO")
                 return self
 
             for each_project in project_details:
-                if not each_project.get("name"):
+                project_name = each_project.get("name")
+                if not project_name:
+                    self.log("Skipping project with missing 'name' field.", "WARNING")
                     continue
 
-                if self.delete_project(each_project.get("name")):
-                    self.processed_project.append(each_project.get("name"))
+                if self.delete_project(project_name):
+                    self.processed_project.append(project_name)
+                    self.log("Successfully deleted project: {0}".format(project_name), "INFO")
 
         return self
 
@@ -4436,8 +4475,9 @@ class Template(DnacBase):
                                           config.get("projects")).check_return_status()
                 return self
 
-            self.msg = "Unable to delete below Project(s)"
-            self.log(self.msg, "INFO")
+            self.msg = "Unable to delete the following project(s): {0}".format(
+                [project.get("name") for project in self.have.get("projects", [])])
+            self.log(self.msg, "ERROR")
             self.set_operation_result("failed", False, self.msg, "INFO",
                                       self.have.get("projects")).check_return_status()
         return self
