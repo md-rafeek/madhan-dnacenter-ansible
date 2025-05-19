@@ -1332,12 +1332,12 @@ EXAMPLES = r"""
     state: merged
     config:
       - projects:
-          name: Wireless_Controller
-          description: Centralized repository for managing templates and configurations for wireless controllers (WLCs).
-          tags:
-            - name: wlc_templates
-            - name: wireless
-            - name: configuration
+          - name: Wireless_Controller
+            description: Centralized repository for managing templates and configurations for wireless controllers (WLCs).
+            tags:
+              - name: wlc_templates
+              - name: wireless
+              - name: configuration
 
 - name: Update project name and details.
   cisco.dnac.template_workflow_manager:
@@ -1354,13 +1354,13 @@ EXAMPLES = r"""
     state: merged
     config:
       - projects:
-          name: Wireless_Controller
-          new_name: Wireless_Template_Management
-          description: Centralized repository for managing templates and configurations for wireless controllers (WLCs).
-          tags:
-            - name: wlc_templates
-            - name: wireless
-            - name: configuration
+          - name: Wireless_Controller
+            new_name: Wireless_Template_Management
+            description: Centralized repository for managing templates and configurations for wireless controllers (WLCs).
+            tags:
+              - name: wlc_templates
+              - name: wireless
+              - name: configuration
 
 - name: Delete project based on the name.
   cisco.dnac.template_workflow_manager:
@@ -1377,7 +1377,7 @@ EXAMPLES = r"""
     state: deleted
     config:
       - projects:
-          name: Wireless_Template_Management
+          - name: Wireless_Template_Management
 """
 
 RETURN = r"""
