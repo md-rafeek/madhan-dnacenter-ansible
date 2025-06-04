@@ -372,6 +372,14 @@ options:
                 command_execution: Executes commands to address the issue.
             type: str
             required: true
+          ignore_duration:
+            description: >
+              Duration for which issues will be ignored for all interfaces, ranging from 1 hour to 30 days,
+              based on the value of 'issue_process_type' set to 'ignore'. Possible values:
+              ignore_duration: 2h
+              ignore_duration: 5d
+            type: str
+            required: false
           start_datetime:
             description: >
               A filter to select issues that started at or after this date and time. The format is "YYYY-MM-DD HH:MM:SS".
@@ -748,6 +756,34 @@ EXAMPLES = r"""
           - assurance_issue:
               - issue_name: Fabric BGP session status is down with Peer Device  # required field
                 issue_process_type: ignore  # required field
+                start_datetime: "2024-12-11 16:00:00"  # optional field
+                end_datetime: "2024-12-11 18:30:00"  # optional field
+                site_hierarchy: Global/USA/San Jose/BLDG23  # optional field
+                device_name: NY-EN-9300.cisco.local  # optional field
+                priority: P4  # optional field
+                issue_status: ACTIVE  # optional field
+                mac_address: e4:38:7e:42:bc:40  # optional field
+                network_device_ip_address: 204.1.2.4  # optional field
+
+    - name: Ignoring issues with duration
+      cisco.dnac.assurance_issue_workflow_manager:
+        dnac_host: "{{ dnac_host }}"
+        dnac_port: "{{ dnac_port }}"
+        dnac_username: "{{ dnac_username }}"
+        dnac_password: "{{ dnac_password }}"
+        dnac_verify: "{{ dnac_verify }}"
+        dnac_debug: "{{ dnac_debug }}"
+        dnac_version: "{{ dnac_version }}"
+        dnac_log: true
+        dnac_log_level: debug
+        dnac_log_append: true
+        state: merged
+        config_verify: true
+        config:
+          - assurance_issue:
+              - issue_name: Fabric BGP session status is down with Peer Device  # required field
+                issue_process_type: ignore  # required field
+                ignore_duration: 3d
                 start_datetime: "2024-12-11 16:00:00"  # optional field
                 end_datetime: "2024-12-11 18:30:00"  # optional field
                 site_hierarchy: Global/USA/San Jose/BLDG23  # optional field
