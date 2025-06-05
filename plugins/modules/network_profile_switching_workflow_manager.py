@@ -256,6 +256,10 @@ class NetworkSwitchProfile(NetworkProfileFunctions):
         self.switch_delete, self.assurance_delete = [], []
         self.common_delete = []
         self.not_processed = []
+        self.result_response = {
+            "success_responses": self.switch,
+            "failed_responses": self.not_processed
+            }
 
     def validate_input(self):
         """
@@ -553,7 +557,8 @@ class NetworkSwitchProfile(NetworkProfileFunctions):
         if not host_name:
             msg = "Cisco Catalyst Center host information is missing."
             self.log(msg, "ERROR")
-            self.fail_and_exit(msg)
+            self.set_operation_result("failed", False, msg, "ERROR",
+                                      self.result_response).check_return_status()
 
         # Direct API call as SDK is not available yet
         dnac_url = "https://{0}".format(str(host_name))
@@ -562,7 +567,8 @@ class NetworkSwitchProfile(NetworkProfileFunctions):
         if not token_str:
             msg = "Failed to retrieve access token from Cisco Catalyst Center."
             self.log(msg, "ERROR")
-            self.fail_and_exit(msg)
+            self.set_operation_result("failed", False, msg, "ERROR",
+                                      self.result_response).check_return_status()
 
         headers = {
             "Content-Type": "application/json",
@@ -617,7 +623,8 @@ class NetworkSwitchProfile(NetworkProfileFunctions):
                     msg = "Error on creating Network Profile: Unable to get the success response creating profile '{0}'. ".format(
                         each_config["profile_name"])
                     self.log(msg + str(e), "ERROR")
-                    self.fail_and_exit(msg)
+                    self.set_operation_result("failed", False, msg, "ERROR",
+                                              self.result_response).check_return_status()
 
         self.log("No matching switch profile found. Skipping profile creation.", "INFO")
         return None
@@ -714,7 +721,7 @@ class NetworkSwitchProfile(NetworkProfileFunctions):
         if self.not_processed:
             self.msg = "Unable to delete the profile '{0}'.".format(self.not_processed)
             self.set_operation_result("failed", False, self.msg, "ERROR",
-                                      self.not_processed).check_return_status()
+                                      self.result_response).check_return_status()
         return self
 
     def get_diff_merged(self, config):
@@ -850,7 +857,7 @@ class NetworkSwitchProfile(NetworkProfileFunctions):
 
         self.log(self.msg, "INFO")
         self.set_operation_result(self.status, self.changed, self.msg, "INFO",
-                                  self.switch).check_return_status()
+                                  self.result_response).check_return_status()
 
         return self
 
@@ -884,13 +891,14 @@ class NetworkSwitchProfile(NetworkProfileFunctions):
         if not success_profile:
             msg = "Unable to create the profile for '{0}'.".format(config)
             self.log(msg, "INFO")
-            self.fail_and_exit(msg)
+            self.set_operation_result("failed", False, msg, "ERROR",
+                                      self.result_response).check_return_status()
 
         msg = "Profile created/updated are verified successfully for '{0}'.".format(
             str(success_profile))
         self.log(msg, "INFO")
         self.set_operation_result("success", True, msg, "INFO",
-                                  self.switch).check_return_status()
+                                  self.result_response).check_return_status()
         return self
 
     def get_diff_deleted(self, config):
