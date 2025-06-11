@@ -82,12 +82,18 @@ Modules
 * :ref:`aaa_services_summary_analytics_v1 module <ansible_collections.cisco.dnac.aaa_services_summary_analytics_v1_module>` -- Resource module for Aaa Services Summary Analytics V1
 * :ref:`aaa_services_top_n_analytics module <ansible_collections.cisco.dnac.aaa_services_top_n_analytics_module>` -- Resource module for Aaa Services Top N Analytics
 * :ref:`aaa_services_top_n_analytics_v1 module <ansible_collections.cisco.dnac.aaa_services_top_n_analytics_v1_module>` -- Resource module for Aaa Services Top N Analytics V1
+* :ref:`aaa_services_top_nanalytics module <ansible_collections.cisco.dnac.aaa_services_top_nanalytics_module>` -- Resource module for Aaa Services Top Nanalytics
 * :ref:`aaa_services_trend_analytics module <ansible_collections.cisco.dnac.aaa_services_trend_analytics_module>` -- Resource module for Aaa Services Trend Analytics
 * :ref:`aaa_services_trend_analytics_v1 module <ansible_collections.cisco.dnac.aaa_services_trend_analytics_v1_module>` -- Resource module for Aaa Services Trend Analytics V1
 * :ref:`aaa_services_v1_info module <ansible_collections.cisco.dnac.aaa_services_v1_info_module>` -- Information module for Aaa Services V1
 * :ref:`accesspoint_configuration_details_by_task_id_info module <ansible_collections.cisco.dnac.accesspoint_configuration_details_by_task_id_info_module>` -- Information module for Accesspoint Configuration Details By Task Id Info
 * :ref:`accesspoint_configuration_details_by_task_id_v1_info module <ansible_collections.cisco.dnac.accesspoint_configuration_details_by_task_id_v1_info_module>` -- Information module for Accesspoint Configuration Details By Task Id V1
 * :ref:`accesspoint_workflow_manager module <ansible_collections.cisco.dnac.accesspoint_workflow_manager_module>` -- Automates bulk AP configuration changes.
+* :ref:`activities_activity_id_triggered_jobs_count_info module <ansible_collections.cisco.dnac.activities_activity_id_triggered_jobs_count_info_module>` -- Information module for Activities Activity Id Triggered Jobs Count
+* :ref:`activities_activity_id_triggered_jobs_info module <ansible_collections.cisco.dnac.activities_activity_id_triggered_jobs_info_module>` -- Information module for Activities Activity Id Triggered Jobs
+* :ref:`activities_count_info module <ansible_collections.cisco.dnac.activities_count_info_module>` -- Information module for Activities Count
+* :ref:`activities_id_info module <ansible_collections.cisco.dnac.activities_id_info_module>` -- Information module for Activities Id
+* :ref:`activities_info module <ansible_collections.cisco.dnac.activities_info_module>` -- Information module for Activities
 * :ref:`app_policy_default_info module <ansible_collections.cisco.dnac.app_policy_default_info_module>` -- Information module for App Policy Default Info
 * :ref:`app_policy_default_v1_info module <ansible_collections.cisco.dnac.app_policy_default_v1_info_module>` -- Information module for App Policy Default V1
 * :ref:`app_policy_info module <ansible_collections.cisco.dnac.app_policy_info_module>` -- Information module for App Policy Info
@@ -177,6 +183,7 @@ Modules
 * :ref:`assurance_issues_summary_analytics_v1 module <ansible_collections.cisco.dnac.assurance_issues_summary_analytics_v1_module>` -- Resource module for Assurance Issues Summary Analytics V1
 * :ref:`assurance_issues_top_n_analytics module <ansible_collections.cisco.dnac.assurance_issues_top_n_analytics_module>` -- Resource module for Assurance Issues Top N Analytics
 * :ref:`assurance_issues_top_n_analytics_v1 module <ansible_collections.cisco.dnac.assurance_issues_top_n_analytics_v1_module>` -- Resource module for Assurance Issues Top N Analytics V1
+* :ref:`assurance_issues_top_nanalytics module <ansible_collections.cisco.dnac.assurance_issues_top_nanalytics_module>` -- Resource module for Assurance Issues Top Nanalytics
 * :ref:`assurance_issues_trend_analytics module <ansible_collections.cisco.dnac.assurance_issues_trend_analytics_module>` -- Resource module for Assurance Issues Trend Analytics
 * :ref:`assurance_issues_trend_analytics_v1 module <ansible_collections.cisco.dnac.assurance_issues_trend_analytics_v1_module>` -- Resource module for Assurance Issues Trend Analytics V1
 * :ref:`assurance_issues_update module <ansible_collections.cisco.dnac.assurance_issues_update_module>` -- Resource module for Assurance Issues Update
@@ -198,6 +205,19 @@ Modules
 * :ref:`authentication_policy_servers_info module <ansible_collections.cisco.dnac.authentication_policy_servers_info_module>` -- Information module for Authentication Policy Servers Info
 * :ref:`authentication_policy_servers_v1 module <ansible_collections.cisco.dnac.authentication_policy_servers_v1_module>` -- Resource module for Authentication Policy Servers V1
 * :ref:`authentication_policy_servers_v1_info module <ansible_collections.cisco.dnac.authentication_policy_servers_v1_info_module>` -- Information module for Authentication Policy Servers V1
+* :ref:`backup_configuration module <ansible_collections.cisco.dnac.backup_configuration_module>` -- Resource module for Backup Configuration
+* :ref:`backup_configuration_info module <ansible_collections.cisco.dnac.backup_configuration_info_module>` -- Information module for Backup Configuration
+* :ref:`backup_nfs_configurations module <ansible_collections.cisco.dnac.backup_nfs_configurations_module>` -- Resource module for Backup Nfs Configurations
+* :ref:`backup_nfs_configurations_id module <ansible_collections.cisco.dnac.backup_nfs_configurations_id_module>` -- Resource module for Backup Nfs Configurations Id
+* :ref:`backup_nfs_configurations_info module <ansible_collections.cisco.dnac.backup_nfs_configurations_info_module>` -- Information module for Backup Nfs Configurations
+* :ref:`backup_restore_executions_id_info module <ansible_collections.cisco.dnac.backup_restore_executions_id_info_module>` -- Information module for Backup Restore Executions Id
+* :ref:`backup_restore_executions_info module <ansible_collections.cisco.dnac.backup_restore_executions_info_module>` -- Information module for Backup Restore Executions
+* :ref:`backup_storages_info module <ansible_collections.cisco.dnac.backup_storages_info_module>` -- Information module for Backup Storages
+* :ref:`backups module <ansible_collections.cisco.dnac.backups_module>` -- Resource module for Backups
+* :ref:`backups_id module <ansible_collections.cisco.dnac.backups_id_module>` -- Resource module for Backups Id
+* :ref:`backups_id_info module <ansible_collections.cisco.dnac.backups_id_info_module>` -- Information module for Backups Id
+* :ref:`backups_id_restore module <ansible_collections.cisco.dnac.backups_id_restore_module>` -- Resource module for Backups Id Restore
+* :ref:`backups_info module <ansible_collections.cisco.dnac.backups_info_module>` -- Information module for Backups
 * :ref:`buildings module <ansible_collections.cisco.dnac.buildings_module>` -- Resource module for Buildings
 * :ref:`buildings_info module <ansible_collections.cisco.dnac.buildings_info_module>` -- Information module for Buildings Info
 * :ref:`buildings_planned_access_points_info module <ansible_collections.cisco.dnac.buildings_planned_access_points_info_module>` -- Information module for Buildings Planned Access Points Info
@@ -243,6 +263,7 @@ Modules
 * :ref:`clients_summary_analytics_v1 module <ansible_collections.cisco.dnac.clients_summary_analytics_v1_module>` -- Resource module for Clients Summary Analytics V1
 * :ref:`clients_top_n_analytics module <ansible_collections.cisco.dnac.clients_top_n_analytics_module>` -- Resource module for Clients Top N Analytics
 * :ref:`clients_top_n_analytics_v1 module <ansible_collections.cisco.dnac.clients_top_n_analytics_v1_module>` -- Resource module for Clients Top N Analytics V1
+* :ref:`clients_top_nanalytics module <ansible_collections.cisco.dnac.clients_top_nanalytics_module>` -- Resource module for Clients Top Nanalytics
 * :ref:`clients_trend_analytics module <ansible_collections.cisco.dnac.clients_trend_analytics_module>` -- Resource module for Clients Trend Analytics
 * :ref:`clients_trend_analytics_id module <ansible_collections.cisco.dnac.clients_trend_analytics_id_module>` -- Resource module for Clients Trend Analytics Id
 * :ref:`clients_trend_analytics_id_v1 module <ansible_collections.cisco.dnac.clients_trend_analytics_id_v1_module>` -- Resource module for Clients Trend Analytics Id V1
@@ -299,6 +320,7 @@ Modules
 * :ref:`connection_modesetting_info module <ansible_collections.cisco.dnac.connection_modesetting_info_module>` -- Information module for Connection Modesetting Info
 * :ref:`connection_modesetting_v1 module <ansible_collections.cisco.dnac.connection_modesetting_v1_module>` -- Resource module for Connection Modesetting V1
 * :ref:`connection_modesetting_v1_info module <ansible_collections.cisco.dnac.connection_modesetting_v1_info_module>` -- Information module for Connection Modesetting V1
+* :ref:`create_wired_network_devices_id_config_features_intended_layer2 module <ansible_collections.cisco.dnac.create_wired_network_devices_id_config_features_intended_layer2_module>` -- Resource module for Create Wired Network Devices Id Config Features Intended Layer2
 * :ref:`credential_to_site_by_siteid_create module <ansible_collections.cisco.dnac.credential_to_site_by_siteid_create_module>` -- Resource module for Credential To Site By Siteid Create
 * :ref:`credential_to_site_by_siteid_create_v2 module <ansible_collections.cisco.dnac.credential_to_site_by_siteid_create_v2_module>` -- Resource module for Credential To Site By Siteid Create V2
 * :ref:`custom_issue_definitions module <ansible_collections.cisco.dnac.custom_issue_definitions_module>` -- Resource module for Custom Issue Definitions
@@ -308,6 +330,7 @@ Modules
 * :ref:`custom_issue_definitions_v1 module <ansible_collections.cisco.dnac.custom_issue_definitions_v1_module>` -- Resource module for Custom Issue Definitions V1
 * :ref:`custom_issue_definitions_v1_info module <ansible_collections.cisco.dnac.custom_issue_definitions_v1_info_module>` -- Information module for Custom Issue Definitions V1
 * :ref:`device_configs_backup_workflow_manager module <ansible_collections.cisco.dnac.device_configs_backup_workflow_manager_module>` -- Device Configs Backup module for taking configuration backups of reachable devices in the Cisco Catalyst Center.
+* :ref:`device_configs_backup_workflow_manager_copy module <ansible_collections.cisco.dnac.device_configs_backup_workflow_manager_copy_module>` -- Device Configs Backup module for taking configuration backups of reachable devices in the Cisco Catalyst Center.
 * :ref:`device_configurations_export module <ansible_collections.cisco.dnac.device_configurations_export_module>` -- Resource module for Device Configurations Export
 * :ref:`device_configurations_export_v1 module <ansible_collections.cisco.dnac.device_configurations_export_v1_module>` -- Resource module for Device Configurations Export V1
 * :ref:`device_credential module <ansible_collections.cisco.dnac.device_credential_module>` -- Resource module for Device Credential
@@ -361,6 +384,7 @@ Modules
 * :ref:`dhcp_services_summary_analytics_v1 module <ansible_collections.cisco.dnac.dhcp_services_summary_analytics_v1_module>` -- Resource module for Dhcp Services Summary Analytics V1
 * :ref:`dhcp_services_top_n_analytics module <ansible_collections.cisco.dnac.dhcp_services_top_n_analytics_module>` -- Resource module for Dhcp Services Top N Analytics
 * :ref:`dhcp_services_top_n_analytics_v1 module <ansible_collections.cisco.dnac.dhcp_services_top_n_analytics_v1_module>` -- Resource module for Dhcp Services Top N Analytics V1
+* :ref:`dhcp_services_top_nanalytics module <ansible_collections.cisco.dnac.dhcp_services_top_nanalytics_module>` -- Resource module for Dhcp Services Top Nanalytics
 * :ref:`dhcp_services_trend_analytics module <ansible_collections.cisco.dnac.dhcp_services_trend_analytics_module>` -- Resource module for Dhcp Services Trend Analytics
 * :ref:`dhcp_services_trend_analytics_v1 module <ansible_collections.cisco.dnac.dhcp_services_trend_analytics_v1_module>` -- Resource module for Dhcp Services Trend Analytics V1
 * :ref:`dhcp_services_v1_info module <ansible_collections.cisco.dnac.dhcp_services_v1_info_module>` -- Information module for Dhcp Services V1
@@ -431,6 +455,7 @@ Modules
 * :ref:`dns_services_summary_analytics_v1 module <ansible_collections.cisco.dnac.dns_services_summary_analytics_v1_module>` -- Resource module for Dns Services Summary Analytics V1
 * :ref:`dns_services_top_n_analytics module <ansible_collections.cisco.dnac.dns_services_top_n_analytics_module>` -- Resource module for Dns Services Top N Analytics
 * :ref:`dns_services_top_n_analytics_v1 module <ansible_collections.cisco.dnac.dns_services_top_n_analytics_v1_module>` -- Resource module for Dns Services Top N Analytics V1
+* :ref:`dns_services_top_nanalytics module <ansible_collections.cisco.dnac.dns_services_top_nanalytics_module>` -- Resource module for Dns Services Top Nanalytics
 * :ref:`dns_services_trend_analytics module <ansible_collections.cisco.dnac.dns_services_trend_analytics_module>` -- Resource module for Dns Services Trend Analytics
 * :ref:`dns_services_trend_analytics_v1 module <ansible_collections.cisco.dnac.dns_services_trend_analytics_v1_module>` -- Resource module for Dns Services Trend Analytics V1
 * :ref:`dns_services_v1_info module <ansible_collections.cisco.dnac.dns_services_v1_info_module>` -- Information module for Dns Services V1
@@ -460,6 +485,25 @@ Modules
 * :ref:`endpoint_analytics_profiling_rules_v1_info module <ansible_collections.cisco.dnac.endpoint_analytics_profiling_rules_v1_info_module>` -- Information module for Endpoint Analytics Profiling Rules V1
 * :ref:`endpoint_analytics_tasks_info module <ansible_collections.cisco.dnac.endpoint_analytics_tasks_info_module>` -- Information module for Endpoint Analytics Tasks Info
 * :ref:`endpoint_analytics_tasks_v1_info module <ansible_collections.cisco.dnac.endpoint_analytics_tasks_v1_info_module>` -- Information module for Endpoint Analytics Tasks V1
+* :ref:`energy_clients_count_info module <ansible_collections.cisco.dnac.energy_clients_count_info_module>` -- Information module for Energy Clients Count
+* :ref:`energy_clients_id_info module <ansible_collections.cisco.dnac.energy_clients_id_info_module>` -- Information module for Energy Clients Id
+* :ref:`energy_clients_info module <ansible_collections.cisco.dnac.energy_clients_info_module>` -- Information module for Energy Clients
+* :ref:`energy_clients_query module <ansible_collections.cisco.dnac.energy_clients_query_module>` -- Resource module for Energy Clients Query
+* :ref:`energy_clients_query_count module <ansible_collections.cisco.dnac.energy_clients_query_count_module>` -- Resource module for Energy Clients Query Count
+* :ref:`energy_network_devices_count_info module <ansible_collections.cisco.dnac.energy_network_devices_count_info_module>` -- Information module for Energy Network Devices Count
+* :ref:`energy_network_devices_id_info module <ansible_collections.cisco.dnac.energy_network_devices_id_info_module>` -- Information module for Energy Network Devices Id
+* :ref:`energy_network_devices_info module <ansible_collections.cisco.dnac.energy_network_devices_info_module>` -- Information module for Energy Network Devices
+* :ref:`energy_network_devices_query module <ansible_collections.cisco.dnac.energy_network_devices_query_module>` -- Resource module for Energy Network Devices Query
+* :ref:`energy_network_devices_query_count module <ansible_collections.cisco.dnac.energy_network_devices_query_count_module>` -- Resource module for Energy Network Devices Query Count
+* :ref:`energy_sites_count_info module <ansible_collections.cisco.dnac.energy_sites_count_info_module>` -- Information module for Energy Sites Count
+* :ref:`energy_sites_id_info module <ansible_collections.cisco.dnac.energy_sites_id_info_module>` -- Information module for Energy Sites Id
+* :ref:`energy_sites_info module <ansible_collections.cisco.dnac.energy_sites_info_module>` -- Information module for Energy Sites
+* :ref:`energy_sites_query module <ansible_collections.cisco.dnac.energy_sites_query_module>` -- Resource module for Energy Sites Query
+* :ref:`energy_sites_query_count module <ansible_collections.cisco.dnac.energy_sites_query_count_module>` -- Resource module for Energy Sites Query Count
+* :ref:`energy_sites_query_count_info module <ansible_collections.cisco.dnac.energy_sites_query_count_info_module>` -- Information module for Energy Sites Query Count
+* :ref:`energy_sites_query_info module <ansible_collections.cisco.dnac.energy_sites_query_info_module>` -- Information module for Energy Sites Query
+* :ref:`energy_summary_analytics module <ansible_collections.cisco.dnac.energy_summary_analytics_module>` -- Resource module for Energy Summary Analytics
+* :ref:`energy_trend_analytics module <ansible_collections.cisco.dnac.energy_trend_analytics_module>` -- Resource module for Energy Trend Analytics
 * :ref:`eox_status_device_info module <ansible_collections.cisco.dnac.eox_status_device_info_module>` -- Information module for Eox Status Device Info
 * :ref:`eox_status_device_v1_info module <ansible_collections.cisco.dnac.eox_status_device_v1_info_module>` -- Information module for Eox Status Device V1
 * :ref:`eox_status_summary_info module <ansible_collections.cisco.dnac.eox_status_summary_info_module>` -- Information module for Eox Status Summary Info
@@ -547,6 +591,43 @@ Modules
 * :ref:`fabrics_fabric_id_wireless_multicast_info module <ansible_collections.cisco.dnac.fabrics_fabric_id_wireless_multicast_info_module>` -- Information module for Fabrics Fabric Id Wireless Multicast Info
 * :ref:`fabrics_fabric_id_wireless_multicast_v1 module <ansible_collections.cisco.dnac.fabrics_fabric_id_wireless_multicast_v1_module>` -- Resource module for Fabrics Fabric Id Wireless Multicast V1
 * :ref:`fabrics_fabric_id_wireless_multicast_v1_info module <ansible_collections.cisco.dnac.fabrics_fabric_id_wireless_multicast_v1_info_module>` -- Information module for Fabrics Fabric Id Wireless Multicast V1
+* :ref:`feature_templates_wireless_aaa_radius_attributes_configurations module <ansible_collections.cisco.dnac.feature_templates_wireless_aaa_radius_attributes_configurations_module>` -- Resource module for Feature Templates Wireless Aaa Radius Attributes Configurations
+* :ref:`feature_templates_wireless_aaa_radius_attributes_configurations_id module <ansible_collections.cisco.dnac.feature_templates_wireless_aaa_radius_attributes_configurations_id_module>` -- Resource module for Feature Templates Wireless Aaa Radius Attributes Configurations Id
+* :ref:`feature_templates_wireless_aaa_radius_attributes_configurations_id_info module <ansible_collections.cisco.dnac.feature_templates_wireless_aaa_radius_attributes_configurations_id_info_module>` -- Information module for Feature Templates Wireless Aaa Radius Attributes Configurations Id
+* :ref:`feature_templates_wireless_advanced_ssid_configurations module <ansible_collections.cisco.dnac.feature_templates_wireless_advanced_ssid_configurations_module>` -- Resource module for Featuretemplates Wireless Advancedssidconfigurations
+* :ref:`feature_templates_wireless_advanced_ssid_configurations_id module <ansible_collections.cisco.dnac.feature_templates_wireless_advanced_ssid_configurations_id_module>` -- Resource module for Featuretemplates Wireless Advancedssidconfigurations Id
+* :ref:`feature_templates_wireless_advanced_ssid_configurations_id_info module <ansible_collections.cisco.dnac.feature_templates_wireless_advanced_ssid_configurations_id_info_module>` -- Information module for Featuretemplates Wireless Advancedssidconfigurations Id
+* :ref:`feature_templates_wireless_advanced_ssidconfigurations module <ansible_collections.cisco.dnac.feature_templates_wireless_advanced_ssidconfigurations_module>` -- Resource module for Feature Templates Wireless Advanced Ssidconfigurations
+* :ref:`feature_templates_wireless_advanced_ssidconfigurations_id module <ansible_collections.cisco.dnac.feature_templates_wireless_advanced_ssidconfigurations_id_module>` -- Resource module for Feature Templates Wireless Advanced Ssidconfigurations Id
+* :ref:`feature_templates_wireless_advanced_ssidconfigurations_id_info module <ansible_collections.cisco.dnac.feature_templates_wireless_advanced_ssidconfigurations_id_info_module>` -- Information module for Feature Templates Wireless Advanced Ssidconfigurations Id
+* :ref:`feature_templates_wireless_clean_air_configurations module <ansible_collections.cisco.dnac.feature_templates_wireless_clean_air_configurations_module>` -- Resource module for Feature Templates Wireless Clean Air Configurations
+* :ref:`feature_templates_wireless_clean_air_configurations_id module <ansible_collections.cisco.dnac.feature_templates_wireless_clean_air_configurations_id_module>` -- Resource module for Feature Templates Wireless Clean Air Configurations Id
+* :ref:`feature_templates_wireless_clean_air_configurations_id_info module <ansible_collections.cisco.dnac.feature_templates_wireless_clean_air_configurations_id_info_module>` -- Information module for Feature Templates Wireless Clean Air Configurations Id
+* :ref:`feature_templates_wireless_dot11ax_configurations module <ansible_collections.cisco.dnac.feature_templates_wireless_dot11ax_configurations_module>` -- Resource module for Feature Templates Wireless Dot11ax Configurations
+* :ref:`feature_templates_wireless_dot11ax_configurations_id module <ansible_collections.cisco.dnac.feature_templates_wireless_dot11ax_configurations_id_module>` -- Resource module for Feature Templates Wireless Dot11ax Configurations Id
+* :ref:`feature_templates_wireless_dot11ax_configurations_id_info module <ansible_collections.cisco.dnac.feature_templates_wireless_dot11ax_configurations_id_info_module>` -- Information module for Feature Templates Wireless Dot11ax Configurations Id
+* :ref:`feature_templates_wireless_dot11be_status_configurations module <ansible_collections.cisco.dnac.feature_templates_wireless_dot11be_status_configurations_module>` -- Resource module for Feature Templates Wireless Dot11be Status Configurations
+* :ref:`feature_templates_wireless_dot11be_status_configurations_id module <ansible_collections.cisco.dnac.feature_templates_wireless_dot11be_status_configurations_id_module>` -- Resource module for Feature Templates Wireless Dot11be Status Configurations Id
+* :ref:`feature_templates_wireless_dot11be_status_configurations_id_info module <ansible_collections.cisco.dnac.feature_templates_wireless_dot11be_status_configurations_id_info_module>` -- Information module for Feature Templates Wireless Dot11be Status Configurations Id
+* :ref:`feature_templates_wireless_event_driven_r_r_m_configurations module <ansible_collections.cisco.dnac.feature_templates_wireless_event_driven_r_r_m_configurations_module>` -- Resource module for Featuretemplates Wireless Eventdrivenrrmconfigurations
+* :ref:`feature_templates_wireless_event_driven_r_r_m_configurations_id module <ansible_collections.cisco.dnac.feature_templates_wireless_event_driven_r_r_m_configurations_id_module>` -- Resource module for Featuretemplates Wireless Eventdrivenrrmconfigurations Id
+* :ref:`feature_templates_wireless_event_driven_r_r_m_configurations_id_info module <ansible_collections.cisco.dnac.feature_templates_wireless_event_driven_r_r_m_configurations_id_info_module>` -- Information module for Featuretemplates Wireless Eventdrivenrrmconfigurations Id
+* :ref:`feature_templates_wireless_event_driven_rrmconfigurations module <ansible_collections.cisco.dnac.feature_templates_wireless_event_driven_rrmconfigurations_module>` -- Resource module for Feature Templates Wireless Event Driven Rrmconfigurations
+* :ref:`feature_templates_wireless_event_driven_rrmconfigurations_id module <ansible_collections.cisco.dnac.feature_templates_wireless_event_driven_rrmconfigurations_id_module>` -- Resource module for Feature Templates Wireless Event Driven Rrmconfigurations Id
+* :ref:`feature_templates_wireless_event_driven_rrmconfigurations_id_info module <ansible_collections.cisco.dnac.feature_templates_wireless_event_driven_rrmconfigurations_id_info_module>` -- Information module for Feature Templates Wireless Event Driven Rrmconfigurations Id
+* :ref:`feature_templates_wireless_flex_connect_configurations module <ansible_collections.cisco.dnac.feature_templates_wireless_flex_connect_configurations_module>` -- Resource module for Feature Templates Wireless Flex Connect Configurations
+* :ref:`feature_templates_wireless_flex_connect_configurations_id module <ansible_collections.cisco.dnac.feature_templates_wireless_flex_connect_configurations_id_module>` -- Resource module for Feature Templates Wireless Flex Connect Configurations Id
+* :ref:`feature_templates_wireless_flex_connect_configurations_id_info module <ansible_collections.cisco.dnac.feature_templates_wireless_flex_connect_configurations_id_info_module>` -- Information module for Feature Templates Wireless Flex Connect Configurations Id
+* :ref:`feature_templates_wireless_multicast_configurations module <ansible_collections.cisco.dnac.feature_templates_wireless_multicast_configurations_module>` -- Resource module for Feature Templates Wireless Multicast Configurations
+* :ref:`feature_templates_wireless_multicast_configurations_id module <ansible_collections.cisco.dnac.feature_templates_wireless_multicast_configurations_id_module>` -- Resource module for Feature Templates Wireless Multicast Configurations Id
+* :ref:`feature_templates_wireless_multicast_configurations_id_info module <ansible_collections.cisco.dnac.feature_templates_wireless_multicast_configurations_id_info_module>` -- Information module for Feature Templates Wireless Multicast Configurations Id
+* :ref:`feature_templates_wireless_rrm_fra_configurations module <ansible_collections.cisco.dnac.feature_templates_wireless_rrm_fra_configurations_module>` -- Resource module for Feature Templates Wireless Rrm Fra Configurations
+* :ref:`feature_templates_wireless_rrm_fra_configurations_id module <ansible_collections.cisco.dnac.feature_templates_wireless_rrm_fra_configurations_id_module>` -- Resource module for Feature Templates Wireless Rrm Fra Configurations Id
+* :ref:`feature_templates_wireless_rrm_fra_configurations_id_info module <ansible_collections.cisco.dnac.feature_templates_wireless_rrm_fra_configurations_id_info_module>` -- Information module for Feature Templates Wireless Rrm Fra Configurations Id
+* :ref:`feature_templates_wireless_rrm_general_configurations module <ansible_collections.cisco.dnac.feature_templates_wireless_rrm_general_configurations_module>` -- Resource module for Feature Templates Wireless Rrm General Configurations
+* :ref:`feature_templates_wireless_rrm_general_configurations_id module <ansible_collections.cisco.dnac.feature_templates_wireless_rrm_general_configurations_id_module>` -- Resource module for Feature Templates Wireless Rrm General Configurations Id
+* :ref:`feature_templates_wireless_rrm_general_configurations_id_info module <ansible_collections.cisco.dnac.feature_templates_wireless_rrm_general_configurations_id_info_module>` -- Information module for Feature Templates Wireless Rrm General Configurations Id
+* :ref:`feature_templates_wireless_summary_info module <ansible_collections.cisco.dnac.feature_templates_wireless_summary_info_module>` -- Information module for Feature Templates Wireless Summary
 * :ref:`field_notices_results_network_devices_count_info module <ansible_collections.cisco.dnac.field_notices_results_network_devices_count_info_module>` -- Information module for Field Notices Results Network Devices Count Info
 * :ref:`field_notices_results_network_devices_count_v1_info module <ansible_collections.cisco.dnac.field_notices_results_network_devices_count_v1_info_module>` -- Information module for Field Notices Results Network Devices Count V1
 * :ref:`field_notices_results_network_devices_info module <ansible_collections.cisco.dnac.field_notices_results_network_devices_info_module>` -- Information module for Field Notices Results Network Devices Info
@@ -765,6 +846,17 @@ Modules
 * :ref:`interfaces_v1_info module <ansible_collections.cisco.dnac.interfaces_v1_info_module>` -- Information module for Interfaces V1
 * :ref:`inventory_intent module <ansible_collections.cisco.dnac.inventory_intent_module>` -- Resource module for Network Device
 * :ref:`inventory_workflow_manager module <ansible_collections.cisco.dnac.inventory_workflow_manager_module>` -- Resource module for Network Device
+* :ref:`iot_fabric_rep_rings module <ansible_collections.cisco.dnac.iot_fabric_rep_rings_module>` -- Resource module for Iot Fabric Rep Rings
+* :ref:`iot_fabric_rep_rings_id module <ansible_collections.cisco.dnac.iot_fabric_rep_rings_id_module>` -- Resource module for Iot Fabric Rep Rings Id
+* :ref:`iot_network_devices_network_device_id_mrp_rings_count_info module <ansible_collections.cisco.dnac.iot_network_devices_network_device_id_mrp_rings_count_info_module>` -- Information module for Iot Network Devices  Network Device Id Mrp Rings Count
+* :ref:`iot_network_devices_network_device_id_mrp_rings_id_members_count_info module <ansible_collections.cisco.dnac.iot_network_devices_network_device_id_mrp_rings_id_members_count_info_module>` -- Information module for Iot Network Devices  Network Device Id Mrp Rings Id Members Count
+* :ref:`iot_network_devices_network_device_id_mrp_rings_id_members_info module <ansible_collections.cisco.dnac.iot_network_devices_network_device_id_mrp_rings_id_members_info_module>` -- Information module for Iot Network Devices  Network Device Id Mrp Rings Id Members
+* :ref:`iot_network_devices_network_device_id_mrp_rings_info module <ansible_collections.cisco.dnac.iot_network_devices_network_device_id_mrp_rings_info_module>` -- Information module for Iot Network Devices  Network Device Id Mrp Rings
+* :ref:`iot_non_fabric_rep_rings module <ansible_collections.cisco.dnac.iot_non_fabric_rep_rings_module>` -- Resource module for Iot Non Fabric Rep Rings
+* :ref:`iot_non_fabric_rep_rings_id module <ansible_collections.cisco.dnac.iot_non_fabric_rep_rings_id_module>` -- Resource module for Iot Non Fabric Rep Rings Id
+* :ref:`iot_rep_rings_id_info module <ansible_collections.cisco.dnac.iot_rep_rings_id_info_module>` -- Information module for Iot Rep Rings Id
+* :ref:`iot_rep_rings_query module <ansible_collections.cisco.dnac.iot_rep_rings_query_module>` -- Resource module for Iot Rep Rings Query
+* :ref:`iot_rep_rings_query_count module <ansible_collections.cisco.dnac.iot_rep_rings_query_count_module>` -- Resource module for Iot Rep Rings Query Count
 * :ref:`ipam_global_ip_address_pools module <ansible_collections.cisco.dnac.ipam_global_ip_address_pools_module>` -- Resource module for Ipam Global Ip Address Pools
 * :ref:`ipam_global_ip_address_pools_count_info module <ansible_collections.cisco.dnac.ipam_global_ip_address_pools_count_info_module>` -- Information module for Ipam Global Ip Address Pools Count Info
 * :ref:`ipam_global_ip_address_pools_count_v1_info module <ansible_collections.cisco.dnac.ipam_global_ip_address_pools_count_v1_info_module>` -- Information module for Ipam Global Ip Address Pools Count V1
@@ -817,6 +909,11 @@ Modules
 * :ref:`lan_automation_log_by_serial_number_v1_info module <ansible_collections.cisco.dnac.lan_automation_log_by_serial_number_v1_info_module>` -- Information module for Lan Automation Log By Serial Number V1
 * :ref:`lan_automation_log_info module <ansible_collections.cisco.dnac.lan_automation_log_info_module>` -- Information module for Lan Automation Log Info
 * :ref:`lan_automation_log_v1_info module <ansible_collections.cisco.dnac.lan_automation_log_v1_info_module>` -- Information module for Lan Automation Log V1
+* :ref:`lan_automation_port_channels module <ansible_collections.cisco.dnac.lan_automation_port_channels_module>` -- Resource module for Lan Automation Port Channels
+* :ref:`lan_automation_port_channels_id_add_link module <ansible_collections.cisco.dnac.lan_automation_port_channels_id_add_link_module>` -- Resource module for Lan Automation Port Channels Id Add Link
+* :ref:`lan_automation_port_channels_id_info module <ansible_collections.cisco.dnac.lan_automation_port_channels_id_info_module>` -- Information module for Lan Automation Port Channels Id
+* :ref:`lan_automation_port_channels_id_remove_link module <ansible_collections.cisco.dnac.lan_automation_port_channels_id_remove_link_module>` -- Resource module for Lan Automation Port Channels Id Remove Link
+* :ref:`lan_automation_port_channels_info module <ansible_collections.cisco.dnac.lan_automation_port_channels_info_module>` -- Information module for Lan Automation Port Channels
 * :ref:`lan_automation_sessions_info module <ansible_collections.cisco.dnac.lan_automation_sessions_info_module>` -- Information module for Lan Automation Sessions Info
 * :ref:`lan_automation_sessions_v1_info module <ansible_collections.cisco.dnac.lan_automation_sessions_v1_info_module>` -- Information module for Lan Automation Sessions V1
 * :ref:`lan_automation_status_info module <ansible_collections.cisco.dnac.lan_automation_status_info_module>` -- Information module for Lan Automation Status Info
@@ -878,7 +975,9 @@ Modules
 * :ref:`netconf_credential_v1 module <ansible_collections.cisco.dnac.netconf_credential_v1_module>` -- Resource module for Netconf Credential V1
 * :ref:`network_applications_count_info module <ansible_collections.cisco.dnac.network_applications_count_info_module>` -- Information module for Network Applications Count Info
 * :ref:`network_applications_count_v1_info module <ansible_collections.cisco.dnac.network_applications_count_v1_info_module>` -- Information module for Network Applications Count V1
+* :ref:`network_applications_id_trend_analytics module <ansible_collections.cisco.dnac.network_applications_id_trend_analytics_module>` -- Resource module for Network Applications Id Trend Analytics
 * :ref:`network_applications_info module <ansible_collections.cisco.dnac.network_applications_info_module>` -- Information module for Network Applications Info
+* :ref:`network_applications_summary_analytics module <ansible_collections.cisco.dnac.network_applications_summary_analytics_module>` -- Resource module for Network Applications Summary Analytics
 * :ref:`network_applications_trend_analytics module <ansible_collections.cisco.dnac.network_applications_trend_analytics_module>` -- Resource module for Network Applications Trend Analytics
 * :ref:`network_applications_trend_analytics_v1 module <ansible_collections.cisco.dnac.network_applications_trend_analytics_v1_module>` -- Resource module for Network Applications Trend Analytics V1
 * :ref:`network_applications_v1_info module <ansible_collections.cisco.dnac.network_applications_v1_info_module>` -- Information module for Network Applications V1
@@ -947,6 +1046,7 @@ Modules
 * :ref:`network_device_count_info module <ansible_collections.cisco.dnac.network_device_count_info_module>` -- Information module for Network Device Count Info
 * :ref:`network_device_count_v1_info module <ansible_collections.cisco.dnac.network_device_count_v1_info_module>` -- Information module for Network Device Count V1
 * :ref:`network_device_custom_prompt module <ansible_collections.cisco.dnac.network_device_custom_prompt_module>` -- Resource module for Network Device Custom Prompt
+* :ref:`network_device_custom_prompt_info module <ansible_collections.cisco.dnac.network_device_custom_prompt_info_module>` -- Information module for Network Device Custom Prompt Info
 * :ref:`network_device_custom_prompt_info_info module <ansible_collections.cisco.dnac.network_device_custom_prompt_info_info_module>` -- Information module for Network Device Custom Prompt Info Info
 * :ref:`network_device_custom_prompt_info_v1_info module <ansible_collections.cisco.dnac.network_device_custom_prompt_info_v1_info_module>` -- Information module for Network Device Custom Prompt Info V1
 * :ref:`network_device_custom_prompt_v1 module <ansible_collections.cisco.dnac.network_device_custom_prompt_v1_module>` -- Resource module for Network Device Custom Prompt V1
@@ -962,6 +1062,21 @@ Modules
 * :ref:`network_device_image_updates_count_v1_info module <ansible_collections.cisco.dnac.network_device_image_updates_count_v1_info_module>` -- Information module for Network Device Image Updates Count V1
 * :ref:`network_device_image_updates_info module <ansible_collections.cisco.dnac.network_device_image_updates_info_module>` -- Information module for Network Device Image Updates Info
 * :ref:`network_device_image_updates_v1_info module <ansible_collections.cisco.dnac.network_device_image_updates_v1_info_module>` -- Information module for Network Device Image Updates V1
+* :ref:`network_device_images_activate_bulk module <ansible_collections.cisco.dnac.network_device_images_activate_bulk_module>` -- Resource module for Network Device Images Activate Bulk
+* :ref:`network_device_images_count_info module <ansible_collections.cisco.dnac.network_device_images_count_info_module>` -- Information module for Network Device Images Count
+* :ref:`network_device_images_distribute_bulk module <ansible_collections.cisco.dnac.network_device_images_distribute_bulk_module>` -- Resource module for Network Device Images Distribute Bulk
+* :ref:`network_device_images_id_activate module <ansible_collections.cisco.dnac.network_device_images_id_activate_module>` -- Resource module for Network Device Images Id Activate
+* :ref:`network_device_images_id_distribute module <ansible_collections.cisco.dnac.network_device_images_id_distribute_module>` -- Resource module for Network Device Images Id Distribute
+* :ref:`network_device_images_id_info module <ansible_collections.cisco.dnac.network_device_images_id_info_module>` -- Information module for Network Device Images Id
+* :ref:`network_device_images_id_readiness_checks module <ansible_collections.cisco.dnac.network_device_images_id_readiness_checks_module>` -- Resource module for Network Device Images Id Readiness Checks
+* :ref:`network_device_images_info module <ansible_collections.cisco.dnac.network_device_images_info_module>` -- Information module for Network Device Images
+* :ref:`network_device_images_validation_results_count_info module <ansible_collections.cisco.dnac.network_device_images_validation_results_count_info_module>` -- Information module for Network Device Images Validation Results Count
+* :ref:`network_device_images_validation_results_info module <ansible_collections.cisco.dnac.network_device_images_validation_results_info_module>` -- Information module for Network Device Images Validation Results
+* :ref:`network_device_images_validations module <ansible_collections.cisco.dnac.network_device_images_validations_module>` -- Resource module for Network Device Images Validations
+* :ref:`network_device_images_validations_count_info module <ansible_collections.cisco.dnac.network_device_images_validations_count_info_module>` -- Information module for Network Device Images Validations Count
+* :ref:`network_device_images_validations_id module <ansible_collections.cisco.dnac.network_device_images_validations_id_module>` -- Resource module for Network Device Images Validations Id
+* :ref:`network_device_images_validations_id_info module <ansible_collections.cisco.dnac.network_device_images_validations_id_info_module>` -- Information module for Network Device Images Validations Id
+* :ref:`network_device_images_validations_info module <ansible_collections.cisco.dnac.network_device_images_validations_info_module>` -- Information module for Network Device Images Validations
 * :ref:`network_device_info module <ansible_collections.cisco.dnac.network_device_info_module>` -- Information module for Network Device Info
 * :ref:`network_device_interface_neighbor_info module <ansible_collections.cisco.dnac.network_device_interface_neighbor_info_module>` -- Information module for Network Device Interface Neighbor Info
 * :ref:`network_device_interface_neighbor_v1_info module <ansible_collections.cisco.dnac.network_device_interface_neighbor_v1_info_module>` -- Information module for Network Device Interface Neighbor V1
@@ -973,6 +1088,10 @@ Modules
 * :ref:`network_device_ip_address_v1_info module <ansible_collections.cisco.dnac.network_device_ip_address_v1_info_module>` -- Information module for Network Device Ip Address V1
 * :ref:`network_device_lexicographically_sorted_info module <ansible_collections.cisco.dnac.network_device_lexicographically_sorted_info_module>` -- Information module for Network Device Lexicographically Sorted Info
 * :ref:`network_device_lexicographically_sorted_v1_info module <ansible_collections.cisco.dnac.network_device_lexicographically_sorted_v1_info_module>` -- Information module for Network Device Lexicographically Sorted V1
+* :ref:`network_device_licenses_network_device_id_port_channels_count_info module <ansible_collections.cisco.dnac.network_device_licenses_network_device_id_port_channels_count_info_module>` -- Information module for Network Device Licenses Network Device Id Port Channels Count
+* :ref:`network_device_licenses_network_device_id_port_channels_id_info module <ansible_collections.cisco.dnac.network_device_licenses_network_device_id_port_channels_id_info_module>` -- Information module for Network Device Licenses Network Device Id Port Channels Id
+* :ref:`network_device_licenses_network_device_id_port_channels_info module <ansible_collections.cisco.dnac.network_device_licenses_network_device_id_port_channels_info_module>` -- Information module for Network Device Licenses Network Device Id Port Channels
+* :ref:`network_device_licenses_summary_info module <ansible_collections.cisco.dnac.network_device_licenses_summary_info_module>` -- Information module for Network Device Licenses Summary
 * :ref:`network_device_linecard_details_info module <ansible_collections.cisco.dnac.network_device_linecard_details_info_module>` -- Information module for Network Device Linecard Details Info
 * :ref:`network_device_linecard_details_v1_info module <ansible_collections.cisco.dnac.network_device_linecard_details_v1_info_module>` -- Information module for Network Device Linecard Details V1
 * :ref:`network_device_maintenance_schedules module <ansible_collections.cisco.dnac.network_device_maintenance_schedules_module>` -- Resource module for Network Device Maintenance Schedules
@@ -1080,6 +1199,7 @@ Modules
 * :ref:`network_devices_summary_analytics_v1 module <ansible_collections.cisco.dnac.network_devices_summary_analytics_v1_module>` -- Resource module for Network Devices Summary Analytics V1
 * :ref:`network_devices_top_n_analytics module <ansible_collections.cisco.dnac.network_devices_top_n_analytics_module>` -- Resource module for Network Devices Top N Analytics
 * :ref:`network_devices_top_n_analytics_v1 module <ansible_collections.cisco.dnac.network_devices_top_n_analytics_v1_module>` -- Resource module for Network Devices Top N Analytics V1
+* :ref:`network_devices_top_nanalytics module <ansible_collections.cisco.dnac.network_devices_top_nanalytics_module>` -- Resource module for Network Devices Top Nanalytics
 * :ref:`network_devices_trend_analytics module <ansible_collections.cisco.dnac.network_devices_trend_analytics_module>` -- Resource module for Network Devices Trend Analytics
 * :ref:`network_devices_trend_analytics_id module <ansible_collections.cisco.dnac.network_devices_trend_analytics_id_module>` -- Resource module for Network Devices Trend Analytics Id
 * :ref:`network_devices_trend_analytics_id_v1 module <ansible_collections.cisco.dnac.network_devices_trend_analytics_id_v1_module>` -- Resource module for Network Devices Trend Analytics Id V1
@@ -1170,12 +1290,15 @@ Modules
 * :ref:`pnp_workflow_count_v1_info module <ansible_collections.cisco.dnac.pnp_workflow_count_v1_info_module>` -- Information module for Pnp Workflow Count V1
 * :ref:`pnp_workflow_info module <ansible_collections.cisco.dnac.pnp_workflow_info_module>` -- Information module for Pnp Workflow Info
 * :ref:`pnp_workflow_manager module <ansible_collections.cisco.dnac.pnp_workflow_manager_module>` -- Resource module for Site and PnP related functions
+* :ref:`pnp_workflow_manager_copy module <ansible_collections.cisco.dnac.pnp_workflow_manager_copy_module>` -- Resource module for Site and PnP related functions
 * :ref:`pnp_workflow_v1 module <ansible_collections.cisco.dnac.pnp_workflow_v1_module>` -- Resource module for Pnp Workflow V1
 * :ref:`pnp_workflow_v1_info module <ansible_collections.cisco.dnac.pnp_workflow_v1_info_module>` -- Information module for Pnp Workflow V1
 * :ref:`product_names_count_info module <ansible_collections.cisco.dnac.product_names_count_info_module>` -- Information module for Product Names Count Info
 * :ref:`product_names_count_v1_info module <ansible_collections.cisco.dnac.product_names_count_v1_info_module>` -- Information module for Product Names Count V1
 * :ref:`product_names_info module <ansible_collections.cisco.dnac.product_names_info_module>` -- Information module for Product Names Info
 * :ref:`product_names_v1_info module <ansible_collections.cisco.dnac.product_names_v1_info_module>` -- Information module for Product Names V1
+* :ref:`product_series_info module <ansible_collections.cisco.dnac.product_series_info_module>` -- Information module for Product Series
+* :ref:`product_series_product_series_ordinal_info module <ansible_collections.cisco.dnac.product_series_product_series_ordinal_info_module>` -- Information module for Product Series Product Series Ordinal
 * :ref:`projects module <ansible_collections.cisco.dnac.projects_module>` -- Resource module for Projects
 * :ref:`projects_count_info module <ansible_collections.cisco.dnac.projects_count_info_module>` -- Information module for Projects Count Info
 * :ref:`projects_count_v1_info module <ansible_collections.cisco.dnac.projects_count_v1_info_module>` -- Information module for Projects Count V1
@@ -1286,6 +1409,15 @@ Modules
 * :ref:`sda_fabric_devices_layer2_handoffs_sda_transits_v1_info module <ansible_collections.cisco.dnac.sda_fabric_devices_layer2_handoffs_sda_transits_v1_info_module>` -- Information module for Sda Fabric Devices Layer2 Handoffs Sda Transits V1
 * :ref:`sda_fabric_devices_layer2_handoffs_v1 module <ansible_collections.cisco.dnac.sda_fabric_devices_layer2_handoffs_v1_module>` -- Resource module for Sda Fabric Devices Layer2 Handoffs V1
 * :ref:`sda_fabric_devices_layer2_handoffs_v1_info module <ansible_collections.cisco.dnac.sda_fabric_devices_layer2_handoffs_v1_info_module>` -- Information module for Sda Fabric Devices Layer2 Handoffs V1
+* :ref:`sda_fabric_devices_layer2handoffs module <ansible_collections.cisco.dnac.sda_fabric_devices_layer2handoffs_module>` -- Resource module for Sda Fabric Devices Layer2handoffs
+* :ref:`sda_fabric_devices_layer2handoffs_count_info module <ansible_collections.cisco.dnac.sda_fabric_devices_layer2handoffs_count_info_module>` -- Information module for Sda Fabric Devices Layer2handoffs Count
+* :ref:`sda_fabric_devices_layer2handoffs_info module <ansible_collections.cisco.dnac.sda_fabric_devices_layer2handoffs_info_module>` -- Information module for Sda Fabric Devices Layer2handoffs
+* :ref:`sda_fabric_devices_layer2handoffs_ip_transits module <ansible_collections.cisco.dnac.sda_fabric_devices_layer2handoffs_ip_transits_module>` -- Resource module for Sda Fabric Devices Layer2handoffs Ip Transits
+* :ref:`sda_fabric_devices_layer2handoffs_ip_transits_count_info module <ansible_collections.cisco.dnac.sda_fabric_devices_layer2handoffs_ip_transits_count_info_module>` -- Information module for Sda Fabric Devices Layer2handoffs Ip Transits Count
+* :ref:`sda_fabric_devices_layer2handoffs_ip_transits_info module <ansible_collections.cisco.dnac.sda_fabric_devices_layer2handoffs_ip_transits_info_module>` -- Information module for Sda Fabric Devices Layer2handoffs Ip Transits
+* :ref:`sda_fabric_devices_layer2handoffs_sda_transits module <ansible_collections.cisco.dnac.sda_fabric_devices_layer2handoffs_sda_transits_module>` -- Resource module for Sda Fabric Devices Layer2handoffs Sda Transits
+* :ref:`sda_fabric_devices_layer2handoffs_sda_transits_count_info module <ansible_collections.cisco.dnac.sda_fabric_devices_layer2handoffs_sda_transits_count_info_module>` -- Information module for Sda Fabric Devices Layer2handoffs Sda Transits Count
+* :ref:`sda_fabric_devices_layer2handoffs_sda_transits_info module <ansible_collections.cisco.dnac.sda_fabric_devices_layer2handoffs_sda_transits_info_module>` -- Information module for Sda Fabric Devices Layer2handoffs Sda Transits
 * :ref:`sda_fabric_devices_v1 module <ansible_collections.cisco.dnac.sda_fabric_devices_v1_module>` -- Resource module for Sda Fabric Devices V1
 * :ref:`sda_fabric_devices_v1_info module <ansible_collections.cisco.dnac.sda_fabric_devices_v1_info_module>` -- Information module for Sda Fabric Devices V1
 * :ref:`sda_fabric_devices_workflow_manager module <ansible_collections.cisco.dnac.sda_fabric_devices_workflow_manager_module>` -- Manage SDA fabric devices in Cisco Catalyst Center.
@@ -1293,6 +1425,7 @@ Modules
 * :ref:`sda_fabric_edge_device_info module <ansible_collections.cisco.dnac.sda_fabric_edge_device_info_module>` -- Information module for Sda Fabric Edge Device Info
 * :ref:`sda_fabric_edge_device_v1 module <ansible_collections.cisco.dnac.sda_fabric_edge_device_v1_module>` -- Resource module for Sda Fabric Edge Device V1
 * :ref:`sda_fabric_edge_device_v1_info module <ansible_collections.cisco.dnac.sda_fabric_edge_device_v1_info_module>` -- Information module for Sda Fabric Edge Device V1
+* :ref:`sda_fabric_multicast_workflow_manager module <ansible_collections.cisco.dnac.sda_fabric_multicast_workflow_manager_module>` -- Manage SDA fabric multicast in Cisco Catalyst Center.
 * :ref:`sda_fabric_site module <ansible_collections.cisco.dnac.sda_fabric_site_module>` -- Resource module for Sda Fabric Site
 * :ref:`sda_fabric_site_info module <ansible_collections.cisco.dnac.sda_fabric_site_info_module>` -- Information module for Sda Fabric Site Info
 * :ref:`sda_fabric_site_v1 module <ansible_collections.cisco.dnac.sda_fabric_site_v1_module>` -- Resource module for Sda Fabric Site V1
@@ -1329,12 +1462,18 @@ Modules
 * :ref:`sda_layer2_virtual_networks_info module <ansible_collections.cisco.dnac.sda_layer2_virtual_networks_info_module>` -- Information module for Sda Layer2 Virtual Networks Info
 * :ref:`sda_layer2_virtual_networks_v1 module <ansible_collections.cisco.dnac.sda_layer2_virtual_networks_v1_module>` -- Resource module for Sda Layer2 Virtual Networks V1
 * :ref:`sda_layer2_virtual_networks_v1_info module <ansible_collections.cisco.dnac.sda_layer2_virtual_networks_v1_info_module>` -- Information module for Sda Layer2 Virtual Networks V1
+* :ref:`sda_layer2virtual_networks module <ansible_collections.cisco.dnac.sda_layer2virtual_networks_module>` -- Resource module for Sda Layer2virtual Networks
+* :ref:`sda_layer2virtual_networks_count_info module <ansible_collections.cisco.dnac.sda_layer2virtual_networks_count_info_module>` -- Information module for Sda Layer2virtual Networks Count
+* :ref:`sda_layer2virtual_networks_info module <ansible_collections.cisco.dnac.sda_layer2virtual_networks_info_module>` -- Information module for Sda Layer2virtual Networks
 * :ref:`sda_layer3_virtual_networks module <ansible_collections.cisco.dnac.sda_layer3_virtual_networks_module>` -- Resource module for Sda Layer3 Virtual Networks
 * :ref:`sda_layer3_virtual_networks_count_info module <ansible_collections.cisco.dnac.sda_layer3_virtual_networks_count_info_module>` -- Information module for Sda Layer3 Virtual Networks Count Info
 * :ref:`sda_layer3_virtual_networks_count_v1_info module <ansible_collections.cisco.dnac.sda_layer3_virtual_networks_count_v1_info_module>` -- Information module for Sda Layer3 Virtual Networks Count V1
 * :ref:`sda_layer3_virtual_networks_info module <ansible_collections.cisco.dnac.sda_layer3_virtual_networks_info_module>` -- Information module for Sda Layer3 Virtual Networks Info
 * :ref:`sda_layer3_virtual_networks_v1 module <ansible_collections.cisco.dnac.sda_layer3_virtual_networks_v1_module>` -- Resource module for Sda Layer3 Virtual Networks V1
 * :ref:`sda_layer3_virtual_networks_v1_info module <ansible_collections.cisco.dnac.sda_layer3_virtual_networks_v1_info_module>` -- Information module for Sda Layer3 Virtual Networks V1
+* :ref:`sda_layer3virtual_networks module <ansible_collections.cisco.dnac.sda_layer3virtual_networks_module>` -- Resource module for Sda Layer3virtual Networks
+* :ref:`sda_layer3virtual_networks_count_info module <ansible_collections.cisco.dnac.sda_layer3virtual_networks_count_info_module>` -- Information module for Sda Layer3virtual Networks Count
+* :ref:`sda_layer3virtual_networks_info module <ansible_collections.cisco.dnac.sda_layer3virtual_networks_info_module>` -- Information module for Sda Layer3virtual Networks
 * :ref:`sda_multicast module <ansible_collections.cisco.dnac.sda_multicast_module>` -- Resource module for Sda Multicast
 * :ref:`sda_multicast_info module <ansible_collections.cisco.dnac.sda_multicast_info_module>` -- Information module for Sda Multicast Info
 * :ref:`sda_multicast_v1 module <ansible_collections.cisco.dnac.sda_multicast_v1_module>` -- Resource module for Sda Multicast V1
@@ -1451,6 +1590,17 @@ Modules
 * :ref:`security_rogue_wireless_containment_status_v1_info module <ansible_collections.cisco.dnac.security_rogue_wireless_containment_status_v1_info_module>` -- Information module for Security Rogue Wireless Containment Status V1
 * :ref:`security_rogue_wireless_containment_stop module <ansible_collections.cisco.dnac.security_rogue_wireless_containment_stop_module>` -- Resource module for Security Rogue Wireless Containment Stop
 * :ref:`security_rogue_wireless_containment_stop_v1 module <ansible_collections.cisco.dnac.security_rogue_wireless_containment_stop_v1_module>` -- Resource module for Security Rogue Wireless Containment Stop V1
+* :ref:`security_service_insertion_fabric_sites_readiness_id_info module <ansible_collections.cisco.dnac.security_service_insertion_fabric_sites_readiness_id_info_module>` -- Information module for Security Service Insertion Fabric Sites Readiness Id
+* :ref:`security_service_insertion_fabric_sites_readiness_info module <ansible_collections.cisco.dnac.security_service_insertion_fabric_sites_readiness_info_module>` -- Information module for Security Service Insertion Fabric Sites Readiness
+* :ref:`security_service_insertion_fabric_sites_readiness_site_id_virtual_networks_id_info module <ansible_collections.cisco.dnac.security_service_insertion_fabric_sites_readiness_site_id_virtual_networks_id_info_module>` -- Information module for Security Service Insertion Fabric Sites Readiness Site Id Virtual Networks Id
+* :ref:`security_service_insertion_summaries_count_info module <ansible_collections.cisco.dnac.security_service_insertion_summaries_count_info_module>` -- Information module for Security Service Insertion Summaries Count
+* :ref:`security_service_insertion_summaries_info module <ansible_collections.cisco.dnac.security_service_insertion_summaries_info_module>` -- Information module for Security Service Insertion Summaries
+* :ref:`security_service_insertion_system_readiness_info module <ansible_collections.cisco.dnac.security_service_insertion_system_readiness_info_module>` -- Information module for Security Service Insertion System Readiness
+* :ref:`security_service_insertions module <ansible_collections.cisco.dnac.security_service_insertions_module>` -- Resource module for Security Service Insertions
+* :ref:`security_service_insertions_count_info module <ansible_collections.cisco.dnac.security_service_insertions_count_info_module>` -- Information module for Security Service Insertions Count
+* :ref:`security_service_insertions_id module <ansible_collections.cisco.dnac.security_service_insertions_id_module>` -- Resource module for Security Service Insertions Id
+* :ref:`security_service_insertions_id_info module <ansible_collections.cisco.dnac.security_service_insertions_id_info_module>` -- Information module for Security Service Insertions Id
+* :ref:`security_service_insertions_info module <ansible_collections.cisco.dnac.security_service_insertions_info_module>` -- Information module for Security Service Insertions
 * :ref:`security_threats_details module <ansible_collections.cisco.dnac.security_threats_details_module>` -- Resource module for Security Threats Details
 * :ref:`security_threats_details_count module <ansible_collections.cisco.dnac.security_threats_details_count_module>` -- Resource module for Security Threats Details Count
 * :ref:`security_threats_details_count_v1 module <ansible_collections.cisco.dnac.security_threats_details_count_v1_module>` -- Resource module for Security Threats Details Count V1
@@ -1529,6 +1679,8 @@ Modules
 * :ref:`site_kpi_summaries_top_n_analytics_info module <ansible_collections.cisco.dnac.site_kpi_summaries_top_n_analytics_info_module>` -- Information module for Site Kpi Summaries Top N Analytics Info
 * :ref:`site_kpi_summaries_top_n_analytics_v1 module <ansible_collections.cisco.dnac.site_kpi_summaries_top_n_analytics_v1_module>` -- Resource module for Site Kpi Summaries Top N Analytics V1
 * :ref:`site_kpi_summaries_top_n_analytics_v1_info module <ansible_collections.cisco.dnac.site_kpi_summaries_top_n_analytics_v1_info_module>` -- Information module for Site Kpi Summaries Top N Analytics V1
+* :ref:`site_kpi_summaries_top_nanalytics module <ansible_collections.cisco.dnac.site_kpi_summaries_top_nanalytics_module>` -- Resource module for Site Kpi Summaries Top Nanalytics
+* :ref:`site_kpi_summaries_top_nanalytics_info module <ansible_collections.cisco.dnac.site_kpi_summaries_top_nanalytics_info_module>` -- Information module for Site Kpi Summaries Top Nanalytics
 * :ref:`site_kpi_summaries_trend_analytics module <ansible_collections.cisco.dnac.site_kpi_summaries_trend_analytics_module>` -- Resource module for Site Kpi Summaries Trend Analytics
 * :ref:`site_kpi_summaries_trend_analytics_info module <ansible_collections.cisco.dnac.site_kpi_summaries_trend_analytics_info_module>` -- Information module for Site Kpi Summaries Trend Analytics Info
 * :ref:`site_kpi_summaries_trend_analytics_v1 module <ansible_collections.cisco.dnac.site_kpi_summaries_trend_analytics_v1_module>` -- Resource module for Site Kpi Summaries Trend Analytics V1
@@ -1588,6 +1740,10 @@ Modules
 * :ref:`sites_profile_assignments_count_v1_info module <ansible_collections.cisco.dnac.sites_profile_assignments_count_v1_info_module>` -- Information module for Sites Profile Assignments Count V1
 * :ref:`sites_profile_assignments_info module <ansible_collections.cisco.dnac.sites_profile_assignments_info_module>` -- Information module for Sites Profile Assignments Info
 * :ref:`sites_profile_assignments_v1_info module <ansible_collections.cisco.dnac.sites_profile_assignments_v1_info_module>` -- Information module for Sites Profile Assignments V1
+* :ref:`sites_site_id_wireless_settings_flex_connect_aaa_override module <ansible_collections.cisco.dnac.sites_site_id_wireless_settings_flex_connect_aaa_override_module>` -- Resource module for Sites Site Id Wireless Settings Flex Connect Aaa Override
+* :ref:`sites_site_id_wireless_settings_flex_connect_aaa_override_info module <ansible_collections.cisco.dnac.sites_site_id_wireless_settings_flex_connect_aaa_override_info_module>` -- Information module for Sites Site Id Wireless Settings Flex Connect Aaa Override
+* :ref:`sites_site_id_wireless_settings_flex_connect_native_vlan module <ansible_collections.cisco.dnac.sites_site_id_wireless_settings_flex_connect_native_vlan_module>` -- Resource module for Sites Site Id Wireless Settings Flex Connect Native Vlan
+* :ref:`sites_site_id_wireless_settings_flex_connect_native_vlan_info module <ansible_collections.cisco.dnac.sites_site_id_wireless_settings_flex_connect_native_vlan_info_module>` -- Information module for Sites Site Id Wireless Settings Flex Connect Native Vlan
 * :ref:`sites_site_id_wireless_settings_ssids_id_update module <ansible_collections.cisco.dnac.sites_site_id_wireless_settings_ssids_id_update_module>` -- Resource module for Sites Site Id Wireless Settings Ssids Id Update
 * :ref:`sites_site_id_wireless_settings_ssids_id_update_v1 module <ansible_collections.cisco.dnac.sites_site_id_wireless_settings_ssids_id_update_v1_module>` -- Resource module for Sites Site Id Wireless Settings Ssids Id Update V1
 * :ref:`sites_telemetry_settings module <ansible_collections.cisco.dnac.sites_telemetry_settings_module>` -- Resource module for Sites Telemetry Settings
@@ -1645,6 +1801,8 @@ Modules
 * :ref:`system_performance_historical_v1_info module <ansible_collections.cisco.dnac.system_performance_historical_v1_info_module>` -- Information module for System Performance Historical V1
 * :ref:`system_performance_info module <ansible_collections.cisco.dnac.system_performance_info_module>` -- Information module for System Performance Info
 * :ref:`system_performance_v1_info module <ansible_collections.cisco.dnac.system_performance_v1_info_module>` -- Information module for System Performance V1
+* :ref:`system_settings_ap_pnp_location module <ansible_collections.cisco.dnac.system_settings_ap_pnp_location_module>` -- Resource module for System Settings Ap Pnp Location
+* :ref:`system_settings_ap_pnp_location_info module <ansible_collections.cisco.dnac.system_settings_ap_pnp_location_info_module>` -- Information module for System Settings Ap Pnp Location
 * :ref:`tag module <ansible_collections.cisco.dnac.tag_module>` -- Resource module for Tag
 * :ref:`tag_count_info module <ansible_collections.cisco.dnac.tag_count_info_module>` -- Information module for Tag Count Info
 * :ref:`tag_count_v1_info module <ansible_collections.cisco.dnac.tag_count_v1_info_module>` -- Information module for Tag Count V1
@@ -1698,6 +1856,7 @@ Modules
 * :ref:`template_preview module <ansible_collections.cisco.dnac.template_preview_module>` -- Resource module for Template Preview
 * :ref:`template_preview_v1 module <ansible_collections.cisco.dnac.template_preview_v1_module>` -- Resource module for Template Preview V1
 * :ref:`template_workflow_manager module <ansible_collections.cisco.dnac.template_workflow_manager_module>` -- Resource module for Template functions
+* :ref:`template_workflow_manager_copy1 module <ansible_collections.cisco.dnac.template_workflow_manager_copy1_module>` -- Resource module for Template functions
 * :ref:`templates_details_info module <ansible_collections.cisco.dnac.templates_details_info_module>` -- Information module for Templates Details Info
 * :ref:`templates_details_v2_info module <ansible_collections.cisco.dnac.templates_details_v2_info_module>` -- Information module for Templates Details V2
 * :ref:`templates_template_id_network_profiles_for_sites module <ansible_collections.cisco.dnac.templates_template_id_network_profiles_for_sites_module>` -- Resource module for Templates Template Id Network Profiles For Sites
@@ -1720,6 +1879,9 @@ Modules
 * :ref:`templates_template_id_versions_v1_info module <ansible_collections.cisco.dnac.templates_template_id_versions_v1_info_module>` -- Information module for Templates Template Id Versions V1
 * :ref:`templates_template_id_versions_version_id_info module <ansible_collections.cisco.dnac.templates_template_id_versions_version_id_info_module>` -- Information module for Templates Template Id Versions Version Id Info
 * :ref:`templates_template_id_versions_version_id_v1_info module <ansible_collections.cisco.dnac.templates_template_id_versions_version_id_v1_info_module>` -- Information module for Templates Template Id Versions Version Id V1
+* :ref:`thousand_eyes_test_results_count_info module <ansible_collections.cisco.dnac.thousand_eyes_test_results_count_info_module>` -- Information module for Thousand Eyes Test Results Count
+* :ref:`thousand_eyes_test_results_info module <ansible_collections.cisco.dnac.thousand_eyes_test_results_info_module>` -- Information module for Thousand Eyes Test Results
+* :ref:`thousand_eyes_test_results_trend_analytics_info module <ansible_collections.cisco.dnac.thousand_eyes_test_results_trend_analytics_info_module>` -- Information module for Thousand Eyes Test Results Trend Analytics
 * :ref:`topology_layer_2_info module <ansible_collections.cisco.dnac.topology_layer_2_info_module>` -- Information module for Topology Layer 2 Info
 * :ref:`topology_layer_2_v1_info module <ansible_collections.cisco.dnac.topology_layer_2_v1_info_module>` -- Information module for Topology Layer 2 V1
 * :ref:`topology_layer_3_info module <ansible_collections.cisco.dnac.topology_layer_3_info_module>` -- Information module for Topology Layer 3 Info
@@ -1746,6 +1908,7 @@ Modules
 * :ref:`transit_peer_network_v1_info module <ansible_collections.cisco.dnac.transit_peer_network_v1_info_module>` -- Information module for Transit Peer Network V1
 * :ref:`trusted_certificates_import module <ansible_collections.cisco.dnac.trusted_certificates_import_module>` -- Resource module for Trusted Certificates Import
 * :ref:`trusted_certificates_import_v1 module <ansible_collections.cisco.dnac.trusted_certificates_import_v1_module>` -- Resource module for Trusted Certificates Import V1
+* :ref:`update_wired_network_devices_id_config_features_intended_layer2 module <ansible_collections.cisco.dnac.update_wired_network_devices_id_config_features_intended_layer2_module>` -- Resource module for Update Wired Network Devices Id Config Features Intended Layer2
 * :ref:`user module <ansible_collections.cisco.dnac.user_module>` -- Resource module for User
 * :ref:`user_enrichment_details_info module <ansible_collections.cisco.dnac.user_enrichment_details_info_module>` -- Information module for User Enrichment Details Info
 * :ref:`user_enrichment_details_v1_info module <ansible_collections.cisco.dnac.user_enrichment_details_v1_info_module>` -- Information module for User Enrichment Details V1
@@ -1771,6 +1934,21 @@ Modules
 * :ref:`virtual_network_health_summaries_id_v1_info module <ansible_collections.cisco.dnac.virtual_network_health_summaries_id_v1_info_module>` -- Information module for Virtual Network Health Summaries Id V1
 * :ref:`virtual_network_health_summaries_info module <ansible_collections.cisco.dnac.virtual_network_health_summaries_info_module>` -- Information module for Virtual Network Health Summaries Info
 * :ref:`virtual_network_health_summaries_v1_info module <ansible_collections.cisco.dnac.virtual_network_health_summaries_v1_info_module>` -- Information module for Virtual Network Health Summaries V1
+* :ref:`wired_network_devices_id_config_features_deployed_layer2_feature_count_info module <ansible_collections.cisco.dnac.wired_network_devices_id_config_features_deployed_layer2_feature_count_info_module>` -- Information module for Wired Network Devices Id Config Features Deployed Layer2 Feature Count
+* :ref:`wired_network_devices_id_config_features_deployed_layer2_feature_info module <ansible_collections.cisco.dnac.wired_network_devices_id_config_features_deployed_layer2_feature_info_module>` -- Information module for Wired Network Devices Id Config Features Deployed Layer2 Feature
+* :ref:`wired_network_devices_id_config_features_intended_layer2_feature module <ansible_collections.cisco.dnac.wired_network_devices_id_config_features_intended_layer2_feature_module>` -- Resource module for Wired Network Devices Id Config Features Intended Layer2 Feature
+* :ref:`wired_network_devices_id_config_features_intended_layer2_feature_count_info module <ansible_collections.cisco.dnac.wired_network_devices_id_config_features_intended_layer2_feature_count_info_module>` -- Information module for Wired Network Devices Id Config Features Intended Layer2 Feature Count
+* :ref:`wired_network_devices_id_config_features_intended_layer2_feature_info module <ansible_collections.cisco.dnac.wired_network_devices_id_config_features_intended_layer2_feature_info_module>` -- Information module for Wired Network Devices Id Config Features Intended Layer2 Feature
+* :ref:`wired_network_devices_id_config_features_intended_layer2_info module <ansible_collections.cisco.dnac.wired_network_devices_id_config_features_intended_layer2_info_module>` -- Information module for Wired Network Devices Id Config Features Intended Layer2
+* :ref:`wired_network_devices_id_config_features_supported_layer2_info module <ansible_collections.cisco.dnac.wired_network_devices_id_config_features_supported_layer2_info_module>` -- Information module for Wired Network Devices Id Config Features Supported Layer2
+* :ref:`wired_network_devices_network_device_id_config_features_intended_configuration_models module <ansible_collections.cisco.dnac.wired_network_devices_network_device_id_config_features_intended_configuration_models_module>` -- Resource module for Wired Network Devices Network Device Id Config Features Intended Configuration Models
+* :ref:`wired_network_devices_network_device_id_config_features_intended_configuration_models_preview_activity_id module <ansible_collections.cisco.dnac.wired_network_devices_network_device_id_config_features_intended_configuration_models_preview_activity_id_module>` -- Resource module for Wired Network Devices Network Device Id Config Features Intended Configuration Models Preview Activity Id
+* :ref:`wired_network_devices_network_device_id_config_features_intended_configuration_models_preview_activity_id_config module <ansible_collections.cisco.dnac.wired_network_devices_network_device_id_config_features_intended_configuration_models_preview_activity_id_config_module>` -- Resource module for Wired Network Devices Network Device Id Config Features Intended Configuration Models Preview Activity Id Config
+* :ref:`wired_network_devices_network_device_id_config_features_intended_configuration_models_preview_activity_id_config_info module <ansible_collections.cisco.dnac.wired_network_devices_network_device_id_config_features_intended_configuration_models_preview_activity_id_config_info_module>` -- Information module for Wired Network Devices Network Device Id Config Features Intended Configuration Models Preview Activity Id Config
+* :ref:`wired_network_devices_network_device_id_config_features_intended_configuration_models_preview_activity_id_deploy module <ansible_collections.cisco.dnac.wired_network_devices_network_device_id_config_features_intended_configuration_models_preview_activity_id_deploy_module>` -- Resource module for Wired Network Devices Network Device Id Config Features Intended Configuration Models Preview Activity Id Deploy
+* :ref:`wired_network_devices_network_device_id_config_features_intended_deploy module <ansible_collections.cisco.dnac.wired_network_devices_network_device_id_config_features_intended_deploy_module>` -- Resource module for Wired Network Devices Network Device Id Config Features Intended Deploy
+* :ref:`wired_network_devices_network_device_id_config_features_intended_device_deployments_info module <ansible_collections.cisco.dnac.wired_network_devices_network_device_id_config_features_intended_device_deployments_info_module>` -- Information module for Wired Network Devices Network Device Id Config Features Intended Device Deployments
+* :ref:`wired_network_devices_network_device_id_config_features_intended_service_deployments_info module <ansible_collections.cisco.dnac.wired_network_devices_network_device_id_config_features_intended_service_deployments_info_module>` -- Information module for Wired Network Devices Network Device Id Config Features Intended Service Deployments
 * :ref:`wireless_accespoint_configuration module <ansible_collections.cisco.dnac.wireless_accespoint_configuration_module>` -- Resource module for Wireless Accespoint Configuration
 * :ref:`wireless_accespoint_configuration_v1 module <ansible_collections.cisco.dnac.wireless_accespoint_configuration_v1_module>` -- Resource module for Wireless Accespoint Configuration V1
 * :ref:`wireless_access_points_factory_reset_request_provision module <ansible_collections.cisco.dnac.wireless_access_points_factory_reset_request_provision_module>` -- Resource module for Wireless Access Points Factory Reset Request Provision
@@ -1799,6 +1977,7 @@ Modules
 * :ref:`wireless_controllers_mesh_ap_neighbours_v1_info module <ansible_collections.cisco.dnac.wireless_controllers_mesh_ap_neighbours_v1_info_module>` -- Information module for Wireless Controllers Mesh Ap Neighbours V1
 * :ref:`wireless_controllers_network_device_id_ap_authorization_lists_info module <ansible_collections.cisco.dnac.wireless_controllers_network_device_id_ap_authorization_lists_info_module>` -- Information module for Wireless Controllers Network Device Id Ap Authorization Lists Info
 * :ref:`wireless_controllers_network_device_id_ap_authorization_lists_v1_info module <ansible_collections.cisco.dnac.wireless_controllers_network_device_id_ap_authorization_lists_v1_info_module>` -- Information module for Wireless Controllers Network Device Id Ap Authorization Lists V1
+* :ref:`wireless_controllers_network_device_id_provision_status_info module <ansible_collections.cisco.dnac.wireless_controllers_network_device_id_provision_status_info_module>` -- Information module for Wireless Controllers Network Device Id Provision Status
 * :ref:`wireless_controllers_primary_managed_ap_locations_info module <ansible_collections.cisco.dnac.wireless_controllers_primary_managed_ap_locations_info_module>` -- Information module for Wireless Controllers Primary Managed Ap Locations Info
 * :ref:`wireless_controllers_primary_managed_ap_locations_v1_info module <ansible_collections.cisco.dnac.wireless_controllers_primary_managed_ap_locations_v1_info_module>` -- Information module for Wireless Controllers Primary Managed Ap Locations V1
 * :ref:`wireless_controllers_provision module <ansible_collections.cisco.dnac.wireless_controllers_provision_module>` -- Resource module for Wireless Controllers Provision
@@ -1954,12 +2133,18 @@ Modules
     aaa_services_summary_analytics_v1_module
     aaa_services_top_n_analytics_module
     aaa_services_top_n_analytics_v1_module
+    aaa_services_top_nanalytics_module
     aaa_services_trend_analytics_module
     aaa_services_trend_analytics_v1_module
     aaa_services_v1_info_module
     accesspoint_configuration_details_by_task_id_info_module
     accesspoint_configuration_details_by_task_id_v1_info_module
     accesspoint_workflow_manager_module
+    activities_activity_id_triggered_jobs_count_info_module
+    activities_activity_id_triggered_jobs_info_module
+    activities_count_info_module
+    activities_id_info_module
+    activities_info_module
     app_policy_default_info_module
     app_policy_default_v1_info_module
     app_policy_info_module
@@ -2048,6 +2233,7 @@ Modules
     assurance_issues_summary_analytics_v1_module
     assurance_issues_top_n_analytics_module
     assurance_issues_top_n_analytics_v1_module
+    assurance_issues_top_nanalytics_module
     assurance_issues_trend_analytics_module
     assurance_issues_trend_analytics_v1_module
     assurance_issues_update_module
@@ -2069,6 +2255,19 @@ Modules
     authentication_policy_servers_info_module
     authentication_policy_servers_v1_module
     authentication_policy_servers_v1_info_module
+    backup_configuration_module
+    backup_configuration_info_module
+    backup_nfs_configurations_module
+    backup_nfs_configurations_id_module
+    backup_nfs_configurations_info_module
+    backup_restore_executions_id_info_module
+    backup_restore_executions_info_module
+    backup_storages_info_module
+    backups_module
+    backups_id_module
+    backups_id_info_module
+    backups_id_restore_module
+    backups_info_module
     buildings_module
     buildings_info_module
     buildings_planned_access_points_info_module
@@ -2114,6 +2313,7 @@ Modules
     clients_summary_analytics_v1_module
     clients_top_n_analytics_module
     clients_top_n_analytics_v1_module
+    clients_top_nanalytics_module
     clients_trend_analytics_module
     clients_trend_analytics_id_module
     clients_trend_analytics_id_v1_module
@@ -2170,6 +2370,7 @@ Modules
     connection_modesetting_info_module
     connection_modesetting_v1_module
     connection_modesetting_v1_info_module
+    create_wired_network_devices_id_config_features_intended_layer2_module
     credential_to_site_by_siteid_create_module
     credential_to_site_by_siteid_create_v2_module
     custom_issue_definitions_module
@@ -2179,6 +2380,7 @@ Modules
     custom_issue_definitions_v1_module
     custom_issue_definitions_v1_info_module
     device_configs_backup_workflow_manager_module
+    device_configs_backup_workflow_manager_copy_module
     device_configurations_export_module
     device_configurations_export_v1_module
     device_credential_module
@@ -2232,6 +2434,7 @@ Modules
     dhcp_services_summary_analytics_v1_module
     dhcp_services_top_n_analytics_module
     dhcp_services_top_n_analytics_v1_module
+    dhcp_services_top_nanalytics_module
     dhcp_services_trend_analytics_module
     dhcp_services_trend_analytics_v1_module
     dhcp_services_v1_info_module
@@ -2302,6 +2505,7 @@ Modules
     dns_services_summary_analytics_v1_module
     dns_services_top_n_analytics_module
     dns_services_top_n_analytics_v1_module
+    dns_services_top_nanalytics_module
     dns_services_trend_analytics_module
     dns_services_trend_analytics_v1_module
     dns_services_v1_info_module
@@ -2331,6 +2535,25 @@ Modules
     endpoint_analytics_profiling_rules_v1_info_module
     endpoint_analytics_tasks_info_module
     endpoint_analytics_tasks_v1_info_module
+    energy_clients_count_info_module
+    energy_clients_id_info_module
+    energy_clients_info_module
+    energy_clients_query_module
+    energy_clients_query_count_module
+    energy_network_devices_count_info_module
+    energy_network_devices_id_info_module
+    energy_network_devices_info_module
+    energy_network_devices_query_module
+    energy_network_devices_query_count_module
+    energy_sites_count_info_module
+    energy_sites_id_info_module
+    energy_sites_info_module
+    energy_sites_query_module
+    energy_sites_query_count_module
+    energy_sites_query_count_info_module
+    energy_sites_query_info_module
+    energy_summary_analytics_module
+    energy_trend_analytics_module
     eox_status_device_info_module
     eox_status_device_v1_info_module
     eox_status_summary_info_module
@@ -2418,6 +2641,43 @@ Modules
     fabrics_fabric_id_wireless_multicast_info_module
     fabrics_fabric_id_wireless_multicast_v1_module
     fabrics_fabric_id_wireless_multicast_v1_info_module
+    feature_templates_wireless_aaa_radius_attributes_configurations_module
+    feature_templates_wireless_aaa_radius_attributes_configurations_id_module
+    feature_templates_wireless_aaa_radius_attributes_configurations_id_info_module
+    feature_templates_wireless_advanced_ssid_configurations_module
+    feature_templates_wireless_advanced_ssid_configurations_id_module
+    feature_templates_wireless_advanced_ssid_configurations_id_info_module
+    feature_templates_wireless_advanced_ssidconfigurations_module
+    feature_templates_wireless_advanced_ssidconfigurations_id_module
+    feature_templates_wireless_advanced_ssidconfigurations_id_info_module
+    feature_templates_wireless_clean_air_configurations_module
+    feature_templates_wireless_clean_air_configurations_id_module
+    feature_templates_wireless_clean_air_configurations_id_info_module
+    feature_templates_wireless_dot11ax_configurations_module
+    feature_templates_wireless_dot11ax_configurations_id_module
+    feature_templates_wireless_dot11ax_configurations_id_info_module
+    feature_templates_wireless_dot11be_status_configurations_module
+    feature_templates_wireless_dot11be_status_configurations_id_module
+    feature_templates_wireless_dot11be_status_configurations_id_info_module
+    feature_templates_wireless_event_driven_r_r_m_configurations_module
+    feature_templates_wireless_event_driven_r_r_m_configurations_id_module
+    feature_templates_wireless_event_driven_r_r_m_configurations_id_info_module
+    feature_templates_wireless_event_driven_rrmconfigurations_module
+    feature_templates_wireless_event_driven_rrmconfigurations_id_module
+    feature_templates_wireless_event_driven_rrmconfigurations_id_info_module
+    feature_templates_wireless_flex_connect_configurations_module
+    feature_templates_wireless_flex_connect_configurations_id_module
+    feature_templates_wireless_flex_connect_configurations_id_info_module
+    feature_templates_wireless_multicast_configurations_module
+    feature_templates_wireless_multicast_configurations_id_module
+    feature_templates_wireless_multicast_configurations_id_info_module
+    feature_templates_wireless_rrm_fra_configurations_module
+    feature_templates_wireless_rrm_fra_configurations_id_module
+    feature_templates_wireless_rrm_fra_configurations_id_info_module
+    feature_templates_wireless_rrm_general_configurations_module
+    feature_templates_wireless_rrm_general_configurations_id_module
+    feature_templates_wireless_rrm_general_configurations_id_info_module
+    feature_templates_wireless_summary_info_module
     field_notices_results_network_devices_count_info_module
     field_notices_results_network_devices_count_v1_info_module
     field_notices_results_network_devices_info_module
@@ -2636,6 +2896,17 @@ Modules
     interfaces_v1_info_module
     inventory_intent_module
     inventory_workflow_manager_module
+    iot_fabric_rep_rings_module
+    iot_fabric_rep_rings_id_module
+    iot_network_devices_network_device_id_mrp_rings_count_info_module
+    iot_network_devices_network_device_id_mrp_rings_id_members_count_info_module
+    iot_network_devices_network_device_id_mrp_rings_id_members_info_module
+    iot_network_devices_network_device_id_mrp_rings_info_module
+    iot_non_fabric_rep_rings_module
+    iot_non_fabric_rep_rings_id_module
+    iot_rep_rings_id_info_module
+    iot_rep_rings_query_module
+    iot_rep_rings_query_count_module
     ipam_global_ip_address_pools_module
     ipam_global_ip_address_pools_count_info_module
     ipam_global_ip_address_pools_count_v1_info_module
@@ -2688,6 +2959,11 @@ Modules
     lan_automation_log_by_serial_number_v1_info_module
     lan_automation_log_info_module
     lan_automation_log_v1_info_module
+    lan_automation_port_channels_module
+    lan_automation_port_channels_id_add_link_module
+    lan_automation_port_channels_id_info_module
+    lan_automation_port_channels_id_remove_link_module
+    lan_automation_port_channels_info_module
     lan_automation_sessions_info_module
     lan_automation_sessions_v1_info_module
     lan_automation_status_info_module
@@ -2749,7 +3025,9 @@ Modules
     netconf_credential_v1_module
     network_applications_count_info_module
     network_applications_count_v1_info_module
+    network_applications_id_trend_analytics_module
     network_applications_info_module
+    network_applications_summary_analytics_module
     network_applications_trend_analytics_module
     network_applications_trend_analytics_v1_module
     network_applications_v1_info_module
@@ -2818,6 +3096,7 @@ Modules
     network_device_count_info_module
     network_device_count_v1_info_module
     network_device_custom_prompt_module
+    network_device_custom_prompt_info_module
     network_device_custom_prompt_info_info_module
     network_device_custom_prompt_info_v1_info_module
     network_device_custom_prompt_v1_module
@@ -2833,6 +3112,21 @@ Modules
     network_device_image_updates_count_v1_info_module
     network_device_image_updates_info_module
     network_device_image_updates_v1_info_module
+    network_device_images_activate_bulk_module
+    network_device_images_count_info_module
+    network_device_images_distribute_bulk_module
+    network_device_images_id_activate_module
+    network_device_images_id_distribute_module
+    network_device_images_id_info_module
+    network_device_images_id_readiness_checks_module
+    network_device_images_info_module
+    network_device_images_validation_results_count_info_module
+    network_device_images_validation_results_info_module
+    network_device_images_validations_module
+    network_device_images_validations_count_info_module
+    network_device_images_validations_id_module
+    network_device_images_validations_id_info_module
+    network_device_images_validations_info_module
     network_device_info_module
     network_device_interface_neighbor_info_module
     network_device_interface_neighbor_v1_info_module
@@ -2844,6 +3138,10 @@ Modules
     network_device_ip_address_v1_info_module
     network_device_lexicographically_sorted_info_module
     network_device_lexicographically_sorted_v1_info_module
+    network_device_licenses_network_device_id_port_channels_count_info_module
+    network_device_licenses_network_device_id_port_channels_id_info_module
+    network_device_licenses_network_device_id_port_channels_info_module
+    network_device_licenses_summary_info_module
     network_device_linecard_details_info_module
     network_device_linecard_details_v1_info_module
     network_device_maintenance_schedules_module
@@ -2951,6 +3249,7 @@ Modules
     network_devices_summary_analytics_v1_module
     network_devices_top_n_analytics_module
     network_devices_top_n_analytics_v1_module
+    network_devices_top_nanalytics_module
     network_devices_trend_analytics_module
     network_devices_trend_analytics_id_module
     network_devices_trend_analytics_id_v1_module
@@ -3041,12 +3340,15 @@ Modules
     pnp_workflow_count_v1_info_module
     pnp_workflow_info_module
     pnp_workflow_manager_module
+    pnp_workflow_manager_copy_module
     pnp_workflow_v1_module
     pnp_workflow_v1_info_module
     product_names_count_info_module
     product_names_count_v1_info_module
     product_names_info_module
     product_names_v1_info_module
+    product_series_info_module
+    product_series_product_series_ordinal_info_module
     projects_module
     projects_count_info_module
     projects_count_v1_info_module
@@ -3157,6 +3459,15 @@ Modules
     sda_fabric_devices_layer2_handoffs_sda_transits_v1_info_module
     sda_fabric_devices_layer2_handoffs_v1_module
     sda_fabric_devices_layer2_handoffs_v1_info_module
+    sda_fabric_devices_layer2handoffs_module
+    sda_fabric_devices_layer2handoffs_count_info_module
+    sda_fabric_devices_layer2handoffs_info_module
+    sda_fabric_devices_layer2handoffs_ip_transits_module
+    sda_fabric_devices_layer2handoffs_ip_transits_count_info_module
+    sda_fabric_devices_layer2handoffs_ip_transits_info_module
+    sda_fabric_devices_layer2handoffs_sda_transits_module
+    sda_fabric_devices_layer2handoffs_sda_transits_count_info_module
+    sda_fabric_devices_layer2handoffs_sda_transits_info_module
     sda_fabric_devices_v1_module
     sda_fabric_devices_v1_info_module
     sda_fabric_devices_workflow_manager_module
@@ -3164,6 +3475,7 @@ Modules
     sda_fabric_edge_device_info_module
     sda_fabric_edge_device_v1_module
     sda_fabric_edge_device_v1_info_module
+    sda_fabric_multicast_workflow_manager_module
     sda_fabric_site_module
     sda_fabric_site_info_module
     sda_fabric_site_v1_module
@@ -3200,12 +3512,18 @@ Modules
     sda_layer2_virtual_networks_info_module
     sda_layer2_virtual_networks_v1_module
     sda_layer2_virtual_networks_v1_info_module
+    sda_layer2virtual_networks_module
+    sda_layer2virtual_networks_count_info_module
+    sda_layer2virtual_networks_info_module
     sda_layer3_virtual_networks_module
     sda_layer3_virtual_networks_count_info_module
     sda_layer3_virtual_networks_count_v1_info_module
     sda_layer3_virtual_networks_info_module
     sda_layer3_virtual_networks_v1_module
     sda_layer3_virtual_networks_v1_info_module
+    sda_layer3virtual_networks_module
+    sda_layer3virtual_networks_count_info_module
+    sda_layer3virtual_networks_info_module
     sda_multicast_module
     sda_multicast_info_module
     sda_multicast_v1_module
@@ -3322,6 +3640,17 @@ Modules
     security_rogue_wireless_containment_status_v1_info_module
     security_rogue_wireless_containment_stop_module
     security_rogue_wireless_containment_stop_v1_module
+    security_service_insertion_fabric_sites_readiness_id_info_module
+    security_service_insertion_fabric_sites_readiness_info_module
+    security_service_insertion_fabric_sites_readiness_site_id_virtual_networks_id_info_module
+    security_service_insertion_summaries_count_info_module
+    security_service_insertion_summaries_info_module
+    security_service_insertion_system_readiness_info_module
+    security_service_insertions_module
+    security_service_insertions_count_info_module
+    security_service_insertions_id_module
+    security_service_insertions_id_info_module
+    security_service_insertions_info_module
     security_threats_details_module
     security_threats_details_count_module
     security_threats_details_count_v1_module
@@ -3400,6 +3729,8 @@ Modules
     site_kpi_summaries_top_n_analytics_info_module
     site_kpi_summaries_top_n_analytics_v1_module
     site_kpi_summaries_top_n_analytics_v1_info_module
+    site_kpi_summaries_top_nanalytics_module
+    site_kpi_summaries_top_nanalytics_info_module
     site_kpi_summaries_trend_analytics_module
     site_kpi_summaries_trend_analytics_info_module
     site_kpi_summaries_trend_analytics_v1_module
@@ -3459,6 +3790,10 @@ Modules
     sites_profile_assignments_count_v1_info_module
     sites_profile_assignments_info_module
     sites_profile_assignments_v1_info_module
+    sites_site_id_wireless_settings_flex_connect_aaa_override_module
+    sites_site_id_wireless_settings_flex_connect_aaa_override_info_module
+    sites_site_id_wireless_settings_flex_connect_native_vlan_module
+    sites_site_id_wireless_settings_flex_connect_native_vlan_info_module
     sites_site_id_wireless_settings_ssids_id_update_module
     sites_site_id_wireless_settings_ssids_id_update_v1_module
     sites_telemetry_settings_module
@@ -3516,6 +3851,8 @@ Modules
     system_performance_historical_v1_info_module
     system_performance_info_module
     system_performance_v1_info_module
+    system_settings_ap_pnp_location_module
+    system_settings_ap_pnp_location_info_module
     tag_module
     tag_count_info_module
     tag_count_v1_info_module
@@ -3569,6 +3906,7 @@ Modules
     template_preview_module
     template_preview_v1_module
     template_workflow_manager_module
+    template_workflow_manager_copy1_module
     templates_details_info_module
     templates_details_v2_info_module
     templates_template_id_network_profiles_for_sites_module
@@ -3591,6 +3929,9 @@ Modules
     templates_template_id_versions_v1_info_module
     templates_template_id_versions_version_id_info_module
     templates_template_id_versions_version_id_v1_info_module
+    thousand_eyes_test_results_count_info_module
+    thousand_eyes_test_results_info_module
+    thousand_eyes_test_results_trend_analytics_info_module
     topology_layer_2_info_module
     topology_layer_2_v1_info_module
     topology_layer_3_info_module
@@ -3617,6 +3958,7 @@ Modules
     transit_peer_network_v1_info_module
     trusted_certificates_import_module
     trusted_certificates_import_v1_module
+    update_wired_network_devices_id_config_features_intended_layer2_module
     user_module
     user_enrichment_details_info_module
     user_enrichment_details_v1_info_module
@@ -3642,6 +3984,21 @@ Modules
     virtual_network_health_summaries_id_v1_info_module
     virtual_network_health_summaries_info_module
     virtual_network_health_summaries_v1_info_module
+    wired_network_devices_id_config_features_deployed_layer2_feature_count_info_module
+    wired_network_devices_id_config_features_deployed_layer2_feature_info_module
+    wired_network_devices_id_config_features_intended_layer2_feature_module
+    wired_network_devices_id_config_features_intended_layer2_feature_count_info_module
+    wired_network_devices_id_config_features_intended_layer2_feature_info_module
+    wired_network_devices_id_config_features_intended_layer2_info_module
+    wired_network_devices_id_config_features_supported_layer2_info_module
+    wired_network_devices_network_device_id_config_features_intended_configuration_models_module
+    wired_network_devices_network_device_id_config_features_intended_configuration_models_preview_activity_id_module
+    wired_network_devices_network_device_id_config_features_intended_configuration_models_preview_activity_id_config_module
+    wired_network_devices_network_device_id_config_features_intended_configuration_models_preview_activity_id_config_info_module
+    wired_network_devices_network_device_id_config_features_intended_configuration_models_preview_activity_id_deploy_module
+    wired_network_devices_network_device_id_config_features_intended_deploy_module
+    wired_network_devices_network_device_id_config_features_intended_device_deployments_info_module
+    wired_network_devices_network_device_id_config_features_intended_service_deployments_info_module
     wireless_accespoint_configuration_module
     wireless_accespoint_configuration_v1_module
     wireless_access_points_factory_reset_request_provision_module
@@ -3670,6 +4027,7 @@ Modules
     wireless_controllers_mesh_ap_neighbours_v1_info_module
     wireless_controllers_network_device_id_ap_authorization_lists_info_module
     wireless_controllers_network_device_id_ap_authorization_lists_v1_info_module
+    wireless_controllers_network_device_id_provision_status_info_module
     wireless_controllers_primary_managed_ap_locations_info_module
     wireless_controllers_primary_managed_ap_locations_v1_info_module
     wireless_controllers_provision_module
